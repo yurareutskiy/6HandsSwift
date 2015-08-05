@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB771B7253AC00FECB99 /* AppDelegate.swift */; };
+		DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB791B7253AC00FECB99 /* _HandsSwift.xcdatamodeld */; };
+		DB70BB801B7253AC00FECB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB7E1B7253AC00FECB99 /* Main.storyboard */; };
+		DB70BB821B7253AC00FECB99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB811B7253AC00FECB99 /* Images.xcassets */; };
+		DB70BB851B7253AC00FECB99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */; };
+		DB70BB911B7253AC00FECB99 /* _HandsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB901B7253AC00FECB99 /* _HandsSwiftTests.swift */; };
+		DB70BBA01B72548500FECB99 /* backgroundImageFirstView.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9A1B72548500FECB99 /* backgroundImageFirstView.png */; };
+		DB70BBA11B72548500FECB99 /* blueColor.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9B1B72548500FECB99 /* blueColor.png */; };
+		DB70BBA21B72548500FECB99 /* kitchen pack18.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9C1B72548500FECB99 /* kitchen pack18.png */; };
+		DB70BBA31B72548500FECB99 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9D1B72548500FECB99 /* menu.png */; };
+		DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */; };
+		DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */; };
+		DB70BBA91B72549C00FECB99 /* GFPageSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DB70BBA81B72549C00FECB99 /* GFPageSlider.m */; };
+		DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB70BB8B1B7253AC00FECB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB70BB6A1B7253AC00FECB99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB70BB711B7253AC00FECB99;
+			remoteInfo = 6HandsSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB70BB721B7253AC00FECB99 /* 6HandsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6HandsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB70BB761B7253AC00FECB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB70BB771B7253AC00FECB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB70BB7A1B7253AC00FECB99 /* _HandsSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _HandsSwift.xcdatamodel; sourceTree = "<group>"; };
+		DB70BB7F1B7253AC00FECB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB70BB811B7253AC00FECB99 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DB70BB841B7253AC00FECB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DB70BB8A1B7253AC00FECB99 /* 6HandsSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6HandsSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB70BB8F1B7253AC00FECB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB70BB901B7253AC00FECB99 /* _HandsSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _HandsSwiftTests.swift; sourceTree = "<group>"; };
+		DB70BB9A1B72548500FECB99 /* backgroundImageFirstView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundImageFirstView.png; path = Design/backgroundImageFirstView.png; sourceTree = "<group>"; };
+		DB70BB9B1B72548500FECB99 /* blueColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueColor.png; path = Design/blueColor.png; sourceTree = "<group>"; };
+		DB70BB9C1B72548500FECB99 /* kitchen pack18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kitchen pack18.png"; path = "Design/kitchen pack18.png"; sourceTree = "<group>"; };
+		DB70BB9D1B72548500FECB99 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = Design/menu.png; sourceTree = "<group>"; };
+		DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rectBackgroundForButtonFirstView.png; path = Design/rectBackgroundForButtonFirstView.png; sourceTree = "<group>"; };
+		DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sixHandsLogo.png; path = Design/sixHandsLogo.png; sourceTree = "<group>"; };
+		DB70BBA71B72549C00FECB99 /* GFPageSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPageSlider.h; sourceTree = "<group>"; };
+		DB70BBA81B72549C00FECB99 /* GFPageSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPageSlider.m; sourceTree = "<group>"; };
+		DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB70BB6F1B7253AC00FECB99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB70BB871B7253AC00FECB99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB70BB691B7253AC00FECB99 = {
+			isa = PBXGroup;
+			children = (
+				DB70BB741B7253AC00FECB99 /* 6HandsSwift */,
+				DB70BB8D1B7253AC00FECB99 /* 6HandsSwiftTests */,
+				DB70BB731B7253AC00FECB99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB70BB731B7253AC00FECB99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB70BB721B7253AC00FECB99 /* 6HandsSwift.app */,
+				DB70BB8A1B7253AC00FECB99 /* 6HandsSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB70BB741B7253AC00FECB99 /* 6HandsSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DB70BBA61B72548B00FECB99 /* Design */,
+				DB70BBAA1B7254A600FECB99 /* Slider */,
+				DB70BB771B7253AC00FECB99 /* AppDelegate.swift */,
+				DB70BB7E1B7253AC00FECB99 /* Main.storyboard */,
+				DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */,
+				DB70BB811B7253AC00FECB99 /* Images.xcassets */,
+				DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */,
+				DB70BB791B7253AC00FECB99 /* _HandsSwift.xcdatamodeld */,
+				DB70BB751B7253AC00FECB99 /* Supporting Files */,
+			);
+			path = 6HandsSwift;
+			sourceTree = "<group>";
+		};
+		DB70BB751B7253AC00FECB99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB70BB761B7253AC00FECB99 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB70BB8D1B7253AC00FECB99 /* 6HandsSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB70BB901B7253AC00FECB99 /* _HandsSwiftTests.swift */,
+				DB70BB8E1B7253AC00FECB99 /* Supporting Files */,
+			);
+			path = 6HandsSwiftTests;
+			sourceTree = "<group>";
+		};
+		DB70BB8E1B7253AC00FECB99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB70BB8F1B7253AC00FECB99 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB70BBA61B72548B00FECB99 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				DB70BB9A1B72548500FECB99 /* backgroundImageFirstView.png */,
+				DB70BB9B1B72548500FECB99 /* blueColor.png */,
+				DB70BB9C1B72548500FECB99 /* kitchen pack18.png */,
+				DB70BB9D1B72548500FECB99 /* menu.png */,
+				DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */,
+				DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */,
+			);
+			name = Design;
+			sourceTree = "<group>";
+		};
+		DB70BBAA1B7254A600FECB99 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				DB70BBA71B72549C00FECB99 /* GFPageSlider.h */,
+				DB70BBA81B72549C00FECB99 /* GFPageSlider.m */,
+			);
+			name = Slider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB70BB711B7253AC00FECB99 /* 6HandsSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB70BB941B7253AC00FECB99 /* Build configuration list for PBXNativeTarget "6HandsSwift" */;
+			buildPhases = (
+				DB70BB6E1B7253AC00FECB99 /* Sources */,
+				DB70BB6F1B7253AC00FECB99 /* Frameworks */,
+				DB70BB701B7253AC00FECB99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 6HandsSwift;
+			productName = 6HandsSwift;
+			productReference = DB70BB721B7253AC00FECB99 /* 6HandsSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB70BB891B7253AC00FECB99 /* 6HandsSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB70BB971B7253AC00FECB99 /* Build configuration list for PBXNativeTarget "6HandsSwiftTests" */;
+			buildPhases = (
+				DB70BB861B7253AC00FECB99 /* Sources */,
+				DB70BB871B7253AC00FECB99 /* Frameworks */,
+				DB70BB881B7253AC00FECB99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB70BB8C1B7253AC00FECB99 /* PBXTargetDependency */,
+			);
+			name = 6HandsSwiftTests;
+			productName = 6HandsSwiftTests;
+			productReference = DB70BB8A1B7253AC00FECB99 /* 6HandsSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB70BB6A1B7253AC00FECB99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = reutskiy;
+				TargetAttributes = {
+					DB70BB711B7253AC00FECB99 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					DB70BB891B7253AC00FECB99 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DB70BB711B7253AC00FECB99;
+					};
+				};
+			};
+			buildConfigurationList = DB70BB6D1B7253AC00FECB99 /* Build configuration list for PBXProject "6HandsSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB70BB691B7253AC00FECB99;
+			productRefGroup = DB70BB731B7253AC00FECB99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB70BB711B7253AC00FECB99 /* 6HandsSwift */,
+				DB70BB891B7253AC00FECB99 /* 6HandsSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB70BB701B7253AC00FECB99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */,
+				DB70BB801B7253AC00FECB99 /* Main.storyboard in Resources */,
+				DB70BBA01B72548500FECB99 /* backgroundImageFirstView.png in Resources */,
+				DB70BBA11B72548500FECB99 /* blueColor.png in Resources */,
+				DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */,
+				DB70BB851B7253AC00FECB99 /* LaunchScreen.xib in Resources */,
+				DB70BBA31B72548500FECB99 /* menu.png in Resources */,
+				DB70BB821B7253AC00FECB99 /* Images.xcassets in Resources */,
+				DB70BBA21B72548500FECB99 /* kitchen pack18.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB70BB881B7253AC00FECB99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB70BB6E1B7253AC00FECB99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */,
+				DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */,
+				DB70BBA91B72549C00FECB99 /* GFPageSlider.m in Sources */,
+				DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB70BB861B7253AC00FECB99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB70BB911B7253AC00FECB99 /* _HandsSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB70BB8C1B7253AC00FECB99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB70BB711B7253AC00FECB99 /* 6HandsSwift */;
+			targetProxy = DB70BB8B1B7253AC00FECB99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB70BB7E1B7253AC00FECB99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB70BB7F1B7253AC00FECB99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB70BB841B7253AC00FECB99 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB70BB921B7253AC00FECB99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB70BB931B7253AC00FECB99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB70BB951B7253AC00FECB99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 6HandsSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB70BB961B7253AC00FECB99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 6HandsSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DB70BB981B7253AC00FECB99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = 6HandsSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6HandsSwift.app/6HandsSwift";
+			};
+			name = Debug;
+		};
+		DB70BB991B7253AC00FECB99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = 6HandsSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6HandsSwift.app/6HandsSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB70BB6D1B7253AC00FECB99 /* Build configuration list for PBXProject "6HandsSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB70BB921B7253AC00FECB99 /* Debug */,
+				DB70BB931B7253AC00FECB99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB70BB941B7253AC00FECB99 /* Build configuration list for PBXNativeTarget "6HandsSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB70BB951B7253AC00FECB99 /* Debug */,
+				DB70BB961B7253AC00FECB99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB70BB971B7253AC00FECB99 /* Build configuration list for PBXNativeTarget "6HandsSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB70BB981B7253AC00FECB99 /* Debug */,
+				DB70BB991B7253AC00FECB99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB70BB791B7253AC00FECB99 /* _HandsSwift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB70BB7A1B7253AC00FECB99 /* _HandsSwift.xcdatamodel */,
+			);
+			currentVersion = DB70BB7A1B7253AC00FECB99 /* _HandsSwift.xcdatamodel */;
+			path = _HandsSwift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DB70BB6A1B7253AC00FECB99 /* Project object */;
+}
