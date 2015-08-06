@@ -15,17 +15,18 @@ class MainTablesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Determine screen size
+        
         let bounds = UIScreen.mainScreen().bounds
         let width = bounds.size.width
         let height = bounds.size.height
         
         
+        // Navigation controller
+            // Navigation bar view
+        
         edgesForExtendedLayout = UIRectEdge.None
         
-//        [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-//        self.navigationController.view.backgroundColor = pageSliderMenuColor;
-//        self.navigationController.navigationBar.shadowImage = [UIImage new];
-//        self.view.backgroundColor = pageSliderMenuColor;
         
         let pageSliderMenuColor = UIColor(red: 243, green: 243, blue: 244, alpha: 1)
         
@@ -34,7 +35,38 @@ class MainTablesViewController: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage.new()
         view.backgroundColor = pageSliderMenuColor
         
-    
+            // Custom navigation bar items
+        
+        let imgView = UIImageView(image: UIImage(named: "sixHandsLogo"))
+        imgView.frame = CGRect(x: 75, y: 0, width: 80, height: 20)
+        imgView.contentMode = UIViewContentMode.ScaleAspectFit
+        navigationController?.navigationBar.topItem?.titleView = imgView
+        
+            // Custom RIGHT navigation bar button
+        
+        let rightItem = UIBarButtonItem(image: UIImage(named: "kitchen pack18"), style: UIBarButtonItemStyle.Plain, target: nil, action: Selector())
+        
+        
+            // Custom LEFT navigation bar button
+        
+        // Page slider
+        
+        let rectSlider = CGRect(x: 0, y: 0, width: width, height: height - 40)
+        
+        let newVC = NewTableViewController.new()
+        let popularVC = PopularTableViewController.new()
+        
+        let arrayVC = [newVC, popularVC]
+                
+        let slider = GFPageSlider(frame: rectSlider, numberOfPage: 2, viewControllers: NSMutableArray(array: arrayVC), menuButtonTitles: ["Популярное", "Новое"])
+        
+        slider.menuHeight = 45
+        slider.menuNumberPerPage = 2
+        slider.indicatorLineColor = UIColor(patternImage: UIImage(named: "blueColor")!)
+        
+        view.addSubview(slider)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +74,10 @@ class MainTablesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func revealFilterMenu(sender: UIBarButtonItem) {
+
+    
+    }
 
     /*
     // MARK: - Navigation

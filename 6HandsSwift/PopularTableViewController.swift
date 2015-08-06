@@ -1,24 +1,18 @@
 //
-//  WelcomeViewController.swift
+//  PopularTableViewController.swift
 //  6HandsSwift
 //
-//  Created by Reutskiy Jury on 05.08.15.
+//  Created by Reutskiy Jury on 06.08.15.
 //  Copyright (c) 2015 reutskiy. All rights reserved.
 //
 
 import UIKit
 
-
-
-class WelcomeViewController: UIViewController {
-    
-    @IBOutlet var findRoomButton: UIButton!
-    @IBOutlet var rentRoomButton: UIButton!
-
+class PopularTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+
         // Do any additional setup after loading the view.
     }
 
@@ -28,14 +22,6 @@ class WelcomeViewController: UIViewController {
     }
     
 
-    @IBAction func rentRoomAction(sender: UIButton) {
-    
-    }
-    
-    @IBAction func findRoomAction(sender: UIButton) {
-        performSegueWithIdentifier("FindRoom", sender: nil)
-    }
-    
     /*
     // MARK: - Navigation
 
