@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB6BABEA1B726E2000AEE0CC /* GFPageSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6BABE91B726E2000AEE0CC /* GFPageSlider.m */; };
 		DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB771B7253AC00FECB99 /* AppDelegate.swift */; };
 		DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB791B7253AC00FECB99 /* _HandsSwift.xcdatamodeld */; };
 		DB70BB801B7253AC00FECB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB7E1B7253AC00FECB99 /* Main.storyboard */; };
@@ -19,8 +20,9 @@
 		DB70BBA31B72548500FECB99 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9D1B72548500FECB99 /* menu.png */; };
 		DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */; };
 		DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */; };
-		DB70BBA91B72549C00FECB99 /* GFPageSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DB70BBA81B72549C00FECB99 /* GFPageSlider.m */; };
 		DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */; };
+		DB70BBAE1B725A6D00FECB99 /* MainTablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BBAD1B725A6D00FECB99 /* MainTablesViewController.swift */; };
+		DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB2DE241B7274B40076765A /* CalendarAndDate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB6BABE91B726E2000AEE0CC /* GFPageSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFPageSlider.m; path = 6HandsSwift/GFPageSlider.m; sourceTree = "<group>"; };
+		DB6BABEB1B726EBA00AEE0CC /* GFPageSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFPageSlider.h; path = 6HandsSwift/GFPageSlider.h; sourceTree = "<group>"; };
 		DB70BB721B7253AC00FECB99 /* 6HandsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6HandsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB70BB761B7253AC00FECB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB70BB771B7253AC00FECB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,9 +54,11 @@
 		DB70BB9D1B72548500FECB99 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = Design/menu.png; sourceTree = "<group>"; };
 		DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rectBackgroundForButtonFirstView.png; path = Design/rectBackgroundForButtonFirstView.png; sourceTree = "<group>"; };
 		DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sixHandsLogo.png; path = Design/sixHandsLogo.png; sourceTree = "<group>"; };
-		DB70BBA71B72549C00FECB99 /* GFPageSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFPageSlider.h; sourceTree = "<group>"; };
-		DB70BBA81B72549C00FECB99 /* GFPageSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFPageSlider.m; sourceTree = "<group>"; };
 		DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DB70BBAD1B725A6D00FECB99 /* MainTablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTablesViewController.swift; sourceTree = "<group>"; };
+		DB70BBB41B7264FB00FECB99 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
+		DBB2DE231B7274B40076765A /* CalendarAndDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarAndDate.h; path = 6HandsSwift/CalendarAndDate.h; sourceTree = "<group>"; };
+		DBB2DE241B7274B40076765A /* CalendarAndDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarAndDate.m; path = 6HandsSwift/CalendarAndDate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 		DB70BB691B7253AC00FECB99 = {
 			isa = PBXGroup;
 			children = (
+				DB70BBB31B7263D100FECB99 /* Objective-C */,
 				DB70BB741B7253AC00FECB99 /* 6HandsSwift */,
 				DB70BB8D1B7253AC00FECB99 /* 6HandsSwiftTests */,
 				DB70BB731B7253AC00FECB99 /* Products */,
@@ -99,6 +106,7 @@
 				DB70BB771B7253AC00FECB99 /* AppDelegate.swift */,
 				DB70BB7E1B7253AC00FECB99 /* Main.storyboard */,
 				DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */,
+				DB70BBAD1B725A6D00FECB99 /* MainTablesViewController.swift */,
 				DB70BB811B7253AC00FECB99 /* Images.xcassets */,
 				DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */,
 				DB70BB791B7253AC00FECB99 /* _HandsSwift.xcdatamodeld */,
@@ -148,10 +156,20 @@
 		DB70BBAA1B7254A600FECB99 /* Slider */ = {
 			isa = PBXGroup;
 			children = (
-				DB70BBA71B72549C00FECB99 /* GFPageSlider.h */,
-				DB70BBA81B72549C00FECB99 /* GFPageSlider.m */,
 			);
 			name = Slider;
+			sourceTree = "<group>";
+		};
+		DB70BBB31B7263D100FECB99 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				DB70BBB41B7264FB00FECB99 /* Objective-CBridgingHeader.h */,
+				DB6BABEB1B726EBA00AEE0CC /* GFPageSlider.h */,
+				DB6BABE91B726E2000AEE0CC /* GFPageSlider.m */,
+				DBB2DE231B7274B40076765A /* CalendarAndDate.h */,
+				DBB2DE241B7274B40076765A /* CalendarAndDate.m */,
+			);
+			name = "Objective-C";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +216,7 @@
 		DB70BB6A1B7253AC00FECB99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = reutskiy;
 				TargetAttributes = {
@@ -260,10 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB70BBAE1B725A6D00FECB99 /* MainTablesViewController.swift in Sources */,
 				DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */,
 				DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */,
-				DB70BBA91B72549C00FECB99 /* GFPageSlider.m in Sources */,
+				DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */,
 				DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */,
+				DB6BABEA1B726E2000AEE0CC /* GFPageSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +346,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -345,6 +367,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -370,6 +393,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -383,6 +407,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -395,6 +420,7 @@
 				INFOPLIST_FILE = 6HandsSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective-CBridgingHeader.h";
 			};
 			name = Debug;
 		};
@@ -405,6 +431,7 @@
 				INFOPLIST_FILE = 6HandsSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective-CBridgingHeader.h";
 			};
 			name = Release;
 		};
@@ -461,6 +488,7 @@
 				DB70BB961B7253AC00FECB99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB70BB971B7253AC00FECB99 /* Build configuration list for PBXNativeTarget "6HandsSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +497,7 @@
 				DB70BB991B7253AC00FECB99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

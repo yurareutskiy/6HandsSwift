@@ -8,11 +8,19 @@
 
 import UIKit
 
+
+
 class WelcomeViewController: UIViewController {
+    
+    @IBOutlet var findRoomButton: UIButton!
+    @IBOutlet var rentRoomButton: UIButton!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        GFPageSlider
+        
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +30,14 @@ class WelcomeViewController: UIViewController {
     }
     
 
+    @IBAction func rentRoomAction(sender: UIButton) {
+    
+    }
+    
+    @IBAction func findRoomAction(sender: UIButton) {
+        performSegueWithIdentifier("FindRoom", sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
