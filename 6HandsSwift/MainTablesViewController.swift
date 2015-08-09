@@ -44,17 +44,19 @@ class MainTablesViewController: UIViewController {
         
             // Custom RIGHT navigation bar button
         
-        let rightItem = UIBarButtonItem(image: UIImage(named: "kitchen pack18"), style: UIBarButtonItemStyle.Plain, target: nil, action: Selector())
-        
+        let rightItem = UIBarButtonItem(image: UIImage(named: "kitchen pack18"), style: UIBarButtonItemStyle.Plain, target: nil, action: Selector("revealFilterMenu:"))
+        navigationItem.rightBarButtonItem = rightItem
         
             // Custom LEFT navigation bar button
+        let leftItem = UIBarButtonItem(image: UIImage(named: "menu"), style: UIBarButtonItemStyle.Plain, target: nil, action: "revealMenu:")
+        navigationItem.leftBarButtonItem = leftItem
         
         // Page slider
         
         let rectSlider = CGRect(x: 0, y: 0, width: width, height: height - 40)
         
-        let newVC = NewTableViewController.new()
-        let popularVC = PopularTableViewController.new()
+        let newVC = TableWithNewViewController.new()
+        let popularVC = TableWithPopularViewController.new()
         
         let arrayVC = [newVC, popularVC]
                 
@@ -74,9 +76,19 @@ class MainTablesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func setViewControllers() {
+//        let arrayWithVC = Array()
+        
+    }
+    
     func revealFilterMenu(sender: UIBarButtonItem) {
 
     
+    }
+    
+    func revealMenu(sender: UIBarButtonItem) {
+        
+        
     }
 
     /*

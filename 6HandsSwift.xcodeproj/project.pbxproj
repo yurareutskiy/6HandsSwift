@@ -21,10 +21,11 @@
 		DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */; };
 		DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */; };
 		DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */; };
-		DB70BBAE1B725A6D00FECB99 /* MainTablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BBAD1B725A6D00FECB99 /* MainTablesViewController.swift */; };
 		DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB2DE241B7274B40076765A /* CalendarAndDate.m */; };
-		DBB2DE271B736F230076765A /* NewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2DE261B736F230076765A /* NewTableViewController.swift */; };
-		DBB2DE291B736F310076765A /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2DE281B736F310076765A /* PopularTableViewController.swift */; };
+		DBF00DB61B778BBF00209549 /* SampleCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF00DB51B778BBF00209549 /* SampleCellTableViewCell.swift */; };
+		DBF00DED1B77AA3C00209549 /* TableWithNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF00DEC1B77AA3C00209549 /* TableWithNewViewController.swift */; };
+		DBF00DEF1B77AA9300209549 /* TableWithPopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF00DEE1B77AA9300209549 /* TableWithPopularViewController.swift */; };
+		DBF00DF21B77B2FC00209549 /* MainTablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +58,13 @@
 		DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rectBackgroundForButtonFirstView.png; path = Design/rectBackgroundForButtonFirstView.png; sourceTree = "<group>"; };
 		DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sixHandsLogo.png; path = Design/sixHandsLogo.png; sourceTree = "<group>"; };
 		DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		DB70BBAD1B725A6D00FECB99 /* MainTablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTablesViewController.swift; sourceTree = "<group>"; };
 		DB70BBB41B7264FB00FECB99 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
 		DBB2DE231B7274B40076765A /* CalendarAndDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarAndDate.h; path = 6HandsSwift/CalendarAndDate.h; sourceTree = "<group>"; };
 		DBB2DE241B7274B40076765A /* CalendarAndDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarAndDate.m; path = 6HandsSwift/CalendarAndDate.m; sourceTree = "<group>"; };
-		DBB2DE261B736F230076765A /* NewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTableViewController.swift; sourceTree = "<group>"; };
-		DBB2DE281B736F310076765A /* PopularTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularTableViewController.swift; sourceTree = "<group>"; };
+		DBF00DB51B778BBF00209549 /* SampleCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCellTableViewCell.swift; sourceTree = "<group>"; };
+		DBF00DEC1B77AA3C00209549 /* TableWithNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableWithNewViewController.swift; sourceTree = "<group>"; };
+		DBF00DEE1B77AA9300209549 /* TableWithPopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableWithPopularViewController.swift; sourceTree = "<group>"; };
+		DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTablesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +111,9 @@
 				DB70BBAA1B7254A600FECB99 /* Slider */,
 				DB70BB771B7253AC00FECB99 /* AppDelegate.swift */,
 				DB70BB7E1B7253AC00FECB99 /* Main.storyboard */,
+				DBF00DF01B77B2D700209549 /* Table */,
 				DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */,
-				DB70BBAD1B725A6D00FECB99 /* MainTablesViewController.swift */,
-				DBB2DE261B736F230076765A /* NewTableViewController.swift */,
-				DBB2DE281B736F310076765A /* PopularTableViewController.swift */,
+				DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */,
 				DB70BB811B7253AC00FECB99 /* Images.xcassets */,
 				DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */,
 				DB70BB791B7253AC00FECB99 /* _HandsSwift.xcdatamodeld */,
@@ -176,6 +177,16 @@
 				DBB2DE241B7274B40076765A /* CalendarAndDate.m */,
 			);
 			name = "Objective-C";
+			sourceTree = "<group>";
+		};
+		DBF00DF01B77B2D700209549 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				DBF00DEC1B77AA3C00209549 /* TableWithNewViewController.swift */,
+				DBF00DEE1B77AA9300209549 /* TableWithPopularViewController.swift */,
+				DBF00DB51B778BBF00209549 /* SampleCellTableViewCell.swift */,
+			);
+			name = Table;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,12 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB70BBAE1B725A6D00FECB99 /* MainTablesViewController.swift in Sources */,
-				DBB2DE271B736F230076765A /* NewTableViewController.swift in Sources */,
-				DBB2DE291B736F310076765A /* PopularTableViewController.swift in Sources */,
+				DBF00DF21B77B2FC00209549 /* MainTablesViewController.swift in Sources */,
 				DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */,
+				DBF00DED1B77AA3C00209549 /* TableWithNewViewController.swift in Sources */,
+				DBF00DB61B778BBF00209549 /* SampleCellTableViewCell.swift in Sources */,
 				DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */,
 				DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */,
+				DBF00DEF1B77AA9300209549 /* TableWithPopularViewController.swift in Sources */,
 				DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */,
 				DB6BABEA1B726E2000AEE0CC /* GFPageSlider.m in Sources */,
 			);
