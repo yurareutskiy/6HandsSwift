@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */; };
+		DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7CB1B80AAE70093B796 /* PopularTableViewController.swift */; };
+		DB0EA7CE1B80AAE70093B796 /* PopularTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7CC1B80AAE70093B796 /* PopularTableViewController.xib */; };
+		DB0EA7D11B80AAF50093B796 /* NewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7CF1B80AAF50093B796 /* NewTableViewController.swift */; };
+		DB0EA7D21B80AAF50093B796 /* NewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7D01B80AAF50093B796 /* NewTableViewController.xib */; };
+		DB0EA7D61B80B4790093B796 /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7D41B80B4790093B796 /* SimpleTableViewCell.swift */; };
+		DB0EA7D71B80B4790093B796 /* SimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7D51B80B4790093B796 /* SimpleTableViewCell.xib */; };
 		DB4CC29F1B79EFEE00480DC0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC29E1B79EFEE00480DC0 /* SWRevealViewController.m */; };
 		DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */; };
 		DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */; };
@@ -46,6 +52,12 @@
 
 /* Begin PBXFileReference section */
 		DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		DB0EA7CB1B80AAE70093B796 /* PopularTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularTableViewController.swift; sourceTree = "<group>"; };
+		DB0EA7CC1B80AAE70093B796 /* PopularTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularTableViewController.xib; sourceTree = "<group>"; };
+		DB0EA7CF1B80AAF50093B796 /* NewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTableViewController.swift; sourceTree = "<group>"; };
+		DB0EA7D01B80AAF50093B796 /* NewTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTableViewController.xib; sourceTree = "<group>"; };
+		DB0EA7D41B80B4790093B796 /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
+		DB0EA7D51B80B4790093B796 /* SimpleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableViewCell.xib; sourceTree = "<group>"; };
 		DB4CC29D1B79EFEE00480DC0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = 6HandsSwift/SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		DB4CC29E1B79EFEE00480DC0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = 6HandsSwift/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
@@ -98,6 +110,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB0EA7D31B80B4520093B796 /* Unuse */ = {
+			isa = PBXGroup;
+			children = (
+				DBF00DEE1B77AA9300209549 /* TableWithPopularViewController.swift */,
+				DBF00DEC1B77AA3C00209549 /* TableWithNewViewController.swift */,
+				DBF00DB51B778BBF00209549 /* SampleCellTableViewCell.swift */,
+			);
+			name = Unuse;
+			sourceTree = "<group>";
+		};
 		DB4CC2DA1B7B705400480DC0 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,9 +232,13 @@
 		DBF00DF01B77B2D700209549 /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				DBF00DEC1B77AA3C00209549 /* TableWithNewViewController.swift */,
-				DBF00DEE1B77AA9300209549 /* TableWithPopularViewController.swift */,
-				DBF00DB51B778BBF00209549 /* SampleCellTableViewCell.swift */,
+				DB0EA7D41B80B4790093B796 /* SimpleTableViewCell.swift */,
+				DB0EA7D51B80B4790093B796 /* SimpleTableViewCell.xib */,
+				DB0EA7CB1B80AAE70093B796 /* PopularTableViewController.swift */,
+				DB0EA7CC1B80AAE70093B796 /* PopularTableViewController.xib */,
+				DB0EA7CF1B80AAF50093B796 /* NewTableViewController.swift */,
+				DB0EA7D01B80AAF50093B796 /* NewTableViewController.xib */,
+				DB0EA7D31B80B4520093B796 /* Unuse */,
 			);
 			name = Table;
 			sourceTree = "<group>";
@@ -300,13 +326,16 @@
 			files = (
 				DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */,
 				DB70BB801B7253AC00FECB99 /* Main.storyboard in Resources */,
+				DB0EA7D21B80AAF50093B796 /* NewTableViewController.xib in Resources */,
 				DB70BBA01B72548500FECB99 /* backgroundImageFirstView.png in Resources */,
+				DB0EA7D71B80B4790093B796 /* SimpleTableViewCell.xib in Resources */,
 				DB70BBA11B72548500FECB99 /* blueColor.png in Resources */,
 				DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */,
 				DB70BB851B7253AC00FECB99 /* LaunchScreen.xib in Resources */,
 				DB70BBA31B72548500FECB99 /* menu.png in Resources */,
 				DB70BB821B7253AC00FECB99 /* Images.xcassets in Resources */,
 				DB70BBA21B72548500FECB99 /* kitchen pack18.png in Resources */,
+				DB0EA7CE1B80AAE70093B796 /* PopularTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,11 +363,14 @@
 				DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */,
 				DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */,
 				DBF00DEF1B77AA9300209549 /* TableWithPopularViewController.swift in Sources */,
+				DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */,
 				DB4CC29F1B79EFEE00480DC0 /* SWRevealViewController.m in Sources */,
 				DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */,
 				DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */,
 				DB4CC2DE1B7BACC600480DC0 /* LeftMenuViewController.swift in Sources */,
 				DB6BABEA1B726E2000AEE0CC /* GFPageSlider.m in Sources */,
+				DB0EA7D61B80B4790093B796 /* SimpleTableViewCell.swift in Sources */,
+				DB0EA7D11B80AAF50093B796 /* NewTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

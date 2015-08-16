@@ -9,20 +9,20 @@
 import UIKit
 
 
-class MainTablesViewController: UIViewController, ENSideMenuDelegate {
+class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
 
     var widthMenu: CGFloat?
     var widthView: CGFloat?
     var viewClear: UIView?
     var rightViewClear: UIView?
     
+    var slider : CAPSPageMenu?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Menu
         
-        self.sideMenuController()?.sideMenu?.delegate = self
-        self.sideMenuController()?.rightSideMenu?.delegate = self
         
         widthMenu = sideMenuController()?.sideMenu?.menuWidth
         widthView = view.frame.width - widthMenu!
@@ -82,20 +82,39 @@ class MainTablesViewController: UIViewController, ENSideMenuDelegate {
         
         let rectSlider = CGRect(x: 0, y: 0, width: width, height: height - 40)
         
-        let newVC = self.storyboard?.instantiateViewControllerWithIdentifier("VC with New") as! UIViewController
-        let popularVC = self.storyboard?.instantiateViewControllerWithIdentifier("VC with Popular") as! UIViewController
         
-        let arrayVC = [newVC, popularVC]
+        var newVC: PopularTableViewController = PopularTableViewController(nibName: "PopularTableViewController", bundle: nil)
+        newVC.title = "Новое"
+        
+        let popularVC: PopularTableViewController = PopularTableViewController(nibName: "PopularTableViewController", bundle: nil)
+        popularVC.title = "Популярное"
+        
+        let arrayVC: [UIViewController] = [newVC, popularVC]
+        
+        var parameters: [CAPSPageMenuOption] = [
+            .MenuItemSeparatorWidth(4.3),
+            .ScrollMenuBackgroundColor(UIColor.whiteColor()),
+            .ViewBackgroundColor(UIColor(red: 247.0/255.0, green: 247.0/255.0, blue: 247.0/255.0, alpha: 1.0)),
+            .BottomMenuHairlineColor(UIColor(red: 20.0/255.0, green: 20.0/255.0, blue: 20.0/255.0, alpha: 0.1)),
+            .SelectionIndicatorColor(UIColor(red: 18.0/255.0, green: 150.0/255.0, blue: 225.0/255.0, alpha: 1.0)),
+            .MenuMargin(20.0),
+            .MenuHeight(40.0),
+            .SelectedMenuItemLabelColor(UIColor(red: 18.0/255.0, green: 150.0/255.0, blue: 225.0/255.0, alpha: 1.0)),
+            .UnselectedMenuItemLabelColor(UIColor(red: 40.0/255.0, green: 40.0/255.0, blue: 40.0/255.0, alpha: 1.0)),
+            .MenuItemFont(UIFont(name: "HelveticaNeue-Medium", size: 14.0)!),
+            .UseMenuLikeSegmentedControl(true),
+            .MenuItemSeparatorRoundEdges(true),
+            .SelectionIndicatorHeight(2.0),
+            .MenuItemSeparatorPercentageHeight(0.1)
+        ]
                 
-        let slider = GFPageSlider(frame: rectSlider, numberOfPage: 2, viewControllers: NSMutableArray(array: arrayVC), menuButtonTitles: ["Popular", "New"])
+        slider = CAPSPageMenu(viewControllers: arrayVC, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), pageMenuOptions: parameters)
+        slider!.delegate = self
         
-        slider.menuHeight = 45
-        slider.menuNumberPerPage = 2
-        slider.indicatorLineColor = UIColor(patternImage: UIImage(named: "blueColor")!)
-        
-        view.addSubview(slider)
+        self.view.addSubview(slider!.view)
         
         // add clear view
+
         view.addSubview(viewClear!)
         view.addSubview(rightViewClear!)
         viewClear?.hidden = true
@@ -106,6 +125,20 @@ class MainTablesViewController: UIViewController, ENSideMenuDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //MARK: CAPSPageMenuDelegate
+    
+    func didMoveToPage(controller: UIViewController, index: Int) {
+        println("did move to page \(index) " + controller.description)
+
+    }
+    
+    func willMoveToPage(controller: UIViewController, index: Int) {
+        println("will move to page \(index) " + controller.description)
+    }
+    
+    
+    
     
     func setViewControllers() {
 //        let arrayWithVC = Array()
