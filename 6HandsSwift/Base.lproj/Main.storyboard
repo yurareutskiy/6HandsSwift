@@ -141,7 +141,7 @@
         <!--Table With Popular View Controller-->
         <scene sceneID="6Ec-K6-Vzr">
             <objects>
-                <viewController id="2n2-EF-7cW" customClass="TableWithPopularViewController" customModule="_HandsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC with Popular" id="2n2-EF-7cW" customClass="TableWithPopularViewController" customModule="_HandsSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L1R-28-PWd"/>
                         <viewControllerLayoutGuide type="bottom" id="d2T-gF-iof"/>
@@ -154,7 +154,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="C5s-jc-j3D">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="C5s-jc-j3D" customClass="SampleCellTableViewCell" customModule="_HandsSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C5s-jc-j3D" id="HXb-9E-fku">
@@ -181,7 +181,7 @@
         <!--Table With New View Controller-->
         <scene sceneID="D86-Bc-akF">
             <objects>
-                <viewController id="Km5-YE-6hZ" customClass="TableWithNewViewController" customModule="_HandsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC with New" id="Km5-YE-6hZ" customClass="TableWithNewViewController" customModule="_HandsSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kW4-7T-C29"/>
                         <viewControllerLayoutGuide type="bottom" id="EnG-DZ-IBd"/>
@@ -218,10 +218,10 @@
             </objects>
             <point key="canvasLocation" x="3207" y="801"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Navigation View Controller-->
         <scene sceneID="8AH-d2-qJW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="clw-v9-lO6" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="clw-v9-lO6" customClass="MainNavigationViewController" customModule="_HandsSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aCZ-dN-OsE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -235,6 +235,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Za8-Ob-onY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1775.25" y="417.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1tr-6u-85T">
+            <objects>
+                <viewController id="T2v-Za-VDq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V6O-cu-Hbz"/>
+                        <viewControllerLayoutGuide type="bottom" id="SdH-Nv-tPf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="84H-NT-ya9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfG-Ig-stS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818" y="1068"/>
         </scene>
     </scenes>
     <resources>

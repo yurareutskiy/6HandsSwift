@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */; };
+		DB4CC29F1B79EFEE00480DC0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC29E1B79EFEE00480DC0 /* SWRevealViewController.m */; };
+		DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */; };
+		DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */; };
+		DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */; };
+		DB4CC2DE1B7BACC600480DC0 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2DD1B7BACC600480DC0 /* LeftMenuViewController.swift */; };
 		DB6BABEA1B726E2000AEE0CC /* GFPageSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6BABE91B726E2000AEE0CC /* GFPageSlider.m */; };
 		DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB771B7253AC00FECB99 /* AppDelegate.swift */; };
 		DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB791B7253AC00FECB99 /* _HandsSwift.xcdatamodeld */; };
@@ -39,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		DB4CC29D1B79EFEE00480DC0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = 6HandsSwift/SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		DB4CC29E1B79EFEE00480DC0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = 6HandsSwift/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
+		DB4CC2DD1B7BACC600480DC0 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		DB6BABE91B726E2000AEE0CC /* GFPageSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFPageSlider.m; path = 6HandsSwift/GFPageSlider.m; sourceTree = "<group>"; };
 		DB6BABEB1B726EBA00AEE0CC /* GFPageSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFPageSlider.h; path = 6HandsSwift/GFPageSlider.h; sourceTree = "<group>"; };
 		DB70BB721B7253AC00FECB99 /* 6HandsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6HandsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +98,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB4CC2DA1B7B705400480DC0 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */,
+				DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */,
+				DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */,
+				DB4CC2DD1B7BACC600480DC0 /* LeftMenuViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		DB70BB691B7253AC00FECB99 = {
 			isa = PBXGroup;
 			children = (
@@ -109,11 +133,12 @@
 			children = (
 				DB70BBA61B72548B00FECB99 /* Design */,
 				DB70BBAA1B7254A600FECB99 /* Slider */,
-				DB70BB771B7253AC00FECB99 /* AppDelegate.swift */,
+				DB4CC2DA1B7B705400480DC0 /* Menu */,
 				DB70BB7E1B7253AC00FECB99 /* Main.storyboard */,
-				DBF00DF01B77B2D700209549 /* Table */,
+				DB70BB771B7253AC00FECB99 /* AppDelegate.swift */,
 				DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */,
 				DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */,
+				DBF00DF01B77B2D700209549 /* Table */,
 				DB70BB811B7253AC00FECB99 /* Images.xcassets */,
 				DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */,
 				DB70BB791B7253AC00FECB99 /* _HandsSwift.xcdatamodeld */,
@@ -163,6 +188,7 @@
 		DB70BBAA1B7254A600FECB99 /* Slider */ = {
 			isa = PBXGroup;
 			children = (
+				DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */,
 			);
 			name = Slider;
 			sourceTree = "<group>";
@@ -170,6 +196,8 @@
 		DB70BBB31B7263D100FECB99 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				DB4CC29D1B79EFEE00480DC0 /* SWRevealViewController.h */,
+				DB4CC29E1B79EFEE00480DC0 /* SWRevealViewController.m */,
 				DB70BBB41B7264FB00FECB99 /* Objective-CBridgingHeader.h */,
 				DB6BABEB1B726EBA00AEE0CC /* GFPageSlider.h */,
 				DB6BABE91B726E2000AEE0CC /* GFPageSlider.m */,
@@ -296,6 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */,
+				DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */,
+				DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */,
 				DBF00DF21B77B2FC00209549 /* MainTablesViewController.swift in Sources */,
 				DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */,
 				DBF00DED1B77AA3C00209549 /* TableWithNewViewController.swift in Sources */,
@@ -303,7 +334,10 @@
 				DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */,
 				DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */,
 				DBF00DEF1B77AA9300209549 /* TableWithPopularViewController.swift in Sources */,
+				DB4CC29F1B79EFEE00480DC0 /* SWRevealViewController.m in Sources */,
 				DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */,
+				DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */,
+				DB4CC2DE1B7BACC600480DC0 /* LeftMenuViewController.swift in Sources */,
 				DB6BABEA1B726E2000AEE0CC /* GFPageSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

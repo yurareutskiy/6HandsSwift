@@ -19,6 +19,8 @@ class TableWithNewViewController: UIViewController, UITableViewDataSource, UITab
         super.viewDidLoad()
         self.table?.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         getDataForTable()
+        table.delegate = self
+        table.dataSource = self
         // Do any additional setup after loading the view.
     }
     
@@ -42,8 +44,9 @@ class TableWithNewViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = table.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
-        
+//        var cell:UITableViewCell = table.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+
         //        let stringWithNumber = String(NSString(format: "%d", indexPath.row + 1))
         
         

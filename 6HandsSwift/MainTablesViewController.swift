@@ -9,12 +9,39 @@
 import UIKit
 
 
-class MainTablesViewController: UIViewController {
+class MainTablesViewController: UIViewController, ENSideMenuDelegate {
 
+    var widthMenu: CGFloat?
+    var widthView: CGFloat?
+    var viewClear: UIView?
+    var rightViewClear: UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Menu
+        
+        self.sideMenuController()?.sideMenu?.delegate = self
+        self.sideMenuController()?.rightSideMenu?.delegate = self
+        
+        widthMenu = sideMenuController()?.sideMenu?.menuWidth
+        widthView = view.frame.width - widthMenu!
+
+        viewClear = UIView(frame: CGRectMake(widthMenu!, 0, widthView!, view.frame.height))
+        viewClear!.backgroundColor = UIColor.clearColor()
+        
+        rightViewClear = UIView(frame: CGRectMake(0, 0, widthView!, view.frame.height))
+        rightViewClear?.backgroundColor = UIColor.clearColor()
+        
+        let rightGestureRecognizer:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "closeMenu")
+        viewClear!.addGestureRecognizer(rightGestureRecognizer)
+        rightViewClear!.addGestureRecognizer(rightGestureRecognizer)
+        
+        navigationController?.navigationBar.addSubview(viewClear!)
+
+
+        
+        
         // Determine screen size
         
         let bounds = UIScreen.mainScreen().bounds
@@ -44,7 +71,7 @@ class MainTablesViewController: UIViewController {
         
             // Custom RIGHT navigation bar button
         
-        let rightItem = UIBarButtonItem(image: UIImage(named: "kitchen pack18"), style: UIBarButtonItemStyle.Plain, target: nil, action: Selector("revealFilterMenu:"))
+        let rightItem = UIBarButtonItem(image: UIImage(named: "kitchen pack18"), style: UIBarButtonItemStyle.Plain, target: nil, action: "revealFilterMenu")
         navigationItem.rightBarButtonItem = rightItem
         
             // Custom LEFT navigation bar button
@@ -55,12 +82,12 @@ class MainTablesViewController: UIViewController {
         
         let rectSlider = CGRect(x: 0, y: 0, width: width, height: height - 40)
         
-        let newVC = TableWithNewViewController.new()
-        let popularVC = TableWithPopularViewController.new()
+        let newVC = self.storyboard?.instantiateViewControllerWithIdentifier("VC with New") as! UIViewController
+        let popularVC = self.storyboard?.instantiateViewControllerWithIdentifier("VC with Popular") as! UIViewController
         
         let arrayVC = [newVC, popularVC]
                 
-        let slider = GFPageSlider(frame: rectSlider, numberOfPage: 2, viewControllers: NSMutableArray(array: arrayVC), menuButtonTitles: ["Популярное", "Новое"])
+        let slider = GFPageSlider(frame: rectSlider, numberOfPage: 2, viewControllers: NSMutableArray(array: arrayVC), menuButtonTitles: ["Popular", "New"])
         
         slider.menuHeight = 45
         slider.menuNumberPerPage = 2
@@ -68,6 +95,10 @@ class MainTablesViewController: UIViewController {
         
         view.addSubview(slider)
         
+        // add clear view
+        view.addSubview(viewClear!)
+        view.addSubview(rightViewClear!)
+        viewClear?.hidden = true
         
     }
 
@@ -81,15 +112,68 @@ class MainTablesViewController: UIViewController {
         
     }
     
-    func revealFilterMenu(sender: UIBarButtonItem) {
+    func revealFilterMenu() {
 
+        self.sideMenuController()?.rightSideMenu?.toggleMenu()
     
     }
     
     func revealMenu(sender: UIBarButtonItem) {
         
+        self.sideMenuController()?.sideMenu?.toggleMenu()
+    }
+    
+    
+    
+    func closeMenu() {
+        
+        if sideMenuController()?.sideMenu?.isMenuOpen == true {
+        
+            sideMenuController()?.sideMenu?.toggleMenu()
+
+        } else if sideMenuController()?.rightSideMenu?.isMenuOpen == true {
+            
+            sideMenuController()?.rightSideMenu?.toggleMenu()
+        }
+        
         
     }
+    
+    func sideMenuWillOpen() {
+        println("sideMenuWillOpen")
+        
+        println(widthView)
+        println(widthMenu!)
+        println(self.view.frame.width)
+        
+        viewClear?.hidden = false
+        
+        
+        if self.sideMenuController()?.rightSideMenu?.isMenuOpen == true {
+
+        
+        }
+        
+    }
+    
+    func sideMenuWillClose() {
+        println("sideMenuWillClose")
+        
+        viewClear?.hidden = true
+        
+    }
+    func sideMenuShouldOpenSideMenu() -> Bool {
+        println("sideMenuShouldOpenSideMenu")
+
+        if (self.sideMenuController()?.sideMenu?.isMenuOpen == true) || (self.sideMenuController()?.rightSideMenu?.isMenuOpen == true) {
+            
+            return false
+        }
+        
+        return true
+    }
+    
+
 
     /*
     // MARK: - Navigation

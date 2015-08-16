@@ -16,9 +16,11 @@ class TableWithPopularViewController: UIViewController, UITableViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tablePopular?.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+//        self.tablePopular?.registerClass(SampleCellTableViewCell.self, forCellReuseIdentifier: "Cell")
         getDataForTable()
         // Do any additional setup after loading the view.
+        tablePopular.delegate = self
+        tablePopular.dataSource = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,12 +43,9 @@ class TableWithPopularViewController: UIViewController, UITableViewDataSource, U
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = tablePopular.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
-        
-        //        let stringWithNumber = String(NSString(format: "%d", indexPath.row + 1))
-        
-        
-        cell.textLabel?.text = data[indexPath.row] as? String;
+        var cell:SampleCellTableViewCell = tablePopular.dequeueReusableCellWithIdentifier("Cell") as! SampleCellTableViewCell
+
+        cell.textLabel!.text = data[indexPath.row] as? String ?? "[No Title]";
         
         return cell
     }
