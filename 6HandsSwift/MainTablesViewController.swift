@@ -92,7 +92,6 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
         let arrayVC: [UIViewController] = [newVC, popularVC]
         
         var parameters: [CAPSPageMenuOption] = [
-            .MenuItemSeparatorWidth(4.3),
             .ScrollMenuBackgroundColor(UIColor.whiteColor()),
             .ViewBackgroundColor(UIColor(red: 247.0/255.0, green: 247.0/255.0, blue: 247.0/255.0, alpha: 1.0)),
             .BottomMenuHairlineColor(UIColor(red: 20.0/255.0, green: 20.0/255.0, blue: 20.0/255.0, alpha: 0.1)),
@@ -101,11 +100,10 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
             .MenuHeight(40.0),
             .SelectedMenuItemLabelColor(UIColor(red: 18.0/255.0, green: 150.0/255.0, blue: 225.0/255.0, alpha: 1.0)),
             .UnselectedMenuItemLabelColor(UIColor(red: 40.0/255.0, green: 40.0/255.0, blue: 40.0/255.0, alpha: 1.0)),
-            .MenuItemFont(UIFont(name: "HelveticaNeue-Medium", size: 14.0)!),
+//            .MenuItemFont(UIFont(name: "HelveticaNeue-Medium", size: 14.0)!),
             .UseMenuLikeSegmentedControl(true),
-            .MenuItemSeparatorRoundEdges(true),
             .SelectionIndicatorHeight(2.0),
-            .MenuItemSeparatorPercentageHeight(0.1)
+            .MenuItemSeparatorWidth(0),
         ]
                 
         slider = CAPSPageMenu(viewControllers: arrayVC, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), pageMenuOptions: parameters)

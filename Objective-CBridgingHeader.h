@@ -6,6 +6,4 @@
 //  Copyright (c) 2015 reutskiy. All rights reserved.
 //
 
-#import "GFPageSlider.h"
 #import "CalendarAndDate.h"
-#import "SWRevealViewController.h"

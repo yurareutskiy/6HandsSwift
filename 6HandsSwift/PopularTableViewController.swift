@@ -1,5 +1,5 @@
 //
-//  NewTableViewController.swift
+//  PopularTableViewController.swift
 //  6HandsSwift
 //
 //  Created by Reutskiy Jury on 16.08.15.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class NewTableViewController: UITableViewController {
+class PopularTableViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableView.registerNib(UINib(nibName: "SimpleTableViewCell", bundle: nil), forCellReuseIdentifier: "TableCell")
-
+        
+        
+        self.tableView.separatorColor = UIColor.clearColor()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,6 +31,8 @@ class NewTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
@@ -38,18 +42,45 @@ class NewTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 10
+        return 20
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell : SimpleTableViewCell = tableView.dequeueReusableCellWithIdentifier("TableCell") as! SimpleTableViewCell
         
-        cell.someTextLabel!.text = "Some text"
-        cell.numerLabel!.text = NSString(format: "#%d", indexPath.row) as String
-        if indexPath.row % 2 == 1 {
-            cell.backgroundColor = UIColor(red: 222, green: 255, blue: 217, alpha: 1)
-        }
-        
+        configure(cell, forRowAtIndexPath: indexPath)
+
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
+    }
+    
+    func configure(cell: SimpleTableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        cell.someTextLabel!.text = "Карамышевская набережная, 56к2"
+        cell.numerLabel!.text = NSString(format: "%d", indexPath.row + 1) as String
+        cell.priceLabel!.text = formattedStringWithPrice("100000")
+        cell.roomSquareLabel!.text = "123 м²"
+        
+        if indexPath.row % 2 == 0 {
+            cell.backgroundCellView.backgroundColor = UIColor.whiteColor()
+        } else {
+            cell.backgroundCellView.backgroundColor = UIColor(patternImage: UIImage(named: "greenBackForCell")!)
+        }
+    }
+
+    func formattedStringWithPrice(price: String) -> String {
+        var lenghtString = count(price)
+        var resultString: String = ""
+        for char in price {
+            if (lenghtString % 3 == 0) && (count(price) != lenghtString) {
+                resultString += " "
+            }
+            resultString += String(char)
+            lenghtString -= 1
+        }
+        return resultString
     }
 }
