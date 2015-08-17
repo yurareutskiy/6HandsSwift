@@ -15,6 +15,14 @@
 		DB0EA7D61B80B4790093B796 /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7D41B80B4790093B796 /* SimpleTableViewCell.swift */; };
 		DB0EA7D71B80B4790093B796 /* SimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7D51B80B4790093B796 /* SimpleTableViewCell.xib */; };
 		DB0EA7D91B80DB890093B796 /* greenBackForCell.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7D81B80DB890093B796 /* greenBackForCell.png */; };
+		DB0EA7DC1B81D7160093B796 /* LGDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7DA1B81D7160093B796 /* LGDrawer.m */; };
+		DB0EA7DE1B81E1FB0093B796 /* yellowCorner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7DD1B81E1FB0093B796 /* yellowCorner.png */; };
+		DB0EA7E01B81E48E0093B796 /* frameForStationName.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7DF1B81E48E0093B796 /* frameForStationName.png */; };
+		DB0EA7E21B8203A40093B796 /* menuBackgroundColor.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7E11B8203A40093B796 /* menuBackgroundColor.png */; };
+		DB0EA7E61B82090A0093B796 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7E51B82090A0093B796 /* man.png */; };
+		DB0EA7EA1B8213800093B796 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7E91B8213800093B796 /* arrow.png */; };
+		DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */; };
+		DB0EA7EE1B8214690093B796 /* onRightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7ED1B8214690093B796 /* onRightArrow.png */; };
 		DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */; };
 		DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */; };
 		DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */; };
@@ -55,6 +63,15 @@
 		DB0EA7D41B80B4790093B796 /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
 		DB0EA7D51B80B4790093B796 /* SimpleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableViewCell.xib; sourceTree = "<group>"; };
 		DB0EA7D81B80DB890093B796 /* greenBackForCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenBackForCell.png; path = Design/greenBackForCell.png; sourceTree = "<group>"; };
+		DB0EA7DA1B81D7160093B796 /* LGDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGDrawer.m; path = 6HandsSwift/LGDrawer.m; sourceTree = "<group>"; };
+		DB0EA7DB1B81D7160093B796 /* LGDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGDrawer.h; path = 6HandsSwift/LGDrawer.h; sourceTree = "<group>"; };
+		DB0EA7DD1B81E1FB0093B796 /* yellowCorner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellowCorner.png; path = Design/yellowCorner.png; sourceTree = "<group>"; };
+		DB0EA7DF1B81E48E0093B796 /* frameForStationName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frameForStationName.png; path = Design/frameForStationName.png; sourceTree = "<group>"; };
+		DB0EA7E11B8203A40093B796 /* menuBackgroundColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuBackgroundColor.png; path = Design/menuBackgroundColor.png; sourceTree = "<group>"; };
+		DB0EA7E51B82090A0093B796 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = man.png; path = Design/man.png; sourceTree = "<group>"; };
+		DB0EA7E91B8213800093B796 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = Design/arrow.png; sourceTree = "<group>"; };
+		DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteArrow.png; path = Design/whiteArrow.png; sourceTree = "<group>"; };
+		DB0EA7ED1B8214690093B796 /* onRightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = onRightArrow.png; path = Design/onRightArrow.png; sourceTree = "<group>"; };
 		DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
 		DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +194,12 @@
 		DB70BBA61B72548B00FECB99 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				DB0EA7ED1B8214690093B796 /* onRightArrow.png */,
+				DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */,
+				DB0EA7E91B8213800093B796 /* arrow.png */,
+				DB0EA7E11B8203A40093B796 /* menuBackgroundColor.png */,
+				DB0EA7DF1B81E48E0093B796 /* frameForStationName.png */,
+				DB0EA7DD1B81E1FB0093B796 /* yellowCorner.png */,
 				DB0EA7D81B80DB890093B796 /* greenBackForCell.png */,
 				DB70BB9A1B72548500FECB99 /* backgroundImageFirstView.png */,
 				DB70BB9B1B72548500FECB99 /* blueColor.png */,
@@ -184,6 +207,7 @@
 				DB70BB9D1B72548500FECB99 /* menu.png */,
 				DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */,
 				DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */,
+				DB0EA7E51B82090A0093B796 /* man.png */,
 			);
 			name = Design;
 			sourceTree = "<group>";
@@ -199,6 +223,8 @@
 		DB70BBB31B7263D100FECB99 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				DB0EA7DA1B81D7160093B796 /* LGDrawer.m */,
+				DB0EA7DB1B81D7160093B796 /* LGDrawer.h */,
 				DB70BBB41B7264FB00FECB99 /* Objective-CBridgingHeader.h */,
 				DBB2DE231B7274B40076765A /* CalendarAndDate.h */,
 				DBB2DE241B7274B40076765A /* CalendarAndDate.m */,
@@ -302,16 +328,23 @@
 			files = (
 				DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */,
 				DB70BB801B7253AC00FECB99 /* Main.storyboard in Resources */,
+				DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */,
 				DB0EA7D91B80DB890093B796 /* greenBackForCell.png in Resources */,
 				DB0EA7D21B80AAF50093B796 /* NewTableViewController.xib in Resources */,
+				DB0EA7EE1B8214690093B796 /* onRightArrow.png in Resources */,
 				DB70BBA01B72548500FECB99 /* backgroundImageFirstView.png in Resources */,
 				DB0EA7D71B80B4790093B796 /* SimpleTableViewCell.xib in Resources */,
 				DB70BBA11B72548500FECB99 /* blueColor.png in Resources */,
 				DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */,
 				DB70BB851B7253AC00FECB99 /* LaunchScreen.xib in Resources */,
 				DB70BBA31B72548500FECB99 /* menu.png in Resources */,
+				DB0EA7DE1B81E1FB0093B796 /* yellowCorner.png in Resources */,
+				DB0EA7E61B82090A0093B796 /* man.png in Resources */,
 				DB70BB821B7253AC00FECB99 /* Images.xcassets in Resources */,
+				DB0EA7EA1B8213800093B796 /* arrow.png in Resources */,
 				DB70BBA21B72548500FECB99 /* kitchen pack18.png in Resources */,
+				DB0EA7E01B81E48E0093B796 /* frameForStationName.png in Resources */,
+				DB0EA7E21B8203A40093B796 /* menuBackgroundColor.png in Resources */,
 				DB0EA7CE1B80AAE70093B796 /* PopularTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +372,7 @@
 				DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */,
 				DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */,
 				DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */,
+				DB0EA7DC1B81D7160093B796 /* LGDrawer.m in Sources */,
 				DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */,
 				DB4CC2DE1B7BACC600480DC0 /* LeftMenuViewController.swift in Sources */,
 				DB0EA7D61B80B4790093B796 /* SimpleTableViewCell.swift in Sources */,

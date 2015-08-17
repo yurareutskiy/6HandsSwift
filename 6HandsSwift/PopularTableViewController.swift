@@ -46,9 +46,28 @@ class PopularTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell : SimpleTableViewCell = tableView.dequeueReusableCellWithIdentifier("TableCell") as! SimpleTableViewCell
+        let cell : SimpleTableViewCell = tableView.dequeueReusableCellWithIdentifier("TableCell", forIndexPath: indexPath) as! SimpleTableViewCell
+
+//        let cell : SimpleTableViewCell = SimpleTableViewCell.init()
         
-        configure(cell, forRowAtIndexPath: indexPath)
+//        cell.awakeFromNib()
+        
+//        configure(cell, forRowAtIndexPath: indexPath)
+        
+        cell.someTextLabel!.text = "Карамышевская набережная, 56к2"
+        cell.numerLabel!.text = NSString(format: "%d", indexPath.row + 1) as String
+        cell.priceLabel!.text = formattedStringWithPrice("100000")
+        cell.roomSquareLabel!.text = "123 м²"
+        
+        if indexPath.row % 3 == 0 {
+            cell.yellowCorner.hidden = false
+        }
+        
+        if indexPath.row % 2 == 0 {
+            cell.backgroundCellView.backgroundColor = UIColor.whiteColor()
+        } else {
+            cell.backgroundCellView.backgroundColor = UIColor(patternImage: UIImage(named: "greenBackForCell")!)
+        }
 
         return cell
     }
@@ -64,12 +83,17 @@ class PopularTableViewController: UITableViewController {
         cell.priceLabel!.text = formattedStringWithPrice("100000")
         cell.roomSquareLabel!.text = "123 м²"
         
+        if indexPath.row % 3 == 0 {
+            cell.yellowCorner.hidden = false
+        }
+        cell.colorStationView.backgroundColor = SubwayLine.Purple.Color
         if indexPath.row % 2 == 0 {
             cell.backgroundCellView.backgroundColor = UIColor.whiteColor()
         } else {
             cell.backgroundCellView.backgroundColor = UIColor(patternImage: UIImage(named: "greenBackForCell")!)
         }
     }
+    
 
     func formattedStringWithPrice(price: String) -> String {
         var lenghtString = count(price)

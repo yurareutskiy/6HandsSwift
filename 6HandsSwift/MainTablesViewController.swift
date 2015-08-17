@@ -41,7 +41,6 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
 
 
         
-        
         // Determine screen size
         
         let bounds = UIScreen.mainScreen().bounds
@@ -117,6 +116,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
         view.addSubview(rightViewClear!)
         viewClear?.hidden = true
         
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -176,6 +177,7 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
         println(widthView)
         println(widthMenu!)
         println(self.view.frame.width)
+        
         
         viewClear?.hidden = false
         

@@ -8,15 +8,37 @@
 
 import UIKit
 
+public enum SubwayLine {
+    case Brown
+    case Red
+    case Purple
+    case Blue
+    
+    var Color: UIColor {
+        switch self {
+            case .Brown: return UIColor.brownColor()
+            case .Red: return UIColor.redColor()
+            case .Purple: return UIColor.purpleColor()
+            case .Blue: return UIColor.blueColor()
+        }
+    }
+    
+}
 
 class SimpleTableViewCell: UITableViewCell {
 
 
+    
+
+    @IBOutlet weak var frameForStationImageView: UIImageView!
+    @IBOutlet weak var yellowCorner: UIImageView!
     @IBOutlet weak var roomSquareLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var numerLabel: UILabel!
     @IBOutlet weak var someTextLabel: UILabel!
     @IBOutlet weak var backgroundCellView: UIView!
+    @IBOutlet weak var colorStationView: UIView!
+    @IBOutlet weak var stationNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,8 +51,19 @@ class SimpleTableViewCell: UITableViewCell {
         numerLabel.layer.frame.width
         numerLabel.textAlignment = .Center
         
-
+        colorStationView.layer.cornerRadius = colorStationView.frame.width / 2
         
+        colorStationView.layer.borderWidth = 0.5
+        colorStationView.layer.borderColor = UIColor.blackColor().CGColor
+        yellowCorner.hidden = true
+
+//        frameForStationImageView.frame = CGRectMake(
+//            frameForStationImageView.frame.origin.x,
+//            frameForStationImageView.frame.origin.y, 150, 10)
+    
+    
+    
+    
     }
     
     override func setSelected(selected: Bool, animated: Bool) {
@@ -39,4 +72,8 @@ class SimpleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
+    override func prepareForReuse() {
+        yellowCorner.hidden = true
+    }
 }

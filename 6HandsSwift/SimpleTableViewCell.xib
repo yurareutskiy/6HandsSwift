@@ -23,14 +23,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zks-eB-ihH">
-                                <rect key="frame" x="58" y="8" width="139" height="31.5"/>
+                                <rect key="frame" x="49" y="0.0" width="139" height="31.5"/>
                                 <string key="text">Карамышевская набережная, 56к2</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-DB-fVp">
-                                <rect key="frame" x="246" y="19" width="67" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,6 +35,34 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-DB-fVp">
+                                <rect key="frame" x="246" y="19" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yellowCorner.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gtw-gv-0la">
+                                <rect key="frame" x="300" y="0.0" width="20" height="20"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tbn-n1-OH3">
+                                <rect key="frame" x="51" y="36.5" width="119" height="18.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frameForStationName.png" translatesAutoresizingMaskIntoConstraints="NO" id="37F-ab-33u">
+                                        <rect key="frame" x="0.0" y="0.5" width="119" height="18"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VgW-my-OjF">
+                                        <rect key="frame" x="5" y="3.5" width="13" height="12"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Баррикадная" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSG-tU-gFP">
+                                        <rect key="frame" x="23" y="3.5" width="82" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -48,12 +70,20 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="backgroundCellView" destination="dcg-qq-bva" id="n5D-YY-Uh9"/>
+                <outlet property="colorStationView" destination="VgW-my-OjF" id="cyy-94-5Ih"/>
+                <outlet property="frameForStationImageView" destination="37F-ab-33u" id="yzP-fY-iZP"/>
                 <outlet property="numerLabel" destination="2vi-Hj-JQv" id="oDc-8v-HKf"/>
                 <outlet property="priceLabel" destination="Yqx-DB-fVp" id="aXe-HR-1Q7"/>
                 <outlet property="roomSquareLabel" destination="xvV-l9-EaB" id="drJ-s1-TJb"/>
                 <outlet property="someTextLabel" destination="zks-eB-ihH" id="O5W-Ot-nMg"/>
+                <outlet property="stationNameLabel" destination="YSG-tU-gFP" id="Th1-4L-MEZ"/>
+                <outlet property="yellowCorner" destination="Gtw-gv-0la" id="Oax-3R-RpN"/>
             </connections>
             <point key="canvasLocation" x="652" y="393"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="frameForStationName.png" width="155" height="28"/>
+        <image name="yellowCorner.png" width="31" height="31"/>
+    </resources>
 </document>
