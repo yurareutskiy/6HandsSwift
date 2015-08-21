@@ -1,29 +1,27 @@
 //
-//  PopularTableViewController.swift
+//  PopTableViewController.swift
 //  6HandsSwift
 //
-//  Created by Reutskiy Jury on 16.08.15.
+//  Created by Reutskiy Jury on 20.08.15.
 //  Copyright (c) 2015 reutskiy. All rights reserved.
 //
 
 import UIKit
 
-class PopularTableViewController: UITableViewController {
-    @IBOutlet weak var table: UITableView!
-        
+class PopTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        awakeFromNib()
-
+        
         self.tableView.registerNib(UINib(nibName: "SimpleTableViewCell", bundle: nil), forCellReuseIdentifier: "TableCell")
-        
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        
-        self.tableView.separatorColor = UIColor.clearColor()
 
         
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +32,7 @@ class PopularTableViewController: UITableViewController {
     // MARK: - Table view data source
 
 
-    
+
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
@@ -49,12 +47,12 @@ class PopularTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell : SimpleTableViewCell = tableView.dequeueReusableCellWithIdentifier("TableCell", forIndexPath: indexPath) as! SimpleTableViewCell
-
-//        let cell : SimpleTableViewCell = SimpleTableViewCell.init()
         
-//        cell.awakeFromNib()
+        //        let cell : SimpleTableViewCell = SimpleTableViewCell.init()
         
-//        configure(cell, forRowAtIndexPath: indexPath)
+        //        cell.awakeFromNib()
+        
+        //        configure(cell, forRowAtIndexPath: indexPath)
         
         cell.someTextLabel!.text = "Карамышевская набережная, 56к2"
         cell.numerLabel!.text = NSString(format: "%d", indexPath.row + 1) as String
@@ -70,7 +68,7 @@ class PopularTableViewController: UITableViewController {
         } else {
             cell.backgroundCellView.backgroundColor = UIColor(patternImage: UIImage(named: "greenBackForCell")!)
         }
-
+        
         return cell
     }
     
@@ -80,18 +78,18 @@ class PopularTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-     
+        
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-//        let mainVC = storyboard?.instantiateViewControllerWithIdentifier("Main") as! UIViewController
-//        mainVC.pushRoomPage()
+        //        let mainVC = storyboard?.instantiateViewControllerWithIdentifier("Main") as! UIViewController
+        //        mainVC.pushRoomPage()
         
-        performSegueWithIdentifier("toRoomPage", sender: self)
-
+//        performSegueWithIdentifier("segue", sender: self)
         
-//        let sb = UIStoryboard(name: "Main", bundle: nil)
-//        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("vcTemp") as! UIViewController
-//        self.showDetailViewController(vc, sender: nil)
+        
+        //        let sb = UIStoryboard(name: "Main", bundle: nil)
+        //        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("vcTemp") as! UIViewController
+        //        self.showDetailViewController(vc, sender: nil)
         
     }
     
@@ -113,7 +111,7 @@ class PopularTableViewController: UITableViewController {
         }
     }
     
-
+    
     func formattedStringWithPrice(price: String) -> String {
         var lenghtString = count(price)
         var resultString: String = ""
@@ -126,4 +124,6 @@ class PopularTableViewController: UITableViewController {
         }
         return resultString
     }
+
+
 }

@@ -14,13 +14,16 @@ class MainNavigationViewController: ENSideMenuNavigationController, ENSideMenuDe
         super.viewDidLoad()
         
         let leftVC = storyboard?.instantiateViewControllerWithIdentifier("LeftMenu") as! UIViewController
+
+        let rightVC = storyboard?.instantiateViewControllerWithIdentifier("RightMenu") as! UIViewController
+
         
 //        leftVC.view.frame = CGRectMake(0, 0, leftVC.view.frame.size.width - 100, leftVC.view.frame.size.height)
         
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftVC, menuPosition: .Left)
         sideMenu?.menuWidth = 280.0
         
-        rightSideMenu = ENSideMenu(sourceView: self.view, menuPosition: .Right)
+        rightSideMenu = ENSideMenu(sourceView: self.view, menuViewController: rightVC, menuPosition: .Right)
         rightSideMenu?.menuWidth = 280.0
     }
 
@@ -29,6 +32,25 @@ class MainNavigationViewController: ENSideMenuNavigationController, ENSideMenuDe
         // Dispose of any resources that can be recreated.
     }
     
+    func pushController(controller:UIViewController, withTransition transition:UIViewAnimationTransition) {
+        UIView.beginAnimations("", context: nil)
+        self.pushViewController(controller, animated: false)
+        UIView.setAnimationDuration(0.5)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationTransition(transition, forView: self.view, cache: true)
+        UIView.commitAnimations()
+    }
+    /*
+    - (void) pushController: (UIViewController*) controller
+    withTransition: (UIViewAnimationTransition) transition
+    {
+    [UIView beginAnimations:nil context:NULL];
+    [self pushViewController:controller animated:NO];
+    [UIView setAnimationDuration:.5];
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    [UIView setAnimationTransition:transition forView:self.view cache:YES];
+    [UIView commitAnimations];
+    }
 
 
     /*
@@ -41,4 +63,5 @@ class MainNavigationViewController: ENSideMenuNavigationController, ENSideMenuDe
     }
     */
 
+*/
 }

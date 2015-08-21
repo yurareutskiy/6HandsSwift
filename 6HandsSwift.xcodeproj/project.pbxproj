@@ -23,6 +23,7 @@
 		DB0EA7EA1B8213800093B796 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7E91B8213800093B796 /* arrow.png */; };
 		DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */; };
 		DB0EA7EE1B8214690093B796 /* onRightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7ED1B8214690093B796 /* onRightArrow.png */; };
+		DB0EA7F01B8223400093B796 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */; };
 		DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */; };
 		DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */; };
 		DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */; };
@@ -40,7 +41,18 @@
 		DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */; };
 		DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */; };
 		DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */; };
+		DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAF80721B8478CA00299913 /* TTRangeSlider.m */; };
 		DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB2DE241B7274B40076765A /* CalendarAndDate.m */; };
+		DBD3C3BB1B85C12E0046655A /* RoomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */; };
+		DBD3C3BE1B85FAB20046655A /* PopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */; };
+		DBD3C3C31B8648D30046655A /* backButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C21B8648D30046655A /* backButtonArrow.png */; };
+		DBD3C3C51B86949D0046655A /* kvartira.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C41B86949D0046655A /* kvartira.jpg */; };
+		DBD3C3C71B8695660046655A /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C61B8695660046655A /* star.png */; };
+		DBD3C3C91B8696FF0046655A /* empryStar.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C81B8696FF0046655A /* empryStar.png */; };
+		DBD3C3CC1B8722500046655A /* kvartira3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3CA1B8722500046655A /* kvartira3.jpg */; };
+		DBD3C3CD1B8722500046655A /* kvartira2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3CB1B8722500046655A /* kvartira2.jpg */; };
+		DBD3C3D11B8753770046655A /* InfoRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3D01B8753770046655A /* InfoRoomTableViewCell.swift */; };
+		DBD3C3D31B8753F30046655A /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3D21B8753F30046655A /* DescriptionTableViewCell.swift */; };
 		DBF00DF21B77B2FC00209549 /* MainTablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +84,7 @@
 		DB0EA7E91B8213800093B796 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = Design/arrow.png; sourceTree = "<group>"; };
 		DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteArrow.png; path = Design/whiteArrow.png; sourceTree = "<group>"; };
 		DB0EA7ED1B8214690093B796 /* onRightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = onRightArrow.png; path = Design/onRightArrow.png; sourceTree = "<group>"; };
+		DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 		DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
 		DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
@@ -94,8 +107,21 @@
 		DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sixHandsLogo.png; path = Design/sixHandsLogo.png; sourceTree = "<group>"; };
 		DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		DB70BBB41B7264FB00FECB99 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
+		DBAF80711B8478CA00299913 /* TTRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSlider.h; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.h; sourceTree = "<group>"; };
+		DBAF80721B8478CA00299913 /* TTRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTRangeSlider.m; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.m; sourceTree = "<group>"; };
+		DBAF80731B8478CA00299913 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = 6HandsSwift/TTRangeSlider/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
 		DBB2DE231B7274B40076765A /* CalendarAndDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarAndDate.h; path = 6HandsSwift/CalendarAndDate.h; sourceTree = "<group>"; };
 		DBB2DE241B7274B40076765A /* CalendarAndDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarAndDate.m; path = 6HandsSwift/CalendarAndDate.m; sourceTree = "<group>"; };
+		DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomPageViewController.swift; sourceTree = "<group>"; };
+		DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTableViewController.swift; sourceTree = "<group>"; };
+		DBD3C3C21B8648D30046655A /* backButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonArrow.png; path = Design/backButtonArrow.png; sourceTree = "<group>"; };
+		DBD3C3C41B86949D0046655A /* kvartira.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kvartira.jpg; path = Design/kvartira.jpg; sourceTree = "<group>"; };
+		DBD3C3C61B8695660046655A /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Design/star.png; sourceTree = "<group>"; };
+		DBD3C3C81B8696FF0046655A /* empryStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empryStar.png; path = Design/empryStar.png; sourceTree = "<group>"; };
+		DBD3C3CA1B8722500046655A /* kvartira3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kvartira3.jpg; path = Design/kvartira3.jpg; sourceTree = "<group>"; };
+		DBD3C3CB1B8722500046655A /* kvartira2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kvartira2.jpg; path = Design/kvartira2.jpg; sourceTree = "<group>"; };
+		DBD3C3D01B8753770046655A /* InfoRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoRoomTableViewCell.swift; sourceTree = "<group>"; };
+		DBD3C3D21B8753F30046655A /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTablesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +150,7 @@
 				DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */,
 				DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */,
 				DB4CC2DD1B7BACC600480DC0 /* LeftMenuViewController.swift */,
+				DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -157,6 +184,7 @@
 				DB70BB771B7253AC00FECB99 /* AppDelegate.swift */,
 				DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */,
 				DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */,
+				DBD3C3CF1B8753540046655A /* RoomPage */,
 				DBF00DF01B77B2D700209549 /* Table */,
 				DB70BB811B7253AC00FECB99 /* Images.xcassets */,
 				DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */,
@@ -194,6 +222,10 @@
 		DB70BBA61B72548B00FECB99 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				DBD3C3CE1B8722740046655A /* Test */,
+				DBD3C3C21B8648D30046655A /* backButtonArrow.png */,
+				DBD3C3C81B8696FF0046655A /* empryStar.png */,
+				DBD3C3C61B8695660046655A /* star.png */,
 				DB0EA7ED1B8214690093B796 /* onRightArrow.png */,
 				DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */,
 				DB0EA7E91B8213800093B796 /* arrow.png */,
@@ -207,7 +239,6 @@
 				DB70BB9D1B72548500FECB99 /* menu.png */,
 				DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */,
 				DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */,
-				DB0EA7E51B82090A0093B796 /* man.png */,
 			);
 			name = Design;
 			sourceTree = "<group>";
@@ -223,6 +254,9 @@
 		DB70BBB31B7263D100FECB99 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				DBAF80711B8478CA00299913 /* TTRangeSlider.h */,
+				DBAF80721B8478CA00299913 /* TTRangeSlider.m */,
+				DBAF80731B8478CA00299913 /* TTRangeSliderDelegate.h */,
 				DB0EA7DA1B81D7160093B796 /* LGDrawer.m */,
 				DB0EA7DB1B81D7160093B796 /* LGDrawer.h */,
 				DB70BBB41B7264FB00FECB99 /* Objective-CBridgingHeader.h */,
@@ -230,6 +264,27 @@
 				DBB2DE241B7274B40076765A /* CalendarAndDate.m */,
 			);
 			name = "Objective-C";
+			sourceTree = "<group>";
+		};
+		DBD3C3CE1B8722740046655A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3C3CA1B8722500046655A /* kvartira3.jpg */,
+				DBD3C3CB1B8722500046655A /* kvartira2.jpg */,
+				DBD3C3C41B86949D0046655A /* kvartira.jpg */,
+				DB0EA7E51B82090A0093B796 /* man.png */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		DBD3C3CF1B8753540046655A /* RoomPage */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */,
+				DBD3C3D01B8753770046655A /* InfoRoomTableViewCell.swift */,
+				DBD3C3D21B8753F30046655A /* DescriptionTableViewCell.swift */,
+			);
+			name = RoomPage;
 			sourceTree = "<group>";
 		};
 		DBF00DF01B77B2D700209549 /* Table */ = {
@@ -241,6 +296,7 @@
 				DB0EA7CC1B80AAE70093B796 /* PopularTableViewController.xib */,
 				DB0EA7CF1B80AAF50093B796 /* NewTableViewController.swift */,
 				DB0EA7D01B80AAF50093B796 /* NewTableViewController.xib */,
+				DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */,
 			);
 			name = Table;
 			sourceTree = "<group>";
@@ -327,17 +383,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */,
+				DBD3C3C51B86949D0046655A /* kvartira.jpg in Resources */,
 				DB70BB801B7253AC00FECB99 /* Main.storyboard in Resources */,
 				DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */,
 				DB0EA7D91B80DB890093B796 /* greenBackForCell.png in Resources */,
+				DBD3C3CC1B8722500046655A /* kvartira3.jpg in Resources */,
 				DB0EA7D21B80AAF50093B796 /* NewTableViewController.xib in Resources */,
 				DB0EA7EE1B8214690093B796 /* onRightArrow.png in Resources */,
 				DB70BBA01B72548500FECB99 /* backgroundImageFirstView.png in Resources */,
 				DB0EA7D71B80B4790093B796 /* SimpleTableViewCell.xib in Resources */,
+				DBD3C3CD1B8722500046655A /* kvartira2.jpg in Resources */,
 				DB70BBA11B72548500FECB99 /* blueColor.png in Resources */,
 				DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */,
+				DBD3C3C71B8695660046655A /* star.png in Resources */,
 				DB70BB851B7253AC00FECB99 /* LaunchScreen.xib in Resources */,
+				DBD3C3C31B8648D30046655A /* backButtonArrow.png in Resources */,
 				DB70BBA31B72548500FECB99 /* menu.png in Resources */,
+				DBD3C3C91B8696FF0046655A /* empryStar.png in Resources */,
 				DB0EA7DE1B81E1FB0093B796 /* yellowCorner.png in Resources */,
 				DB0EA7E61B82090A0093B796 /* man.png in Resources */,
 				DB70BB821B7253AC00FECB99 /* Images.xcassets in Resources */,
@@ -365,15 +427,21 @@
 			files = (
 				DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */,
 				DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */,
+				DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */,
 				DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */,
 				DBF00DF21B77B2FC00209549 /* MainTablesViewController.swift in Sources */,
+				DBD3C3BE1B85FAB20046655A /* PopTableViewController.swift in Sources */,
+				DB0EA7F01B8223400093B796 /* RightMenuViewController.swift in Sources */,
 				DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */,
 				DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */,
 				DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */,
+				DBD3C3D11B8753770046655A /* InfoRoomTableViewCell.swift in Sources */,
 				DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */,
 				DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */,
 				DB0EA7DC1B81D7160093B796 /* LGDrawer.m in Sources */,
+				DBD3C3BB1B85C12E0046655A /* RoomPageViewController.swift in Sources */,
 				DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */,
+				DBD3C3D31B8753F30046655A /* DescriptionTableViewCell.swift in Sources */,
 				DB4CC2DE1B7BACC600480DC0 /* LeftMenuViewController.swift in Sources */,
 				DB0EA7D61B80B4790093B796 /* SimpleTableViewCell.swift in Sources */,
 				DB0EA7D11B80AAF50093B796 /* NewTableViewController.swift in Sources */,

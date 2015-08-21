@@ -24,8 +24,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
         // Menu
         
         
-        widthMenu = sideMenuController()?.sideMenu?.menuWidth
-        widthView = view.frame.width - widthMenu!
+        widthMenu = 280
+        widthView = view.frame.width - 280
 
         viewClear = UIView(frame: CGRectMake(widthMenu!, 0, widthView!, view.frame.height))
         viewClear!.backgroundColor = UIColor.clearColor()
@@ -82,10 +82,13 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
         let rectSlider = CGRect(x: 0, y: 0, width: width, height: height - 40)
         
         
-        var newVC: PopularTableViewController = PopularTableViewController(nibName: "PopularTableViewController", bundle: nil)
+        var newVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as! PopTableViewController
+//        var newVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as! PopTableViewController
         newVC.title = "Новое"
         
-        let popularVC: PopularTableViewController = PopularTableViewController(nibName: "PopularTableViewController", bundle: nil)
+        let popularVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as! PopTableViewController
+//        var popularVC: PopularTableViewController = PopularTableViewController(nibName: "PopularTableViewController", bundle: nil)
+
         popularVC.title = "Популярное"
         
         let arrayVC: [UIViewController] = [newVC, popularVC]
@@ -117,6 +120,26 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
         viewClear?.hidden = true
         
         
+        var ncArray = navigationController?.viewControllers
+        println(ncArray?.description)
+        
+//        performSegueWithIdentifier("toRoomPage", sender: self)
+
+        
+    }
+    
+    class func pushRoomPage() {
+//        var ncArray = navigationController?.viewControllers
+//        println(ncArray?.description)
+//        navigationController?.pushViewController(<#viewController: UIViewController#>, animated: <#Bool#>)
+//        let sb = UIStoryboard(name: "Main", bundle: nil)
+//        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("vcTemp") as! UIViewController
+//        UIView.setAnimationTransition(UIViewAnimationTransition.FlipFromRight, forView: self, cache: false)
+//        presentViewController(vc, animated: true, completion: nil)
+//        self.navigationController?.pushViewController(vc, animated: true)
+//        println(navigationController?.viewControllers.description)
+        
+//        performSegueWithIdentifier("toRoomPage", sender: self)
         
     }
 

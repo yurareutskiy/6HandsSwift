@@ -10,6 +10,7 @@ import UIKit
 
 class LeftMenuViewController: UIViewController {
 
+    @IBOutlet weak var chatsCountLabel: UILabel!
     @IBOutlet weak var manWantButton: UIButton!
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var photoUserImageView: UIImageView!
@@ -17,6 +18,10 @@ class LeftMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        chatsCountLabel.layer.cornerRadius = chatsCountLabel.frame.size.height / 2
+        chatsCountLabel.clipsToBounds = true
 
 //        manWantButton.imageEdgeInsets = UIEdgeInsetsMake(0, manWantButton.frame.size.width - (17 + 15), 0, 0);
 //        manWantButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 17);
