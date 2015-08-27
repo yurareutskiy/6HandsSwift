@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import MapKit
 
-class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate {
+class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate {
 
+    @IBOutlet weak var map: MKMapView!
+    
+    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var scroll: UIScrollView!
     @IBOutlet weak var infoTable: UITableView!
 
@@ -22,7 +26,7 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
     var pageImages: [UIImage] = []
     var pageViews: [UIImageView?] = []
     
-    var optionsInfoCount: Int = 0
+//    var optionsInfoCount: Int = 0
     
     var infoParameters: [NSArray] = []
     
@@ -30,6 +34,11 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        priceLabel.layer.cornerRadius = 5
+        priceLabel.clipsToBounds = true
         
         infoParameters = [["Общая", "100 м²"], ["Кухня", "25 м²"], ["Комнаты","75 м²"], ["Санузел","Совмещенный"], ["Балкон","Лоджия"], ["Мебель","Есть"], ["Телефон","Есть"], ["Plus","Можно с детьми"], ["Minus","Без животных"], ["Description", "После рабочего дня нам хочется расслабиться перед телевизором или компьютером, посмотреть что-то или поиграть. Многие считают, что это расслабит их. Но это лишь сделает нас более уставшими. Иногда мы даже не замечаем, сколько времени прошло, пока мы смотрим наш любимый сериал, и это приводит к тому, что мы ложимся спать поздно. Попробуйте на протяжении недели отказаться от фильмов и игр перед сном, и вы заметите, насколько лучше и бодрее вы будете чувствовать себя по утрам. Лучше почитайте перед сном книгу, поговорите с родными или подумайте о прошедшем дне и планах на будущее."]]
         
@@ -43,7 +52,7 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         
         
         // Set up the container view to hold your custom view hierarchy
-        let containerSize = CGSizeMake(640.0, 640.0)
+        let containerSize = CGSizeMake(640.0, 1640.0)
         containerView = UIView(frame: CGRect(origin: CGPointMake(0.0, 0.0), size:containerSize))
         scroll.addSubview(containerView)
         
@@ -84,7 +93,22 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         scroll.minimumZoomScale = minScale
         scroll.maximumZoomScale = 1.0
         scroll.zoomScale = 1.0
+
+        
+        centerScrollViewContents()
+        
+        loadVisiblePages()
+        
+        map.delegate = self
+        
+    }
     
+    override func viewWillLayoutSubviews() {
+        setTableHeught()
+    }
+
+    
+    func setTableHeught() {
         // Determine height description cell and set table view height
         let text = infoParameters.last!.objectAtIndex(1) as! NSString
         let font = UIFont(name: "Helvetica", size: 15.0)
@@ -93,13 +117,7 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         let tableHeight = CGFloat((infoParameters.count - 1) * 40) + heightDescriptionCell
         
         infoTable.frame.size = CGSizeMake(view.frame.size.width, tableHeight)
-        
-        centerScrollViewContents()
-        
-        loadVisiblePages()
-        
     }
-    
 
     
     func centerScrollViewContents() {

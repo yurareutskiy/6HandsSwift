@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		709685E21A0CCF585E7CBBC0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF5DE1114C461F85168160E /* libPods.a */; };
 		DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */; };
 		DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7CB1B80AAE70093B796 /* PopularTableViewController.swift */; };
 		DB0EA7CE1B80AAE70093B796 /* PopularTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7CC1B80AAE70093B796 /* PopularTableViewController.xib */; };
@@ -30,7 +31,6 @@
 		DB4CC2DE1B7BACC600480DC0 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2DD1B7BACC600480DC0 /* LeftMenuViewController.swift */; };
 		DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB771B7253AC00FECB99 /* AppDelegate.swift */; };
 		DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB791B7253AC00FECB99 /* _HandsSwift.xcdatamodeld */; };
-		DB70BB801B7253AC00FECB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB7E1B7253AC00FECB99 /* Main.storyboard */; };
 		DB70BB821B7253AC00FECB99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB811B7253AC00FECB99 /* Images.xcassets */; };
 		DB70BB851B7253AC00FECB99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */; };
 		DB70BB911B7253AC00FECB99 /* _HandsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB901B7253AC00FECB99 /* _HandsSwiftTests.swift */; };
@@ -41,8 +41,13 @@
 		DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */; };
 		DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */; };
 		DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */; };
+		DB8289DA1B8CA6F90012E787 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8289D91B8CA6F90012E787 /* MapTableViewCell.swift */; };
 		DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAF80721B8478CA00299913 /* TTRangeSlider.m */; };
 		DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB2DE241B7274B40076765A /* CalendarAndDate.m */; };
+		DBBF9F181B8925CC00E31A44 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF9F171B8925CC00E31A44 /* MapKit.framework */; };
+		DBBF9F1A1B8B4A6D00E31A44 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */; };
+		DBBF9F1C1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */; };
+		DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */; };
 		DBD3C3BB1B85C12E0046655A /* RoomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */; };
 		DBD3C3BE1B85FAB20046655A /* PopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */; };
 		DBD3C3C31B8648D30046655A /* backButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C21B8648D30046655A /* backButtonArrow.png */; };
@@ -53,6 +58,7 @@
 		DBD3C3CD1B8722500046655A /* kvartira2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3CB1B8722500046655A /* kvartira2.jpg */; };
 		DBD3C3D11B8753770046655A /* InfoRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3D01B8753770046655A /* InfoRoomTableViewCell.swift */; };
 		DBD3C3D31B8753F30046655A /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3D21B8753F30046655A /* DescriptionTableViewCell.swift */; };
+		DBED201F1B88AE8C00A5C511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBED201E1B88AE8C00A5C511 /* Main.storyboard */; };
 		DBF00DF21B77B2FC00209549 /* MainTablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +73,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B93BEC3411F8436BCB6F220 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8DF5DE1114C461F85168160E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		DB0EA7CB1B80AAE70093B796 /* PopularTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularTableViewController.swift; sourceTree = "<group>"; };
 		DB0EA7CC1B80AAE70093B796 /* PopularTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularTableViewController.xib; sourceTree = "<group>"; };
@@ -93,7 +101,6 @@
 		DB70BB761B7253AC00FECB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB70BB771B7253AC00FECB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB70BB7A1B7253AC00FECB99 /* _HandsSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _HandsSwift.xcdatamodel; sourceTree = "<group>"; };
-		DB70BB7F1B7253AC00FECB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB70BB811B7253AC00FECB99 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DB70BB841B7253AC00FECB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DB70BB8A1B7253AC00FECB99 /* 6HandsSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6HandsSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,11 +114,16 @@
 		DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sixHandsLogo.png; path = Design/sixHandsLogo.png; sourceTree = "<group>"; };
 		DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		DB70BBB41B7264FB00FECB99 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
+		DB8289D91B8CA6F90012E787 /* MapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 		DBAF80711B8478CA00299913 /* TTRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSlider.h; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.h; sourceTree = "<group>"; };
 		DBAF80721B8478CA00299913 /* TTRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTRangeSlider.m; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.m; sourceTree = "<group>"; };
 		DBAF80731B8478CA00299913 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = 6HandsSwift/TTRangeSlider/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
 		DBB2DE231B7274B40076765A /* CalendarAndDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarAndDate.h; path = 6HandsSwift/CalendarAndDate.h; sourceTree = "<group>"; };
 		DBB2DE241B7274B40076765A /* CalendarAndDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarAndDate.m; path = 6HandsSwift/CalendarAndDate.m; sourceTree = "<group>"; };
+		DBBF9F171B8925CC00E31A44 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollTableViewCell.swift; sourceTree = "<group>"; };
+		DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomPageViewController.swift; sourceTree = "<group>"; };
 		DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTableViewController.swift; sourceTree = "<group>"; };
 		DBD3C3C21B8648D30046655A /* backButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonArrow.png; path = Design/backButtonArrow.png; sourceTree = "<group>"; };
@@ -122,7 +134,9 @@
 		DBD3C3CB1B8722500046655A /* kvartira2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kvartira2.jpg; path = Design/kvartira2.jpg; sourceTree = "<group>"; };
 		DBD3C3D01B8753770046655A /* InfoRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoRoomTableViewCell.swift; sourceTree = "<group>"; };
 		DBD3C3D21B8753F30046655A /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		DBED201E1B88AE8C00A5C511 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTablesViewController.swift; sourceTree = "<group>"; };
+		E84DCF1E2706123B91185255 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +144,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBF9F181B8925CC00E31A44 /* MapKit.framework in Frameworks */,
+				709685E21A0CCF585E7CBBC0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +159,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17BCE7B65558CE26EC5B8882 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E84DCF1E2706123B91185255 /* Pods.debug.xcconfig */,
+				8B93BEC3411F8436BCB6F220 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDFD6222745C6688FFADAE11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DF5DE1114C461F85168160E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB4CC2DA1B7B705400480DC0 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,10 +191,13 @@
 		DB70BB691B7253AC00FECB99 = {
 			isa = PBXGroup;
 			children = (
+				DBBF9F171B8925CC00E31A44 /* MapKit.framework */,
 				DB70BBB31B7263D100FECB99 /* Objective-C */,
 				DB70BB741B7253AC00FECB99 /* 6HandsSwift */,
 				DB70BB8D1B7253AC00FECB99 /* 6HandsSwiftTests */,
 				DB70BB731B7253AC00FECB99 /* Products */,
+				17BCE7B65558CE26EC5B8882 /* Pods */,
+				BDFD6222745C6688FFADAE11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,7 +216,7 @@
 				DB70BBA61B72548B00FECB99 /* Design */,
 				DB70BBAA1B7254A600FECB99 /* Slider */,
 				DB4CC2DA1B7B705400480DC0 /* Menu */,
-				DB70BB7E1B7253AC00FECB99 /* Main.storyboard */,
+				DBED201E1B88AE8C00A5C511 /* Main.storyboard */,
 				DB70BB771B7253AC00FECB99 /* AppDelegate.swift */,
 				DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */,
 				DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */,
@@ -266,6 +302,16 @@
 			name = "Objective-C";
 			sourceTree = "<group>";
 		};
+		DBBF9F1D1B8B6D3B00E31A44 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */,
+				DB8289D91B8CA6F90012E787 /* MapTableViewCell.swift */,
+				DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		DBD3C3CE1B8722740046655A /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,8 +327,10 @@
 			isa = PBXGroup;
 			children = (
 				DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */,
+				DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */,
 				DBD3C3D01B8753770046655A /* InfoRoomTableViewCell.swift */,
 				DBD3C3D21B8753F30046655A /* DescriptionTableViewCell.swift */,
+				DBBF9F1D1B8B6D3B00E31A44 /* Cells */,
 			);
 			name = RoomPage;
 			sourceTree = "<group>";
@@ -308,9 +356,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB70BB941B7253AC00FECB99 /* Build configuration list for PBXNativeTarget "6HandsSwift" */;
 			buildPhases = (
+				71A742DBF90CAEC57D1C2877 /* Check Pods Manifest.lock */,
 				DB70BB6E1B7253AC00FECB99 /* Sources */,
 				DB70BB6F1B7253AC00FECB99 /* Frameworks */,
 				DB70BB701B7253AC00FECB99 /* Resources */,
+				168785B27ECE6D0561F8B08E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -384,10 +434,10 @@
 			files = (
 				DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */,
 				DBD3C3C51B86949D0046655A /* kvartira.jpg in Resources */,
-				DB70BB801B7253AC00FECB99 /* Main.storyboard in Resources */,
 				DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */,
 				DB0EA7D91B80DB890093B796 /* greenBackForCell.png in Resources */,
 				DBD3C3CC1B8722500046655A /* kvartira3.jpg in Resources */,
+				DBED201F1B88AE8C00A5C511 /* Main.storyboard in Resources */,
 				DB0EA7D21B80AAF50093B796 /* NewTableViewController.xib in Resources */,
 				DB0EA7EE1B8214690093B796 /* onRightArrow.png in Resources */,
 				DB70BBA01B72548500FECB99 /* backgroundImageFirstView.png in Resources */,
@@ -420,12 +470,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		168785B27ECE6D0561F8B08E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A742DBF90CAEC57D1C2877 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB70BB6E1B7253AC00FECB99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBF9F1C1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift in Sources */,
 				DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */,
+				DB8289DA1B8CA6F90012E787 /* MapTableViewCell.swift in Sources */,
+				DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */,
 				DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */,
 				DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */,
 				DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */,
@@ -434,6 +520,7 @@
 				DB0EA7F01B8223400093B796 /* RightMenuViewController.swift in Sources */,
 				DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */,
 				DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */,
+				DBBF9F1A1B8B4A6D00E31A44 /* RoomViewController.swift in Sources */,
 				DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */,
 				DBD3C3D11B8753770046655A /* InfoRoomTableViewCell.swift in Sources */,
 				DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */,
@@ -467,14 +554,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB70BB7E1B7253AC00FECB99 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB70BB7F1B7253AC00FECB99 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -575,6 +654,7 @@
 		};
 		DB70BB951B7253AC00FECB99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84DCF1E2706123B91185255 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 6HandsSwift/Info.plist;
@@ -586,6 +666,7 @@
 		};
 		DB70BB961B7253AC00FECB99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B93BEC3411F8436BCB6F220 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 6HandsSwift/Info.plist;
