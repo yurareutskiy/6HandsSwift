@@ -8,8 +8,16 @@
 
 import UIKit
 
+@objc public protocol PopTableViewDelegate {
+    
+    func didSelect(text:String)
+}
+
 class PopTableViewController: UITableViewController {
 
+    weak var delegate : PopTableViewDelegate?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -80,6 +88,11 @@ class PopTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+
+        delegate?.didSelect("test")
+        
+        
         
         //        let mainVC = storyboard?.instantiateViewControllerWithIdentifier("Main") as! UIViewController
         //        mainVC.pushRoomPage()

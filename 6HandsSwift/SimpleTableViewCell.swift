@@ -76,4 +76,17 @@ class SimpleTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         yellowCorner.hidden = true
     }
+    
+    func formattedStringWithPrice(price: String) -> String {
+        var lenghtString = count(price)
+        var resultString: String = ""
+        for char in price {
+            if (lenghtString % 3 == 0) && (count(price) != lenghtString) {
+                resultString += " "
+            }
+            resultString += String(char)
+            lenghtString -= 1
+        }
+        return resultString
+    }
 }

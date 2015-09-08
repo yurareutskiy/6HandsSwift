@@ -1,4 +1,4 @@
-//
+ //
 //  RoomPageViewController.swift
 //  6HandsSwift
 //
@@ -58,9 +58,9 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         
         // Scroll
         
-        pageControl.pageIndicatorTintColor = UIColor.whiteColor()
-        pageControl.currentPageIndicatorTintColor = UIColor(patternImage: UIImage(named: "blueColor")!)
-        pageControl.currentPage = 2
+        pageControl?.pageIndicatorTintColor = UIColor.whiteColor()
+        pageControl?.currentPageIndicatorTintColor = UIColor(patternImage: UIImage(named: "blueColor")!)
+        pageControl?.currentPage = 2
         
         // Arrays
         
@@ -68,8 +68,8 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         let pageCount = pageImages.count
         
         // Set up the page control
-        pageControl.currentPage = 0
-        pageControl.numberOfPages = pageCount
+        pageControl?.currentPage = 0
+        pageControl?.numberOfPages = pageCount
         
         // Set up the array to hold the views for each page
         for _ in 0..<pageCount {
@@ -99,7 +99,7 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         
         loadVisiblePages()
         
-        map.delegate = self
+        map?.delegate = self
         
     }
     
@@ -172,7 +172,7 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         let page = Int(floor((imagesScrollView.contentOffset.x * 2.0 + pageWidth) / (pageWidth * 2.0)))
         
         // Update the page control
-        pageControl.currentPage = page
+        pageControl?.currentPage = page
         
         // Work out which pages you want to load
         let firstPage = page - 1

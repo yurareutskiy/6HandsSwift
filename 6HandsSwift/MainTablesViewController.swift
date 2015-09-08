@@ -9,7 +9,7 @@
 import UIKit
 
 
-class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
+class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTableViewDelegate {
 
     var widthMenu: CGFloat?
     var widthView: CGFloat?
@@ -17,6 +17,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
     var rightViewClear: UIView?
     
     var slider : CAPSPageMenu?
+    
+    var newVC: PopTableViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,16 +84,17 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
         let rectSlider = CGRect(x: 0, y: 0, width: width, height: height - 40)
         
         
-        var newVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as! PopTableViewController
+        newVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as? PopTableViewController
+        newVC!.delegate? = self
 //        var newVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as! PopTableViewController
-        newVC.title = "Новое"
+        newVC!.title = "Новое"
         
         let popularVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as! PopTableViewController
 //        var popularVC: PopularTableViewController = PopularTableViewController(nibName: "PopularTableViewController", bundle: nil)
 
         popularVC.title = "Популярное"
         
-        let arrayVC: [UIViewController] = [newVC, popularVC]
+        let arrayVC: [UIViewController] = [newVC!, popularVC]
         
         var parameters: [CAPSPageMenuOption] = [
             .ScrollMenuBackgroundColor(UIColor.whiteColor()),
@@ -125,6 +128,7 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
         
 //        performSegueWithIdentifier("toRoomPage", sender: self)
 
+        
         
     }
     
@@ -230,7 +234,19 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate {
     }
     
 
+    
+    func makeSegueToRoomPage() {
+        
+    
+        var vc: RoomViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RoomPage") as! RoomViewController
+        vc.forLog = "other"
+        navigationController?.pushViewController(vc, animated: true)
+    }
 
+    func didSelect(text:String) {
+        println(text)
+    }
+    
     /*
     // MARK: - Navigation
 

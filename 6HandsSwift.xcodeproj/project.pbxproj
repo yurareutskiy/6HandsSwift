@@ -34,7 +34,6 @@
 		DB70BB821B7253AC00FECB99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB811B7253AC00FECB99 /* Images.xcassets */; };
 		DB70BB851B7253AC00FECB99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */; };
 		DB70BB911B7253AC00FECB99 /* _HandsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BB901B7253AC00FECB99 /* _HandsSwiftTests.swift */; };
-		DB70BBA01B72548500FECB99 /* backgroundImageFirstView.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9A1B72548500FECB99 /* backgroundImageFirstView.png */; };
 		DB70BBA11B72548500FECB99 /* blueColor.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9B1B72548500FECB99 /* blueColor.png */; };
 		DB70BBA21B72548500FECB99 /* kitchen pack18.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9C1B72548500FECB99 /* kitchen pack18.png */; };
 		DB70BBA31B72548500FECB99 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9D1B72548500FECB99 /* menu.png */; };
@@ -42,6 +41,13 @@
 		DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */; };
 		DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */; };
 		DB8289DA1B8CA6F90012E787 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8289D91B8CA6F90012E787 /* MapTableViewCell.swift */; };
+		DB851C271B9F438200984A2C /* krest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB851C261B9F438200984A2C /* krest@2x.png */; };
+		DB851C291B9F43DC00984A2C /* leftArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB851C281B9F43DC00984A2C /* leftArrow@2x.png */; };
+		DB851C2B1B9F46D100984A2C /* rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB851C2A1B9F46D100984A2C /* rightArrow@2x.png */; };
+		DB851C2D1B9F49C100984A2C /* imageBackgroundFillPost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB851C2C1B9F49C100984A2C /* imageBackgroundFillPost@2x.png */; };
+		DB8B91DD1B8F3AC80019EBF4 /* SellerProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B91DC1B8F3AC80019EBF4 /* SellerProfileTableViewCell.swift */; };
+		DB8B91DF1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B91DE1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift */; };
+		DB8B91E11B8F677D0019EBF4 /* MultiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B91E01B8F677D0019EBF4 /* MultiTableViewCell.swift */; };
 		DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAF80721B8478CA00299913 /* TTRangeSlider.m */; };
 		DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB2DE241B7274B40076765A /* CalendarAndDate.m */; };
 		DBBF9F181B8925CC00E31A44 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF9F171B8925CC00E31A44 /* MapKit.framework */; };
@@ -106,7 +112,6 @@
 		DB70BB8A1B7253AC00FECB99 /* 6HandsSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6HandsSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB70BB8F1B7253AC00FECB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB70BB901B7253AC00FECB99 /* _HandsSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _HandsSwiftTests.swift; sourceTree = "<group>"; };
-		DB70BB9A1B72548500FECB99 /* backgroundImageFirstView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundImageFirstView.png; path = Design/backgroundImageFirstView.png; sourceTree = "<group>"; };
 		DB70BB9B1B72548500FECB99 /* blueColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueColor.png; path = Design/blueColor.png; sourceTree = "<group>"; };
 		DB70BB9C1B72548500FECB99 /* kitchen pack18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kitchen pack18.png"; path = "Design/kitchen pack18.png"; sourceTree = "<group>"; };
 		DB70BB9D1B72548500FECB99 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = Design/menu.png; sourceTree = "<group>"; };
@@ -115,6 +120,13 @@
 		DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		DB70BBB41B7264FB00FECB99 /* Objective-CBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgingHeader.h"; sourceTree = "<group>"; };
 		DB8289D91B8CA6F90012E787 /* MapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
+		DB851C261B9F438200984A2C /* krest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "krest@2x.png"; path = "Design/krest@2x.png"; sourceTree = "<group>"; };
+		DB851C281B9F43DC00984A2C /* leftArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "leftArrow@2x.png"; path = "Design/leftArrow@2x.png"; sourceTree = "<group>"; };
+		DB851C2A1B9F46D100984A2C /* rightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rightArrow@2x.png"; path = "Design/rightArrow@2x.png"; sourceTree = "<group>"; };
+		DB851C2C1B9F49C100984A2C /* imageBackgroundFillPost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "imageBackgroundFillPost@2x.png"; path = "Design/imageBackgroundFillPost@2x.png"; sourceTree = "<group>"; };
+		DB8B91DC1B8F3AC80019EBF4 /* SellerProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerProfileTableViewCell.swift; sourceTree = "<group>"; };
+		DB8B91DE1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonConnectionTableViewCell.swift; sourceTree = "<group>"; };
+		DB8B91E01B8F677D0019EBF4 /* MultiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiTableViewCell.swift; sourceTree = "<group>"; };
 		DBAF80711B8478CA00299913 /* TTRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSlider.h; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.h; sourceTree = "<group>"; };
 		DBAF80721B8478CA00299913 /* TTRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTRangeSlider.m; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.m; sourceTree = "<group>"; };
 		DBAF80731B8478CA00299913 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = 6HandsSwift/TTRangeSlider/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
@@ -259,22 +271,25 @@
 			isa = PBXGroup;
 			children = (
 				DBD3C3CE1B8722740046655A /* Test */,
+				DB851C261B9F438200984A2C /* krest@2x.png */,
 				DBD3C3C21B8648D30046655A /* backButtonArrow.png */,
 				DBD3C3C81B8696FF0046655A /* empryStar.png */,
 				DBD3C3C61B8695660046655A /* star.png */,
 				DB0EA7ED1B8214690093B796 /* onRightArrow.png */,
 				DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */,
 				DB0EA7E91B8213800093B796 /* arrow.png */,
+				DB851C2C1B9F49C100984A2C /* imageBackgroundFillPost@2x.png */,
 				DB0EA7E11B8203A40093B796 /* menuBackgroundColor.png */,
 				DB0EA7DF1B81E48E0093B796 /* frameForStationName.png */,
 				DB0EA7DD1B81E1FB0093B796 /* yellowCorner.png */,
 				DB0EA7D81B80DB890093B796 /* greenBackForCell.png */,
-				DB70BB9A1B72548500FECB99 /* backgroundImageFirstView.png */,
+				DB851C2A1B9F46D100984A2C /* rightArrow@2x.png */,
 				DB70BB9B1B72548500FECB99 /* blueColor.png */,
 				DB70BB9C1B72548500FECB99 /* kitchen pack18.png */,
 				DB70BB9D1B72548500FECB99 /* menu.png */,
 				DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */,
 				DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */,
+				DB851C281B9F43DC00984A2C /* leftArrow@2x.png */,
 			);
 			name = Design;
 			sourceTree = "<group>";
@@ -306,7 +321,10 @@
 			isa = PBXGroup;
 			children = (
 				DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */,
+				DB8B91DE1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift */,
+				DB8B91DC1B8F3AC80019EBF4 /* SellerProfileTableViewCell.swift */,
 				DB8289D91B8CA6F90012E787 /* MapTableViewCell.swift */,
+				DB8B91E01B8F677D0019EBF4 /* MultiTableViewCell.swift */,
 				DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */,
 			);
 			name = Cells;
@@ -435,12 +453,13 @@
 				DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */,
 				DBD3C3C51B86949D0046655A /* kvartira.jpg in Resources */,
 				DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */,
+				DB851C2D1B9F49C100984A2C /* imageBackgroundFillPost@2x.png in Resources */,
 				DB0EA7D91B80DB890093B796 /* greenBackForCell.png in Resources */,
 				DBD3C3CC1B8722500046655A /* kvartira3.jpg in Resources */,
 				DBED201F1B88AE8C00A5C511 /* Main.storyboard in Resources */,
+				DB851C2B1B9F46D100984A2C /* rightArrow@2x.png in Resources */,
 				DB0EA7D21B80AAF50093B796 /* NewTableViewController.xib in Resources */,
 				DB0EA7EE1B8214690093B796 /* onRightArrow.png in Resources */,
-				DB70BBA01B72548500FECB99 /* backgroundImageFirstView.png in Resources */,
 				DB0EA7D71B80B4790093B796 /* SimpleTableViewCell.xib in Resources */,
 				DBD3C3CD1B8722500046655A /* kvartira2.jpg in Resources */,
 				DB70BBA11B72548500FECB99 /* blueColor.png in Resources */,
@@ -450,12 +469,14 @@
 				DBD3C3C31B8648D30046655A /* backButtonArrow.png in Resources */,
 				DB70BBA31B72548500FECB99 /* menu.png in Resources */,
 				DBD3C3C91B8696FF0046655A /* empryStar.png in Resources */,
+				DB851C291B9F43DC00984A2C /* leftArrow@2x.png in Resources */,
 				DB0EA7DE1B81E1FB0093B796 /* yellowCorner.png in Resources */,
 				DB0EA7E61B82090A0093B796 /* man.png in Resources */,
 				DB70BB821B7253AC00FECB99 /* Images.xcassets in Resources */,
 				DB0EA7EA1B8213800093B796 /* arrow.png in Resources */,
 				DB70BBA21B72548500FECB99 /* kitchen pack18.png in Resources */,
 				DB0EA7E01B81E48E0093B796 /* frameForStationName.png in Resources */,
+				DB851C271B9F438200984A2C /* krest@2x.png in Resources */,
 				DB0EA7E21B8203A40093B796 /* menuBackgroundColor.png in Resources */,
 				DB0EA7CE1B80AAE70093B796 /* PopularTableViewController.xib in Resources */,
 			);
@@ -509,10 +530,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBBF9F1C1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift in Sources */,
+				DB8B91DF1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift in Sources */,
 				DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */,
 				DB8289DA1B8CA6F90012E787 /* MapTableViewCell.swift in Sources */,
 				DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */,
 				DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */,
+				DB8B91DD1B8F3AC80019EBF4 /* SellerProfileTableViewCell.swift in Sources */,
 				DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */,
 				DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */,
 				DBF00DF21B77B2FC00209549 /* MainTablesViewController.swift in Sources */,
@@ -527,6 +550,7 @@
 				DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */,
 				DB0EA7DC1B81D7160093B796 /* LGDrawer.m in Sources */,
 				DBD3C3BB1B85C12E0046655A /* RoomPageViewController.swift in Sources */,
+				DB8B91E11B8F677D0019EBF4 /* MultiTableViewCell.swift in Sources */,
 				DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */,
 				DBD3C3D31B8753F30046655A /* DescriptionTableViewCell.swift in Sources */,
 				DB4CC2DE1B7BACC600480DC0 /* LeftMenuViewController.swift in Sources */,

@@ -58,7 +58,7 @@ class PopularTableViewController: UITableViewController {
         
         cell.someTextLabel!.text = "Карамышевская набережная, 56к2"
         cell.numerLabel!.text = NSString(format: "%d", indexPath.row + 1) as String
-        cell.priceLabel!.text = formattedStringWithPrice("100000")
+        cell.priceLabel!.text = SimpleTableViewCell().formattedStringWithPrice("100000")
         cell.roomSquareLabel!.text = "123 м²"
         
         if indexPath.row % 3 == 0 {
@@ -99,7 +99,7 @@ class PopularTableViewController: UITableViewController {
         
         cell.someTextLabel!.text = "Карамышевская набережная, 56к2"
         cell.numerLabel!.text = NSString(format: "%d", indexPath.row + 1) as String
-        cell.priceLabel!.text = formattedStringWithPrice("100000")
+        cell.priceLabel!.text = SimpleTableViewCell().formattedStringWithPrice("100000")
         cell.roomSquareLabel!.text = "123 м²"
         
         if indexPath.row % 3 == 0 {
@@ -114,16 +114,7 @@ class PopularTableViewController: UITableViewController {
     }
     
 
-    func formattedStringWithPrice(price: String) -> String {
-        var lenghtString = count(price)
-        var resultString: String = ""
-        for char in price {
-            if (lenghtString % 3 == 0) && (count(price) != lenghtString) {
-                resultString += " "
-            }
-            resultString += String(char)
-            lenghtString -= 1
-        }
-        return resultString
-    }
+
+
+    
 }
