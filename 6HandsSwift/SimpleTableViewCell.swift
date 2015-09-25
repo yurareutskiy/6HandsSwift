@@ -78,10 +78,10 @@ class SimpleTableViewCell: UITableViewCell {
     }
     
     func formattedStringWithPrice(price: String) -> String {
-        var lenghtString = count(price)
+        var lenghtString = price.characters.count
         var resultString: String = ""
-        for char in price {
-            if (lenghtString % 3 == 0) && (count(price) != lenghtString) {
+        for char in price.characters {
+            if (lenghtString % 3 == 0) && (price.characters.count != lenghtString) {
                 resultString += " "
             }
             resultString += String(char)

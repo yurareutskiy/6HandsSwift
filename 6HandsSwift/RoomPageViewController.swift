@@ -266,7 +266,7 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
  
-        var infoData = infoParameters[indexPath.row]
+        let infoData = infoParameters[indexPath.row]
         
         if infoData[0] as! String != "Description" {
             
@@ -289,8 +289,8 @@ class RoomPageViewController: UIViewController, UIScrollViewDelegate, UITableVie
         cell.descriptionTextLabel.text = infoData[1] as? String
         cell.descriptionTextLabel.frame.size = CGSizeMake(280, 415)
         
-        println(cell.descriptionTextLabel.frame.size.height)
-        println(cell.frame.size.height)
+        print(cell.descriptionTextLabel.frame.size.height)
+        print(cell.frame.size.height)
         
         
         return cell

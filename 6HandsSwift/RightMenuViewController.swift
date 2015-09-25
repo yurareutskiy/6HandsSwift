@@ -48,7 +48,7 @@ class RightMenuViewController: UIViewController {
     
 
     @IBAction func chooseNumberRoomsButton(sender: UIButton) {
-        println(sender.selected)
+        print(sender.selected)
         if sender.selected == false {
             sender.selected = true
             sender.backgroundColor = UIColor.blackColor()

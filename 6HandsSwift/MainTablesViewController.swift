@@ -58,9 +58,9 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         
         let pageSliderMenuColor = UIColor(red: 243, green: 243, blue: 244, alpha: 1)
         
-        navigationController?.navigationBar.setBackgroundImage(UIImage.new(), forBarMetrics: UIBarMetrics.Default)
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         navigationController?.view.backgroundColor = pageSliderMenuColor
-        navigationController?.navigationBar.shadowImage = UIImage.new()
+        navigationController?.navigationBar.shadowImage = UIImage()
         view.backgroundColor = pageSliderMenuColor
         
             // Custom navigation bar items
@@ -96,7 +96,7 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         
         let arrayVC: [UIViewController] = [newVC!, popularVC]
         
-        var parameters: [CAPSPageMenuOption] = [
+        let parameters: [CAPSPageMenuOption] = [
             .ScrollMenuBackgroundColor(UIColor.whiteColor()),
             .ViewBackgroundColor(UIColor(red: 247.0/255.0, green: 247.0/255.0, blue: 247.0/255.0, alpha: 1.0)),
             .BottomMenuHairlineColor(UIColor(red: 20.0/255.0, green: 20.0/255.0, blue: 20.0/255.0, alpha: 0.1)),
@@ -123,8 +123,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         viewClear?.hidden = true
         
         
-        var ncArray = navigationController?.viewControllers
-        println(ncArray?.description)
+        let ncArray = navigationController?.viewControllers
+        print(ncArray?.description)
         
 //        performSegueWithIdentifier("toRoomPage", sender: self)
 
@@ -155,12 +155,12 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     //MARK: CAPSPageMenuDelegate
     
     func didMoveToPage(controller: UIViewController, index: Int) {
-        println("did move to page \(index) " + controller.description)
+        print("did move to page \(index) " + controller.description)
 
     }
     
     func willMoveToPage(controller: UIViewController, index: Int) {
-        println("will move to page \(index) " + controller.description)
+        print("will move to page \(index) " + controller.description)
     }
     
     
@@ -199,11 +199,11 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     }
     
     func sideMenuWillOpen() {
-        println("sideMenuWillOpen")
+        print("sideMenuWillOpen")
         
-        println(widthView)
-        println(widthMenu!)
-        println(self.view.frame.width)
+        print(widthView)
+        print(widthMenu!)
+        print(self.view.frame.width)
         
         
         viewClear?.hidden = false
@@ -217,13 +217,13 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     }
     
     func sideMenuWillClose() {
-        println("sideMenuWillClose")
+        print("sideMenuWillClose")
         
         viewClear?.hidden = true
         
     }
     func sideMenuShouldOpenSideMenu() -> Bool {
-        println("sideMenuShouldOpenSideMenu")
+        print("sideMenuShouldOpenSideMenu")
 
         if (self.sideMenuController()?.sideMenu?.isMenuOpen == true) || (self.sideMenuController()?.rightSideMenu?.isMenuOpen == true) {
             
@@ -238,13 +238,13 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     func makeSegueToRoomPage() {
         
     
-        var vc: RoomViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RoomPage") as! RoomViewController
+        let vc: RoomViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RoomPage") as! RoomViewController
         vc.forLog = "other"
         navigationController?.pushViewController(vc, animated: true)
     }
 
     func didSelect(text:String) {
-        println(text)
+        print(text)
     }
     
     /*

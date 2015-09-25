@@ -13,17 +13,17 @@ class MainNavigationViewController: ENSideMenuNavigationController, ENSideMenuDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let leftVC = storyboard?.instantiateViewControllerWithIdentifier("LeftMenu") as! UIViewController
+        let leftVC = storyboard?.instantiateViewControllerWithIdentifier("LeftMenu") as UIViewController?
 
-        let rightVC = storyboard?.instantiateViewControllerWithIdentifier("RightMenu") as! UIViewController
+        let rightVC = storyboard?.instantiateViewControllerWithIdentifier("RightMenu")as UIViewController?
 
         
 //        leftVC.view.frame = CGRectMake(0, 0, leftVC.view.frame.size.width - 100, leftVC.view.frame.size.height)
         
-        sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftVC, menuPosition: .Left)
+        sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftVC!, menuPosition: .Left)
         sideMenu?.menuWidth = 280.0
         
-        rightSideMenu = ENSideMenu(sourceView: self.view, menuViewController: rightVC, menuPosition: .Right)
+        rightSideMenu = ENSideMenu(sourceView: self.view, menuViewController: rightVC!, menuPosition: .Right)
         rightSideMenu?.menuWidth = 280.0
     }
 

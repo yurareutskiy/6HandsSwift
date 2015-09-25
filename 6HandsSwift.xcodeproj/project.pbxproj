@@ -25,6 +25,7 @@
 		DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */; };
 		DB0EA7EE1B8214690093B796 /* onRightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7ED1B8214690093B796 /* onRightArrow.png */; };
 		DB0EA7F01B8223400093B796 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */; };
+		DB19566E1BAEC2E900A3C294 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */; };
 		DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */; };
 		DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */; };
 		DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */; };
@@ -45,12 +46,15 @@
 		DB851C291B9F43DC00984A2C /* leftArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB851C281B9F43DC00984A2C /* leftArrow@2x.png */; };
 		DB851C2B1B9F46D100984A2C /* rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB851C2A1B9F46D100984A2C /* rightArrow@2x.png */; };
 		DB851C2D1B9F49C100984A2C /* imageBackgroundFillPost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB851C2C1B9F49C100984A2C /* imageBackgroundFillPost@2x.png */; };
+		DB851C321B9F6E0B00984A2C /* FillPostSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB851C311B9F6E0B00984A2C /* FillPostSliderViewController.swift */; };
 		DB8B91DD1B8F3AC80019EBF4 /* SellerProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B91DC1B8F3AC80019EBF4 /* SellerProfileTableViewCell.swift */; };
 		DB8B91DF1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B91DE1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift */; };
 		DB8B91E11B8F677D0019EBF4 /* MultiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B91E01B8F677D0019EBF4 /* MultiTableViewCell.swift */; };
+		DB92400A1BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9240091BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift */; };
+		DB92400C1BA3512600CE57F3 /* photoKrest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB92400B1BA3512600CE57F3 /* photoKrest@2x.png */; };
+		DB9240101BA3522500CE57F3 /* newPhotoButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB92400F1BA3522500CE57F3 /* newPhotoButton@2x.png */; };
 		DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAF80721B8478CA00299913 /* TTRangeSlider.m */; };
 		DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB2DE241B7274B40076765A /* CalendarAndDate.m */; };
-		DBBF9F181B8925CC00E31A44 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF9F171B8925CC00E31A44 /* MapKit.framework */; };
 		DBBF9F1A1B8B4A6D00E31A44 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */; };
 		DBBF9F1C1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */; };
 		DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */; };
@@ -99,6 +103,7 @@
 		DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteArrow.png; path = Design/whiteArrow.png; sourceTree = "<group>"; };
 		DB0EA7ED1B8214690093B796 /* onRightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = onRightArrow.png; path = Design/onRightArrow.png; sourceTree = "<group>"; };
 		DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
+		DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
 		DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
@@ -124,15 +129,19 @@
 		DB851C281B9F43DC00984A2C /* leftArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "leftArrow@2x.png"; path = "Design/leftArrow@2x.png"; sourceTree = "<group>"; };
 		DB851C2A1B9F46D100984A2C /* rightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rightArrow@2x.png"; path = "Design/rightArrow@2x.png"; sourceTree = "<group>"; };
 		DB851C2C1B9F49C100984A2C /* imageBackgroundFillPost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "imageBackgroundFillPost@2x.png"; path = "Design/imageBackgroundFillPost@2x.png"; sourceTree = "<group>"; };
+		DB851C311B9F6E0B00984A2C /* FillPostSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillPostSliderViewController.swift; sourceTree = "<group>"; };
 		DB8B91DC1B8F3AC80019EBF4 /* SellerProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerProfileTableViewCell.swift; sourceTree = "<group>"; };
 		DB8B91DE1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonConnectionTableViewCell.swift; sourceTree = "<group>"; };
 		DB8B91E01B8F677D0019EBF4 /* MultiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiTableViewCell.swift; sourceTree = "<group>"; };
+		DB9240091BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostWithPhotosViewController.swift; sourceTree = "<group>"; };
+		DB92400B1BA3512600CE57F3 /* photoKrest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "photoKrest@2x.png"; path = "Design/photoKrest@2x.png"; sourceTree = "<group>"; };
+		DB92400F1BA3522500CE57F3 /* newPhotoButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "newPhotoButton@2x.png"; path = "Design/newPhotoButton@2x.png"; sourceTree = "<group>"; };
+		DB9240111BA3F45700CE57F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DBAF80711B8478CA00299913 /* TTRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSlider.h; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.h; sourceTree = "<group>"; };
 		DBAF80721B8478CA00299913 /* TTRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTRangeSlider.m; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.m; sourceTree = "<group>"; };
 		DBAF80731B8478CA00299913 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = 6HandsSwift/TTRangeSlider/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
 		DBB2DE231B7274B40076765A /* CalendarAndDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarAndDate.h; path = 6HandsSwift/CalendarAndDate.h; sourceTree = "<group>"; };
 		DBB2DE241B7274B40076765A /* CalendarAndDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarAndDate.m; path = 6HandsSwift/CalendarAndDate.m; sourceTree = "<group>"; };
-		DBBF9F171B8925CC00E31A44 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollTableViewCell.swift; sourceTree = "<group>"; };
 		DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,7 +165,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBBF9F181B8925CC00E31A44 /* MapKit.framework in Frameworks */,
 				709685E21A0CCF585E7CBBC0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +191,7 @@
 		BDFD6222745C6688FFADAE11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB9240111BA3F45700CE57F3 /* Security.framework */,
 				8DF5DE1114C461F85168160E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -203,7 +212,6 @@
 		DB70BB691B7253AC00FECB99 = {
 			isa = PBXGroup;
 			children = (
-				DBBF9F171B8925CC00E31A44 /* MapKit.framework */,
 				DB70BBB31B7263D100FECB99 /* Objective-C */,
 				DB70BB741B7253AC00FECB99 /* 6HandsSwift */,
 				DB70BB8D1B7253AC00FECB99 /* 6HandsSwiftTests */,
@@ -233,6 +241,7 @@
 				DB70BBAB1B7254C400FECB99 /* WelcomeViewController.swift */,
 				DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */,
 				DBD3C3CF1B8753540046655A /* RoomPage */,
+				DB9240081BA350C500CE57F3 /* New Post */,
 				DBF00DF01B77B2D700209549 /* Table */,
 				DB70BB811B7253AC00FECB99 /* Images.xcassets */,
 				DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */,
@@ -290,6 +299,8 @@
 				DB70BB9E1B72548500FECB99 /* rectBackgroundForButtonFirstView.png */,
 				DB70BB9F1B72548500FECB99 /* sixHandsLogo.png */,
 				DB851C281B9F43DC00984A2C /* leftArrow@2x.png */,
+				DB92400F1BA3522500CE57F3 /* newPhotoButton@2x.png */,
+				DB92400B1BA3512600CE57F3 /* photoKrest@2x.png */,
 			);
 			name = Design;
 			sourceTree = "<group>";
@@ -315,6 +326,16 @@
 				DBB2DE241B7274B40076765A /* CalendarAndDate.m */,
 			);
 			name = "Objective-C";
+			sourceTree = "<group>";
+		};
+		DB9240081BA350C500CE57F3 /* New Post */ = {
+			isa = PBXGroup;
+			children = (
+				DB851C311B9F6E0B00984A2C /* FillPostSliderViewController.swift */,
+				DB9240091BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift */,
+				DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */,
+			);
+			name = "New Post";
 			sourceTree = "<group>";
 		};
 		DBBF9F1D1B8B6D3B00E31A44 /* Cells */ = {
@@ -413,12 +434,14 @@
 		DB70BB6A1B7253AC00FECB99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = reutskiy;
 				TargetAttributes = {
 					DB70BB711B7253AC00FECB99 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = FY284969S6;
 					};
 					DB70BB891B7253AC00FECB99 = {
 						CreatedOnToolsVersion = 6.4;
@@ -463,12 +486,14 @@
 				DB0EA7D71B80B4790093B796 /* SimpleTableViewCell.xib in Resources */,
 				DBD3C3CD1B8722500046655A /* kvartira2.jpg in Resources */,
 				DB70BBA11B72548500FECB99 /* blueColor.png in Resources */,
+				DB92400C1BA3512600CE57F3 /* photoKrest@2x.png in Resources */,
 				DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */,
 				DBD3C3C71B8695660046655A /* star.png in Resources */,
 				DB70BB851B7253AC00FECB99 /* LaunchScreen.xib in Resources */,
 				DBD3C3C31B8648D30046655A /* backButtonArrow.png in Resources */,
 				DB70BBA31B72548500FECB99 /* menu.png in Resources */,
 				DBD3C3C91B8696FF0046655A /* empryStar.png in Resources */,
+				DB9240101BA3522500CE57F3 /* newPhotoButton@2x.png in Resources */,
 				DB851C291B9F43DC00984A2C /* leftArrow@2x.png in Resources */,
 				DB0EA7DE1B81E1FB0093B796 /* yellowCorner.png in Resources */,
 				DB0EA7E61B82090A0093B796 /* man.png in Resources */,
@@ -531,6 +556,7 @@
 			files = (
 				DBBF9F1C1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift in Sources */,
 				DB8B91DF1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift in Sources */,
+				DB92400A1BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift in Sources */,
 				DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */,
 				DB8289DA1B8CA6F90012E787 /* MapTableViewCell.swift in Sources */,
 				DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */,
@@ -545,8 +571,10 @@
 				DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */,
 				DBBF9F1A1B8B4A6D00E31A44 /* RoomViewController.swift in Sources */,
 				DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */,
+				DB851C321B9F6E0B00984A2C /* FillPostSliderViewController.swift in Sources */,
 				DBD3C3D11B8753770046655A /* InfoRoomTableViewCell.swift in Sources */,
 				DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */,
+				DB19566E1BAEC2E900A3C294 /* CollectionViewCell.swift in Sources */,
 				DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */,
 				DB0EA7DC1B81D7160093B796 /* LGDrawer.m in Sources */,
 				DBD3C3BB1B85C12E0046655A /* RoomPageViewController.swift in Sources */,
@@ -681,9 +709,12 @@
 			baseConfigurationReference = E84DCF1E2706123B91185255 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 6HandsSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Objective-CBridgingHeader.h";
 			};
 			name = Debug;
@@ -693,9 +724,12 @@
 			baseConfigurationReference = 8B93BEC3411F8436BCB6F220 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 6HandsSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Objective-CBridgingHeader.h";
 			};
 			name = Release;

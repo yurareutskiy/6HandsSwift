@@ -25,7 +25,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         table.delegate = self
         table.dataSource = self
         
-        println(forLog)
+        print(forLog)
         
         table.registerNib(UINib(nibName: "SimpleTableViewCell", bundle: nil), forCellReuseIdentifier: "TableCell")
 //        table.contentSize = CGSizeMake(view.frame.width, 1100)
@@ -64,8 +64,8 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
                 return 130
             } else if (indexPath.row == countParameters) {
                 let height = heightForView()
-                print("Height 2: ")
-                println(height)
+                print("Height 2: ", terminator: "")
+                print(height)
                 return height
 //                return  476
             } else if (indexPath.row == (countParameters + 1)) {
@@ -92,8 +92,8 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         label.text = text
         
         label.sizeToFit()
-        print("Height ")
-        println(label.frame.height)
+        print("Height ", terminator: "")
+        print(label.frame.height)
         let height = label.frame.height
         return height + 10 + (height / 10) + 1
     }
@@ -108,8 +108,8 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if (section == 1) {
             let rect = CGRectMake(-1, 0, self.view.frame.size.width + 1, 45)
-            var header = UIView(frame: rect)
-            var label = UILabel(frame: rect)
+            let header = UIView(frame: rect)
+            let label = UILabel(frame: rect)
             label.text = "Похожие объявлления"
             label.textAlignment = NSTextAlignment.Center
             label.font = UIFont(name: "Helvetica", size: 15)
@@ -136,7 +136,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         if (indexPath.section == 0) {
             //        println(indexPath.row)
             if (indexPath.row >= countParameters + 3) {
-                let cell = tableView.dequeueReusableCellWithIdentifier("emptyCell") as! UITableViewCell
+                let cell = tableView.dequeueReusableCellWithIdentifier("emptyCell")! as UITableViewCell
                 return cell
             }
             if (indexPath.row == 0) {
@@ -156,7 +156,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("emptyCell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("emptyCell")! as UITableViewCell
         return cell
 
     }
@@ -183,7 +183,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func configureInfoCell(tableView: UITableView, rowAtIndexPath indexPath: NSIndexPath) -> InfoTableViewCell {
-        println(indexPath.row)
+        print(indexPath.row)
         
         let cell = table.dequeueReusableCellWithIdentifier("InfoCell") as! InfoTableViewCell
         let tempArray = infoParameters[indexPath.row - 1]
@@ -218,7 +218,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func configureDescriptionCell(tableView: UITableView) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("DescriptionCell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("DescriptionCell")! as UITableViewCell
         let text = infoParameters[countParameters - 1][1] as! String
         cell.textLabel?.text = text
         cell.textLabel?.numberOfLines = 0

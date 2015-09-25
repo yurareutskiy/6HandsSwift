@@ -38,11 +38,11 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate, GMSMapViewDelegate {
     func setContentFrameWithStationName(stationText:String?, AndAddress addressText: String?) {
         let width = self.frame.width
         
-        var view = UIView(frame: CGRectMake(10, 90, width - 20, 70))
+        let view = UIView(frame: CGRectMake(10, 90, width - 20, 70))
         view.backgroundColor = UIColor.whiteColor()
         view.alpha = 0.85
         
-        var addresLabel = UILabel(frame: CGRectMake(10, 4, view.frame.width - 20, 40))
+        let addresLabel = UILabel(frame: CGRectMake(10, 4, view.frame.width - 20, 40))
         addresLabel.font = UIFont(name: "Helvetica", size: 15)
         addresLabel.numberOfLines = 2
         addresLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
@@ -67,7 +67,7 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate, GMSMapViewDelegate {
         colorStationView.backgroundColor = UIColor.redColor()
         
         //        var nameStation = UILabel(frame: CGRectMake(10, 2, stationView.frame.width - 12, stationView.frame.height - 4))
-        var nameStation = UILabel(frame: CGRectMake(20, 3, 100, 10))
+        let nameStation = UILabel(frame: CGRectMake(20, 3, 100, 10))
         nameStation.font = UIFont(name: "Helvetica", size: 10)
         nameStation.textColor = UIColor.blackColor()
         nameStation.numberOfLines = 1
@@ -98,7 +98,7 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate, GMSMapViewDelegate {
         geocodeAddress(address, withCompletionHandler: { (status, success) -> Void in
             let camera: GMSCameraPosition = GMSCameraPosition.cameraWithLatitude(self.fetchedAddressLatitude!, longitude: self.fetchedAddressLongitude!, zoom: 10.0)
             self.map.camera = camera
-            var cameraMoving = GMSCameraUpdate.scrollByX(0, y: 20)
+            let cameraMoving = GMSCameraUpdate.scrollByX(0, y: 20)
             self.map.moveCamera(cameraMoving)
             
             let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: self.fetchedAddressLatitude, longitude: self.fetchedAddressLongitude))
@@ -118,17 +118,20 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate, GMSMapViewDelegate {
             
             let geocodeURL = NSURL(string: geocodeURLString)
             
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            dispatch_async(dispatch_get_main_queue(), {
                 let geocodingResultsData = NSData(contentsOfURL: geocodeURL!)
                 
-                var error: NSError?
-                let dictionary: Dictionary<NSObject, AnyObject> = NSJSONSerialization.JSONObjectWithData(geocodingResultsData!, options: NSJSONReadingOptions.MutableContainers, error: &error) as! Dictionary<NSObject, AnyObject>
+//                var error: NSError?
+                do {
                 
-                if (error != nil) {
-                    println(error)
-                    completionHandler(status: "", success: false)
-                }
-                else {
+                    let dictionary: Dictionary<NSObject, AnyObject> = try NSJSONSerialization.JSONObjectWithData(geocodingResultsData!, options: NSJSONReadingOptions.MutableContainers) as! Dictionary<NSObject, AnyObject>
+                
+//                if (error != nil) {
+//                    println(error)
+//                    completionHandler(status: "", success: false)
+//                }
+
                     // Get the response status.
                     let status = dictionary["status"] as! String
                     
@@ -148,10 +151,15 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate, GMSMapViewDelegate {
                         completionHandler(status: status, success: false)
                     }
                 }
-            })
-        }
-        else {
+                catch let parseError {
+                    completionHandler(status: "No internet connection.", success: false)
+                            
+                    }
+                })
+
+        } else {
             completionHandler(status: "No valid address.", success: false)
+
         }
     }
     
