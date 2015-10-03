@@ -19,6 +19,7 @@ class LeftMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.frame.size = CGSizeMake(280, self.view.frame.height)
         
         chatsCountLabel.layer.cornerRadius = chatsCountLabel.frame.size.height / 2
         chatsCountLabel.clipsToBounds = true
@@ -43,6 +44,9 @@ class LeftMenuViewController: UIViewController {
     }
     
 
+    @IBAction func wantRentAction(sender: AnyObject) {
+        performSegueWithIdentifier("WantRent", sender: nil)
+    }
 
 
 }

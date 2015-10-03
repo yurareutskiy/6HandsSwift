@@ -14,6 +14,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var scroll: UIScrollView!
     
+    @IBOutlet weak var arrowBackButton: UIButton!
     var photoArray = []
     
     var collection: UICollectionView!
@@ -41,6 +42,8 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         
         
         var secondVC = UIStoryboard(name: "Main", bundle: nil)
+        
+        arrowBackButton.hidden = true
         
         
 //        vc.button.addTarget(self, action: "testFunc", forControlEvents: UIControlEvents.TouchUpInside)
@@ -92,6 +95,14 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         cell.image.image = photoArray[0] as? UIImage
         return cell
     }
+    @IBAction func backButtonAction(sender: AnyObject) {
+    }
+    
+    @IBAction func dismissAction(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
 }
 
 

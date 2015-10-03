@@ -23,6 +23,8 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,7 +32,7 @@ class WelcomeViewController: UIViewController {
     
 
     @IBAction func rentRoomAction(sender: UIButton) {
-    
+        performSegueWithIdentifier("ToPostSegue", sender: nil)
     }
     
     @IBAction func findRoomAction(sender: UIButton) {

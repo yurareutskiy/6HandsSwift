@@ -21,10 +21,10 @@ class MainNavigationViewController: ENSideMenuNavigationController, ENSideMenuDe
 //        leftVC.view.frame = CGRectMake(0, 0, leftVC.view.frame.size.width - 100, leftVC.view.frame.size.height)
         
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: leftVC!, menuPosition: .Left)
-        sideMenu?.menuWidth = 280.0
+        sideMenu?.menuWidth = 279.0
         
         rightSideMenu = ENSideMenu(sourceView: self.view, menuViewController: rightVC!, menuPosition: .Right)
-        rightSideMenu?.menuWidth = 280.0
+        rightSideMenu?.menuWidth = 279.0
     }
 
     override func didReceiveMemoryWarning() {

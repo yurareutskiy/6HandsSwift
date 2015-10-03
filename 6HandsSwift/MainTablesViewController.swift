@@ -16,9 +16,15 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     var viewClear: UIView?
     var rightViewClear: UIView?
     
+    var rightItem: UIBarButtonItem?
+    var leftItem: UIBarButtonItem?
+
+    
     var slider : CAPSPageMenu?
     
     var newVC: PopTableViewController?
+    
+    var abd: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,11 +78,11 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         
             // Custom RIGHT navigation bar button
         
-        let rightItem = UIBarButtonItem(image: UIImage(named: "kitchen pack18"), style: UIBarButtonItemStyle.Plain, target: nil, action: "revealFilterMenu")
-        navigationItem.rightBarButtonItem = rightItem
+        rightItem = UIBarButtonItem(image: UIImage(named: "kitchen pack18"), style: UIBarButtonItemStyle.Plain, target: nil, action: "revealFilterMenu")
+//        navigationItem.rightBarButtonItem = rightItem
         
             // Custom LEFT navigation bar button
-        let leftItem = UIBarButtonItem(image: UIImage(named: "menu"), style: UIBarButtonItemStyle.Plain, target: nil, action: "revealMenu:")
+        leftItem = UIBarButtonItem(image: UIImage(named: "menu"), style: UIBarButtonItemStyle.Plain, target: nil, action: "revealMenu:")
         navigationItem.leftBarButtonItem = leftItem
         
         // Page slider
@@ -163,7 +169,9 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         print("will move to page \(index) " + controller.description)
     }
     
-    
+    func barButtonPressedAction(sender: UIBarButtonItem) {
+        
+    }
     
     
     func setViewControllers() {
@@ -247,6 +255,10 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         print(text)
     }
     
+    @IBAction func filterPressed(sender: UIBarButtonItem) {
+        self.sideMenuController()?.rightSideMenu?.toggleMenu()
+
+    }
     /*
     // MARK: - Navigation
 
