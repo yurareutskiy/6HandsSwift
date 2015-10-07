@@ -78,6 +78,7 @@
 		DBD3C3CD1B8722500046655A /* kvartira2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3CB1B8722500046655A /* kvartira2.jpg */; };
 		DBD3C3D11B8753770046655A /* InfoRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3D01B8753770046655A /* InfoRoomTableViewCell.swift */; };
 		DBD3C3D31B8753F30046655A /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3D21B8753F30046655A /* DescriptionTableViewCell.swift */; };
+		DBEC634A1BC0B9F900347679 /* NewPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEC63491BC0B9F900347679 /* NewPostsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DBED201F1B88AE8C00A5C511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBED201E1B88AE8C00A5C511 /* Main.storyboard */; };
 		DBF00DF21B77B2FC00209549 /* MainTablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */; };
 /* End PBXBuildFile section */
@@ -167,6 +168,7 @@
 		DB92400B1BA3512600CE57F3 /* photoKrest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "photoKrest@2x.png"; path = "Design/photoKrest@2x.png"; sourceTree = "<group>"; };
 		DB92400F1BA3522500CE57F3 /* newPhotoButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "newPhotoButton@2x.png"; path = "Design/newPhotoButton@2x.png"; sourceTree = "<group>"; };
 		DB9240111BA3F45700CE57F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DBAA1F501BC4FDB70037E6DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/PostSecondViewController.swift; sourceTree = "<group>"; };
 		DBAF80711B8478CA00299913 /* TTRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSlider.h; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.h; sourceTree = "<group>"; };
 		DBAF80721B8478CA00299913 /* TTRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTRangeSlider.m; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.m; sourceTree = "<group>"; };
 		DBAF80731B8478CA00299913 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = 6HandsSwift/TTRangeSlider/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
@@ -176,7 +178,7 @@
 		DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollTableViewCell.swift; sourceTree = "<group>"; };
 		DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomPageViewController.swift; sourceTree = "<group>"; };
-		DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTableViewController.swift; sourceTree = "<group>"; };
+		DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopTableViewController.swift; path = ../6HandsSwift/PopTableViewController.swift; sourceTree = "<group>"; };
 		DBD3C3C21B8648D30046655A /* backButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonArrow.png; path = Design/backButtonArrow.png; sourceTree = "<group>"; };
 		DBD3C3C41B86949D0046655A /* kvartira.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kvartira.jpg; path = Design/kvartira.jpg; sourceTree = "<group>"; };
 		DBD3C3C61B8695660046655A /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Design/star.png; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 		DBD3C3CB1B8722500046655A /* kvartira2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kvartira2.jpg; path = Design/kvartira2.jpg; sourceTree = "<group>"; };
 		DBD3C3D01B8753770046655A /* InfoRoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoRoomTableViewCell.swift; sourceTree = "<group>"; };
 		DBD3C3D21B8753F30046655A /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		DBEC63491BC0B9F900347679 /* NewPostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostsViewController.swift; sourceTree = "<group>"; };
 		DBED201E1B88AE8C00A5C511 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBF00DF11B77B2FC00209549 /* MainTablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTablesViewController.swift; sourceTree = "<group>"; };
 		E84DCF1E2706123B91185255 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -319,6 +322,7 @@
 		DB70BB8D1B7253AC00FECB99 /* 6HandsSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */,
 				DB70BB901B7253AC00FECB99 /* _HandsSwiftTests.swift */,
 				DB70BB8E1B7253AC00FECB99 /* Supporting Files */,
 			);
@@ -393,6 +397,7 @@
 				DB851C311B9F6E0B00984A2C /* FillPostSliderViewController.swift */,
 				DB9240091BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift */,
 				DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */,
+				DBAA1F4F1BC4FDB70037E6DE /* PostSecondViewController.swift */,
 			);
 			name = "New Post";
 			sourceTree = "<group>";
@@ -442,7 +447,7 @@
 				DB0EA7CC1B80AAE70093B796 /* PopularTableViewController.xib */,
 				DB0EA7CF1B80AAF50093B796 /* NewTableViewController.swift */,
 				DB0EA7D01B80AAF50093B796 /* NewTableViewController.xib */,
-				DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */,
+				DBEC63491BC0B9F900347679 /* NewPostsViewController.swift */,
 			);
 			name = Table;
 			sourceTree = "<group>";
@@ -623,6 +628,7 @@
 				DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */,
 				DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */,
 				DB8B91DD1B8F3AC80019EBF4 /* SellerProfileTableViewCell.swift in Sources */,
+				DBEC634A1BC0B9F900347679 /* NewPostsViewController.swift in Sources */,
 				DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */,
 				DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */,
 				DB459EC11BBC3B0B0062C525 /* AFURLRequestSerialization.m in Sources */,
@@ -681,6 +687,14 @@
 				DB70BB841B7253AC00FECB99 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		DBAA1F4F1BC4FDB70037E6DE /* PostSecondViewController.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBAA1F501BC4FDB70037E6DE /* Base */,
+			);
+			name = PostSecondViewController.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -27,21 +27,21 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         
         attributesForStepLabel()
         
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SimpleVC") as! NewPostWithPhotosViewController
-        vc.view.frame.size.height = self.view.frame.height - 105
-        vc.view.frame.origin.y = 50
+        let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FirstPostVC") as! NewPostWithPhotosViewController
+        firstVC.view.frame.size.height = self.view.frame.height - 105
+        firstVC.view.frame.origin.y = 50
         navigationController?.navigationBarHidden = true
         
-        collection = vc.collection
+        collection = firstVC.collection
         collection.delegate = self
         collection.dataSource = self
         
         collection.frame.size.height = 200
         
-        scroll.addSubview(vc.view)
+        scroll.addSubview(firstVC.view)
         
         
-        var secondVC = UIStoryboard(name: "Main", bundle: nil)
+        var secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SecondPostVC") as! PostSecondViewController
         
         arrowBackButton.hidden = true
         

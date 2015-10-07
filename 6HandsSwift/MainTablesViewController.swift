@@ -23,9 +23,7 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     var slider : CAPSPageMenu?
     
     var newVC: PopTableViewController?
-    
-    var abd: String?
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 

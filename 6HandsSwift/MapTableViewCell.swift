@@ -120,13 +120,18 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate, GMSMapViewDelegate {
             
             
             dispatch_async(dispatch_get_main_queue(), {
-                let geocodingResultsData = NSData(contentsOfURL: geocodeURL!)
                 
 //                var error: NSError?
                 do {
+                    
+                    let geocodingResultsData = NSData(contentsOfURL: geocodeURL!)
+
                 
                     let dictionary: Dictionary<NSObject, AnyObject> = try NSJSONSerialization.JSONObjectWithData(geocodingResultsData!, options: NSJSONReadingOptions.MutableContainers) as! Dictionary<NSObject, AnyObject>
                 
+                    print(dictionary.description)
+
+                    
 //                if (error != nil) {
 //                    println(error)
 //                    completionHandler(status: "", success: false)
@@ -151,7 +156,7 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate, GMSMapViewDelegate {
                         completionHandler(status: status, success: false)
                     }
                 }
-                catch let parseError {
+                catch {
                     completionHandler(status: "No internet connection.", success: false)
                             
                     }
