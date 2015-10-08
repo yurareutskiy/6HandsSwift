@@ -19,6 +19,11 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     
     var collection: UICollectionView!
     
+    let offsetTopScroll: CGFloat = 50
+    let scrollAnimationDuration: CGFloat = 350
+    
+    var index = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,7 +34,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         
         let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FirstPostVC") as! NewPostWithPhotosViewController
         firstVC.view.frame.size.height = self.view.frame.height - 105
-        firstVC.view.frame.origin.y = 50
+        firstVC.view.frame.origin.y = offsetTopScroll
         navigationController?.navigationBarHidden = true
         
         collection = firstVC.collection
@@ -42,6 +47,9 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         
         
         var secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SecondPostVC") as! PostSecondViewController
+        
+        secondVC.view.frame.origin = CGPointMake(self.view.frame.width, offsetTopScroll)
+        scroll.addSubview(secondVC.view)
         
         arrowBackButton.hidden = true
         
@@ -102,6 +110,16 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func nextButtonAction(sender: UIButton) {
+
+        let duration : Double = Double(scrollAnimationDuration) / Double(1000)
+        
+        UIView.animateWithDuration(duration, animations: { () -> Void in
+            self.index++
+            let xOffset : CGFloat = CGFloat(self.index) * self.scroll.frame.width
+            self.scroll.setContentOffset(CGPoint(x: xOffset, y: self.scroll.contentOffset.y), animated: false)
+        })
+    }
     
 }
 

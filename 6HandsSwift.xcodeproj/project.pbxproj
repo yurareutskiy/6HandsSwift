@@ -68,6 +68,7 @@
 		DBBF9F1A1B8B4A6D00E31A44 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */; };
 		DBBF9F1C1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */; };
 		DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */; };
+		DBC6ACA61BC4FF4A00413983 /* PostSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6ACA51BC4FF4A00413983 /* PostSecondViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DBD3C3BB1B85C12E0046655A /* RoomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */; };
 		DBD3C3BE1B85FAB20046655A /* PopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */; };
 		DBD3C3C31B8648D30046655A /* backButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C21B8648D30046655A /* backButtonArrow.png */; };
@@ -168,7 +169,6 @@
 		DB92400B1BA3512600CE57F3 /* photoKrest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "photoKrest@2x.png"; path = "Design/photoKrest@2x.png"; sourceTree = "<group>"; };
 		DB92400F1BA3522500CE57F3 /* newPhotoButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "newPhotoButton@2x.png"; path = "Design/newPhotoButton@2x.png"; sourceTree = "<group>"; };
 		DB9240111BA3F45700CE57F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		DBAA1F501BC4FDB70037E6DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/PostSecondViewController.swift; sourceTree = "<group>"; };
 		DBAF80711B8478CA00299913 /* TTRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSlider.h; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.h; sourceTree = "<group>"; };
 		DBAF80721B8478CA00299913 /* TTRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTRangeSlider.m; path = 6HandsSwift/TTRangeSlider/TTRangeSlider.m; sourceTree = "<group>"; };
 		DBAF80731B8478CA00299913 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = 6HandsSwift/TTRangeSlider/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
@@ -177,6 +177,7 @@
 		DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollTableViewCell.swift; sourceTree = "<group>"; };
 		DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		DBC6ACA51BC4FF4A00413983 /* PostSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSecondViewController.swift; sourceTree = "<group>"; };
 		DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomPageViewController.swift; sourceTree = "<group>"; };
 		DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopTableViewController.swift; path = ../6HandsSwift/PopTableViewController.swift; sourceTree = "<group>"; };
 		DBD3C3C21B8648D30046655A /* backButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonArrow.png; path = Design/backButtonArrow.png; sourceTree = "<group>"; };
@@ -397,7 +398,7 @@
 				DB851C311B9F6E0B00984A2C /* FillPostSliderViewController.swift */,
 				DB9240091BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift */,
 				DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */,
-				DBAA1F4F1BC4FDB70037E6DE /* PostSecondViewController.swift */,
+				DBC6ACA51BC4FF4A00413983 /* PostSecondViewController.swift */,
 			);
 			name = "New Post";
 			sourceTree = "<group>";
@@ -500,7 +501,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = reutskiy;
 				TargetAttributes = {
 					DB70BB711B7253AC00FECB99 = {
@@ -649,6 +650,7 @@
 				DB459EBC1BBC3B0B0062C525 /* AFHTTPRequestOperationManager.m in Sources */,
 				DB0EA7DC1B81D7160093B796 /* LGDrawer.m in Sources */,
 				DBD3C3BB1B85C12E0046655A /* RoomPageViewController.swift in Sources */,
+				DBC6ACA61BC4FF4A00413983 /* PostSecondViewController.swift in Sources */,
 				DB459EC21BBC3B0B0062C525 /* AFURLResponseSerialization.m in Sources */,
 				DB8B91E11B8F677D0019EBF4 /* MultiTableViewCell.swift in Sources */,
 				DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */,
@@ -689,14 +691,6 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		DBAA1F4F1BC4FDB70037E6DE /* PostSecondViewController.swift */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBAA1F501BC4FDB70037E6DE /* Base */,
-			);
-			name = PostSecondViewController.swift;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -722,6 +716,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -798,6 +793,7 @@
 				INFOPLIST_FILE = 6HandsSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reutskiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Objective-CBridgingHeader.h";
@@ -815,6 +811,7 @@
 				INFOPLIST_FILE = 6HandsSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reutskiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Objective-CBridgingHeader.h";
@@ -835,6 +832,7 @@
 				);
 				INFOPLIST_FILE = 6HandsSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reutskiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6HandsSwift.app/6HandsSwift";
 			};
@@ -850,6 +848,7 @@
 				);
 				INFOPLIST_FILE = 6HandsSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reutskiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6HandsSwift.app/6HandsSwift";
 			};
