@@ -597,6 +597,74 @@
             </objects>
             <point key="canvasLocation" x="4134" y="-417.5"/>
         </scene>
+        <!--ThirdVC-->
+        <scene sceneID="xrm-YE-VPI">
+            <objects>
+                <viewController storyboardIdentifier="ThirdVC" title="ThirdVC" id="fvm-og-U95" customClass="PostThirdViewController" customModule="_HandsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AN4-iZ-f6Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="YDk-DD-43R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nw4-xX-ZXa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="493"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Последний шаг - уточните местоположение Вашей квартиры." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="B3F-o7-lbc">
+                                <rect key="frame" x="33" y="28" width="255" height="61"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ваше местоположение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAy-QO-nG1">
+                                <rect key="frame" x="33" y="172" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="locationMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="NqD-p2-8kE">
+                                <rect key="frame" x="33" y="201" width="20" height="27"/>
+                                <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Россия, Москва, Карамышевская  набережная, 56к2" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwM-Oc-sD6">
+                                <rect key="frame" x="66" y="192" width="234" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rectBackgroundForButtonFirstView.png" translatesAutoresizingMaskIntoConstraints="NO" id="WGK-qV-nLa">
+                                <rect key="frame" x="58" y="279" width="205" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="205" id="8dI-Vi-SwF"/>
+                                    <constraint firstAttribute="height" constant="56" id="ae0-uX-0XL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvA-Sr-rrn">
+                                <rect key="frame" x="59" y="279" width="203" height="56"/>
+                                <state key="normal" title="Сдать">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.60784313729999995" green="0.76470588240000004" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="0.76470588240000004" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZvA-Sr-rrn" firstAttribute="centerY" secondItem="WGK-qV-nLa" secondAttribute="centerY" id="Y99-0b-QJB"/>
+                            <constraint firstItem="ZvA-Sr-rrn" firstAttribute="centerX" secondItem="WGK-qV-nLa" secondAttribute="centerX" id="owc-cD-JnE"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="493"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCp-4X-hTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4502" y="-417.5"/>
+        </scene>
         <!--Room View Controller-->
         <scene sceneID="IXd-Zu-dME">
             <objects>
@@ -1200,6 +1268,7 @@
         <image name="krest.png" width="15" height="15"/>
         <image name="kvartira.jpg" width="1772" height="1181"/>
         <image name="leftArrow.png" width="15" height="15"/>
+        <image name="locationMark.png" width="28" height="42"/>
         <image name="menu.png" width="30" height="21"/>
         <image name="newPhotoButton.png" width="66" height="66"/>
         <image name="onRightArrow.png" width="29" height="29"/>

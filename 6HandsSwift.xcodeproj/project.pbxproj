@@ -65,6 +65,8 @@
 		DB9240101BA3522500CE57F3 /* newPhotoButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB92400F1BA3522500CE57F3 /* newPhotoButton@2x.png */; };
 		DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAF80721B8478CA00299913 /* TTRangeSlider.m */; };
 		DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB2DE241B7274B40076765A /* CalendarAndDate.m */; };
+		DBBF3A131BC86E2000DDA567 /* locationMark.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBF3A121BC86E2000DDA567 /* locationMark.png */; settings = {ASSET_TAGS = (); }; };
+		DBBF3A151BC86FE400DDA567 /* PostThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF3A141BC86FE400DDA567 /* PostThirdViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DBBF9F1A1B8B4A6D00E31A44 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */; };
 		DBBF9F1C1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */; };
 		DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */; };
@@ -174,6 +176,8 @@
 		DBAF80731B8478CA00299913 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = 6HandsSwift/TTRangeSlider/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
 		DBB2DE231B7274B40076765A /* CalendarAndDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarAndDate.h; path = 6HandsSwift/CalendarAndDate.h; sourceTree = "<group>"; };
 		DBB2DE241B7274B40076765A /* CalendarAndDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarAndDate.m; path = 6HandsSwift/CalendarAndDate.m; sourceTree = "<group>"; };
+		DBBF3A121BC86E2000DDA567 /* locationMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = locationMark.png; path = Design/locationMark.png; sourceTree = "<group>"; };
+		DBBF3A141BC86FE400DDA567 /* PostThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostThirdViewController.swift; sourceTree = "<group>"; };
 		DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollTableViewCell.swift; sourceTree = "<group>"; };
 		DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -341,6 +345,7 @@
 		DB70BBA61B72548B00FECB99 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				DBBF3A121BC86E2000DDA567 /* locationMark.png */,
 				DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */,
 				DBD3C3CE1B8722740046655A /* Test */,
 				DB851C261B9F438200984A2C /* krest@2x.png */,
@@ -399,6 +404,7 @@
 				DB9240091BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift */,
 				DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */,
 				DBC6ACA51BC4FF4A00413983 /* PostSecondViewController.swift */,
+				DBBF3A141BC86FE400DDA567 /* PostThirdViewController.swift */,
 			);
 			name = "New Post";
 			sourceTree = "<group>";
@@ -540,6 +546,7 @@
 			files = (
 				DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */,
 				DBD3C3C51B86949D0046655A /* kvartira.jpg in Resources */,
+				DBBF3A131BC86E2000DDA567 /* locationMark.png in Resources */,
 				DB459D781BBAE02A0062C525 /* welcomeBackground@3x.png in Resources */,
 				DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */,
 				DB851C2D1B9F49C100984A2C /* imageBackgroundFillPost@2x.png in Resources */,
@@ -624,6 +631,7 @@
 				DB8B91DF1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift in Sources */,
 				DB92400A1BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift in Sources */,
 				DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */,
+				DBBF3A151BC86FE400DDA567 /* PostThirdViewController.swift in Sources */,
 				DB459EC01BBC3B0B0062C525 /* AFURLConnectionOperation.m in Sources */,
 				DB8289DA1B8CA6F90012E787 /* MapTableViewCell.swift in Sources */,
 				DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */,

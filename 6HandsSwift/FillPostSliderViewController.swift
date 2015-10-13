@@ -16,6 +16,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     
     @IBOutlet weak var arrowBackButton: UIButton!
     var photoArray = []
+    var indexPage: Int = 0
     
     var collection: UICollectionView!
     
@@ -46,10 +47,15 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         scroll.addSubview(firstVC.view)
         
         
-        var secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SecondPostVC") as! PostSecondViewController
+        let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SecondPostVC") as! PostSecondViewController
+        
+        let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ThirdVC") as! PostThirdViewController
         
         secondVC.view.frame.origin = CGPointMake(self.view.frame.width, offsetTopScroll)
+        thirdVC.view.frame.origin = CGPointMake(self.view.frame.width * 2, offsetTopScroll)
+
         scroll.addSubview(secondVC.view)
+        scroll.addSubview(thirdVC.view)
         
         arrowBackButton.hidden = true
         
@@ -112,6 +118,21 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     
     @IBAction func nextButtonAction(sender: UIButton) {
 
+        
+        if index > 2 {
+            return
+        }
+        
+        index++
+        
+        switch index {
+            case 1: stepLabel.text = "ШАГ 2 ИЗ 3"
+            case 2: stepLabel.text = "ШАГ 3 ИЗ 3"
+            default: stepLabel.text = "ШАГ 1 ИЗ 3"
+        }
+        
+        attributesForStepLabel()
+        
         let duration : Double = Double(scrollAnimationDuration) / Double(1000)
         
         UIView.animateWithDuration(duration, animations: { () -> Void in
