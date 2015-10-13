@@ -89,7 +89,10 @@ class PopTableViewController: UITableViewController {
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("RoomPage")
+        self.showDetailViewController(vc, sender: nil)
+        
         delegate?.didSelect("test")
         
         

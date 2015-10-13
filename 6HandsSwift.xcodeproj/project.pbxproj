@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6A69C01BCD7F8E00C9C39D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */; };
 		709685E21A0CCF585E7CBBC0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF5DE1114C461F85168160E /* libPods.a */; };
 		DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */; };
 		DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7CB1B80AAE70093B796 /* PopularTableViewController.swift */; };
@@ -27,15 +28,6 @@
 		DB0EA7F01B8223400093B796 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */; };
 		DB19566E1BAEC2E900A3C294 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */; };
 		DB459D781BBAE02A0062C525 /* welcomeBackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */; settings = {ASSET_TAGS = (); }; };
-		DB459EBB1BBC3B0B0062C525 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB459EA91BBC3B0B0062C525 /* AFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
-		DB459EBC1BBC3B0B0062C525 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB459EAB1BBC3B0B0062C525 /* AFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
-		DB459EBD1BBC3B0B0062C525 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB459EAD1BBC3B0B0062C525 /* AFHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
-		DB459EBE1BBC3B0B0062C525 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB459EB01BBC3B0B0062C525 /* AFNetworkReachabilityManager.m */; settings = {ASSET_TAGS = (); }; };
-		DB459EBF1BBC3B0B0062C525 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB459EB21BBC3B0B0062C525 /* AFSecurityPolicy.m */; settings = {ASSET_TAGS = (); }; };
-		DB459EC01BBC3B0B0062C525 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB459EB41BBC3B0B0062C525 /* AFURLConnectionOperation.m */; settings = {ASSET_TAGS = (); }; };
-		DB459EC11BBC3B0B0062C525 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DB459EB61BBC3B0B0062C525 /* AFURLRequestSerialization.m */; settings = {ASSET_TAGS = (); }; };
-		DB459EC21BBC3B0B0062C525 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DB459EB81BBC3B0B0062C525 /* AFURLResponseSerialization.m */; settings = {ASSET_TAGS = (); }; };
-		DB459EC31BBC3B0B0062C525 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB459EBA1BBC3B0B0062C525 /* AFURLSessionManager.m */; settings = {ASSET_TAGS = (); }; };
 		DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */; };
 		DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */; };
 		DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */; };
@@ -97,6 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B93BEC3411F8436BCB6F220 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8DF5DE1114C461F85168160E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
@@ -119,25 +112,6 @@
 		DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 		DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "welcomeBackground@3x.png"; path = "Design/welcomeBackground@3x.png"; sourceTree = "<group>"; };
-		DB459EA81BBC3B0B0062C525 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		DB459EA91BBC3B0B0062C525 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		DB459EAA1BBC3B0B0062C525 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		DB459EAB1BBC3B0B0062C525 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
-		DB459EAC1BBC3B0B0062C525 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		DB459EAD1BBC3B0B0062C525 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		DB459EAE1BBC3B0B0062C525 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		DB459EAF1BBC3B0B0062C525 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		DB459EB01BBC3B0B0062C525 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		DB459EB11BBC3B0B0062C525 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		DB459EB21BBC3B0B0062C525 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		DB459EB31BBC3B0B0062C525 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		DB459EB41BBC3B0B0062C525 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		DB459EB51BBC3B0B0062C525 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		DB459EB61BBC3B0B0062C525 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		DB459EB71BBC3B0B0062C525 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		DB459EB81BBC3B0B0062C525 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		DB459EB91BBC3B0B0062C525 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		DB459EBA1BBC3B0B0062C525 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
 		DB4CC2DB1B7B70A000480DC0 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6A69C01BCD7F8E00C9C39D /* Foundation.framework in Frameworks */,
 				709685E21A0CCF585E7CBBC0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,37 +204,11 @@
 		BDFD6222745C6688FFADAE11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */,
 				DB9240111BA3F45700CE57F3 /* Security.framework */,
 				8DF5DE1114C461F85168160E /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DB459EA71BBC3B0B0062C525 /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				DB459EA81BBC3B0B0062C525 /* AFHTTPRequestOperation.h */,
-				DB459EA91BBC3B0B0062C525 /* AFHTTPRequestOperation.m */,
-				DB459EAA1BBC3B0B0062C525 /* AFHTTPRequestOperationManager.h */,
-				DB459EAB1BBC3B0B0062C525 /* AFHTTPRequestOperationManager.m */,
-				DB459EAC1BBC3B0B0062C525 /* AFHTTPSessionManager.h */,
-				DB459EAD1BBC3B0B0062C525 /* AFHTTPSessionManager.m */,
-				DB459EAE1BBC3B0B0062C525 /* AFNetworking.h */,
-				DB459EAF1BBC3B0B0062C525 /* AFNetworkReachabilityManager.h */,
-				DB459EB01BBC3B0B0062C525 /* AFNetworkReachabilityManager.m */,
-				DB459EB11BBC3B0B0062C525 /* AFSecurityPolicy.h */,
-				DB459EB21BBC3B0B0062C525 /* AFSecurityPolicy.m */,
-				DB459EB31BBC3B0B0062C525 /* AFURLConnectionOperation.h */,
-				DB459EB41BBC3B0B0062C525 /* AFURLConnectionOperation.m */,
-				DB459EB51BBC3B0B0062C525 /* AFURLRequestSerialization.h */,
-				DB459EB61BBC3B0B0062C525 /* AFURLRequestSerialization.m */,
-				DB459EB71BBC3B0B0062C525 /* AFURLResponseSerialization.h */,
-				DB459EB81BBC3B0B0062C525 /* AFURLResponseSerialization.m */,
-				DB459EB91BBC3B0B0062C525 /* AFURLSessionManager.h */,
-				DB459EBA1BBC3B0B0062C525 /* AFURLSessionManager.m */,
-			);
-			name = AFNetworking;
-			path = "../../../Downloads/AFNetworking-master-3/AFNetworking";
 			sourceTree = "<group>";
 		};
 		DB4CC2DA1B7B705400480DC0 /* Menu */ = {
@@ -384,7 +333,6 @@
 		DB70BBB31B7263D100FECB99 /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				DB459EA71BBC3B0B0062C525 /* AFNetworking */,
 				DBAF80711B8478CA00299913 /* TTRangeSlider.h */,
 				DBAF80721B8478CA00299913 /* TTRangeSlider.m */,
 				DBAF80731B8478CA00299913 /* TTRangeSliderDelegate.h */,
@@ -632,7 +580,6 @@
 				DB92400A1BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift in Sources */,
 				DB4CC2DC1B7B70A000480DC0 /* MainNavigationViewController.swift in Sources */,
 				DBBF3A151BC86FE400DDA567 /* PostThirdViewController.swift in Sources */,
-				DB459EC01BBC3B0B0062C525 /* AFURLConnectionOperation.m in Sources */,
 				DB8289DA1B8CA6F90012E787 /* MapTableViewCell.swift in Sources */,
 				DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */,
 				DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */,
@@ -640,7 +587,6 @@
 				DBEC634A1BC0B9F900347679 /* NewPostsViewController.swift in Sources */,
 				DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */,
 				DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */,
-				DB459EC11BBC3B0B0062C525 /* AFURLRequestSerialization.m in Sources */,
 				DBF00DF21B77B2FC00209549 /* MainTablesViewController.swift in Sources */,
 				DBD3C3BE1B85FAB20046655A /* PopTableViewController.swift in Sources */,
 				DB0EA7F01B8223400093B796 /* RightMenuViewController.swift in Sources */,
@@ -652,20 +598,13 @@
 				DBD3C3D11B8753770046655A /* InfoRoomTableViewCell.swift in Sources */,
 				DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */,
 				DB19566E1BAEC2E900A3C294 /* CollectionViewCell.swift in Sources */,
-				DB459EBF1BBC3B0B0062C525 /* AFSecurityPolicy.m in Sources */,
-				DB459EC31BBC3B0B0062C525 /* AFURLSessionManager.m in Sources */,
 				DB70BB781B7253AC00FECB99 /* AppDelegate.swift in Sources */,
-				DB459EBC1BBC3B0B0062C525 /* AFHTTPRequestOperationManager.m in Sources */,
 				DB0EA7DC1B81D7160093B796 /* LGDrawer.m in Sources */,
 				DBD3C3BB1B85C12E0046655A /* RoomPageViewController.swift in Sources */,
 				DBC6ACA61BC4FF4A00413983 /* PostSecondViewController.swift in Sources */,
-				DB459EC21BBC3B0B0062C525 /* AFURLResponseSerialization.m in Sources */,
 				DB8B91E11B8F677D0019EBF4 /* MultiTableViewCell.swift in Sources */,
 				DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */,
-				DB459EBD1BBC3B0B0062C525 /* AFHTTPSessionManager.m in Sources */,
-				DB459EBE1BBC3B0B0062C525 /* AFNetworkReachabilityManager.m in Sources */,
 				DBD3C3D31B8753F30046655A /* DescriptionTableViewCell.swift in Sources */,
-				DB459EBB1BBC3B0B0062C525 /* AFHTTPRequestOperation.m in Sources */,
 				DB4CC2DE1B7BACC600480DC0 /* LeftMenuViewController.swift in Sources */,
 				DB0EA7D61B80B4790093B796 /* SimpleTableViewCell.swift in Sources */,
 				DB0EA7D11B80AAF50093B796 /* NewTableViewController.swift in Sources */,

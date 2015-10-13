@@ -85,13 +85,12 @@ class PopularTableViewController: UITableViewController {
         
 //        let mainVC = storyboard?.instantiateViewControllerWithIdentifier("Main") as! UIViewController
 //        mainVC.pushRoomPage()
-        
-        performSegueWithIdentifier("toRoomPage", sender: self)
+        //performSegueWithIdentifier("toRoomPage", sender: self)
 
-        
-//        let sb = UIStoryboard(name: "Main", bundle: nil)
-//        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("vcTemp") as! UIViewController
-//        self.showDetailViewController(vc, sender: nil)
+
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("RoomPage")
+        self.showDetailViewController(vc, sender: nil)
         
     }
     

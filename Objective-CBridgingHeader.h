@@ -10,5 +10,3 @@
 #import "LGDrawer.h"
 #import "TTRangeSlider.h"
 #import "TTRangeSliderDelegate.h"
-#import "AFNetworking.h"
-#import "AFSecurityPolicy.h"

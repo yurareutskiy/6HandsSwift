@@ -117,21 +117,16 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     }
     
     @IBAction func nextButtonAction(sender: UIButton) {
-
         
-        if index > 2 {
+
+        if index >= 2 {
             return
         }
         
-        index++
         
-        switch index {
-            case 1: stepLabel.text = "ШАГ 2 ИЗ 3"
-            case 2: stepLabel.text = "ШАГ 3 ИЗ 3"
-            default: stepLabel.text = "ШАГ 1 ИЗ 3"
-        }
         
-        attributesForStepLabel()
+
+        
         
         let duration : Double = Double(scrollAnimationDuration) / Double(1000)
         
@@ -140,6 +135,15 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
             let xOffset : CGFloat = CGFloat(self.index) * self.scroll.frame.width
             self.scroll.setContentOffset(CGPoint(x: xOffset, y: self.scroll.contentOffset.y), animated: false)
         })
+        
+        switch index {
+        case 0: stepLabel.text = "ШАГ 1 ИЗ 3"
+        case 1: stepLabel.text = "ШАГ 2 ИЗ 3"
+        case 2: stepLabel.text = "ШАГ 3 ИЗ 3"
+        default: stepLabel.text = ""
+        }
+        attributesForStepLabel()
+        print(index)
     }
     
 }

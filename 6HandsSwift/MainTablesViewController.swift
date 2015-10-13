@@ -257,6 +257,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         self.sideMenuController()?.rightSideMenu?.toggleMenu()
 
     }
+    
+    
     /*
     // MARK: - Navigation
 
