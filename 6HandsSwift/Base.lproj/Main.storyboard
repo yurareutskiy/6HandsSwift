@@ -353,12 +353,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="MCg-8f-nBE" kind="push" identifier="toRoomPage" id="1dG-0D-jif"/>
+                        <segue destination="MCg-8f-nBE" kind="push" identifier="toRoomPage" id="oaH-uO-PsH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yx7-65-JfD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442" y="395"/>
+            <point key="canvasLocation" x="2422" y="395"/>
         </scene>
         <!--Pop Table View Controller-->
         <scene sceneID="lqC-Ks-71d">
@@ -744,32 +744,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezR-Ya-Lzr">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <animations/>
-                                <items/>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" backIndicatorImage="sixHandsLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Evw-p0-2ht">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <animations/>
-                                <items>
-                                    <navigationItem id="1tC-PU-ZOP">
-                                        <barButtonItem key="leftBarButtonItem" image="backButtonArrow.png" id="Hh9-wS-xFV">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Item" id="o0I-Gi-xlU">
-                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="btH-60-U12">
                                 <rect key="frame" x="0.0" y="64" width="320" height="447"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesCell" rowHeight="130" id="AK4-Ky-HQ9" customClass="ImageScrollTableViewCell" customModule="_HandsSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="130"/>
+                                        <rect key="frame" x="0.0" y="86" width="320" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AK4-Ky-HQ9" id="FlG-9h-2kL">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
@@ -822,7 +803,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoCell" rowHeight="40" id="IL0-6D-X7A" customClass="InfoTableViewCell" customModule="_HandsSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="152" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="216" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IL0-6D-X7A" id="yX1-lO-L9b">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
@@ -852,7 +833,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionCell" rowHeight="41" id="POq-v7-ba7">
-                                        <rect key="frame" x="0.0" y="192" width="320" height="41"/>
+                                        <rect key="frame" x="0.0" y="256" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="POq-v7-ba7" id="AC4-g0-GvH">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -862,7 +843,7 @@
                                         <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapCell" rowHeight="10" id="RbH-lS-Kow" customClass="MapTableViewCell" customModule="_HandsSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="233" width="320" height="10"/>
+                                        <rect key="frame" x="0.0" y="297" width="320" height="10"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RbH-lS-Kow" id="FH4-SE-WMG">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="9"/>
@@ -885,7 +866,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SellerCell" rowHeight="70" id="3Em-Qa-tLc" customClass="SellerProfileTableViewCell" customModule="_HandsSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="243" width="320" height="70"/>
+                                        <rect key="frame" x="0.0" y="307" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Em-Qa-tLc" id="bft-ja-GDK">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
@@ -942,7 +923,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" rowHeight="60" id="MHe-tZ-KuT">
-                                        <rect key="frame" x="0.0" y="313" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="377" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MHe-tZ-KuT" id="3SE-1S-o6m">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
@@ -952,7 +933,7 @@
                                         <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell" rowHeight="41" id="vD8-vV-WHz">
-                                        <rect key="frame" x="0.0" y="373" width="320" height="41"/>
+                                        <rect key="frame" x="0.0" y="437" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vD8-vV-WHz" id="K0h-Bi-G3N">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -978,10 +959,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jNH-aQ-BX0"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="navBar" destination="Evw-p0-2ht" id="HPs-LA-WJu"/>
                         <outlet property="table" destination="btH-60-U12" id="xGp-Hh-GDn"/>
                     </connections>
                 </viewController>
@@ -1001,8 +979,13 @@
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Opn-UO-5Gr">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
                     <connections>
-                        <segue destination="Nkc-gL-Tv5" kind="relationship" relationship="rootViewController" id="0R0-Q0-2Fl"/>
+                        <segue destination="Nkc-gL-Tv5" kind="relationship" relationship="rootViewController" id="78n-83-qlb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Za8-Ob-onY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1316,7 +1299,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backButtonArrow.png" width="30" height="30"/>
         <image name="blueColor.png" width="2050" height="1100"/>
         <image name="empryStar.png" width="32" height="32"/>
         <image name="imageBackgroundFillPost.png" width="757" height="568"/>

@@ -91,9 +91,18 @@ class PopTableViewController: UITableViewController {
         
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("RoomPage")
-        self.showDetailViewController(vc, sender: nil)
+        //navigationController?.showViewController(vc, sender: nil)
+        navigationController?.showDetailViewController(vc, sender: nil)
+        //self.showDetailViewController(vc, sender: nil)
+        //self.showViewController(vc, sender: nil)
+
         
-        delegate?.didSelect("test")
+        //performSegueWithIdentifier("toRoomPage", sender: self)
+        
+//        let vc: MainTablesViewController = MainTablesViewController()
+//        vc.makeSegueToRoomPage()
+        //delegate?.didSelect("test")
+        
         
         
         
@@ -101,12 +110,6 @@ class PopTableViewController: UITableViewController {
         //        mainVC.pushRoomPage()
         
 //        performSegueWithIdentifier("segue", sender: self)
-        
-        
-        //        let sb = UIStoryboard(name: "Main", bundle: nil)
-        //        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("vcTemp") as! UIViewController
-        //        self.showDetailViewController(vc, sender: nil)
-        
     }
     
     func configure(cell: SimpleTableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {

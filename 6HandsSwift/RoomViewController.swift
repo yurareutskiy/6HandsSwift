@@ -16,7 +16,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     var countParameters = 0
     var forLog: NSString = "temp"
     
-    @IBOutlet weak var navBar: UINavigationBar!
+    //@IBOutlet weak var navBar: UINavigationBar!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,8 +37,8 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         imgView.frame = CGRect(x: 13, y: 0, width: 80, height: 20)
         imgView.contentMode = UIViewContentMode.ScaleAspectFit
-        navBar.topItem?.titleView = imgView
-        navBar.frame = CGRectMake(0, 0, view.frame.width, 64)
+//        navBar.topItem?.titleView = imgView
+//        navBar.frame = CGRectMake(0, 0, view.frame.width, 64)
         
         
         infoParameters = [["Общая", "100 м²"], ["Кухня", "25 м²"], ["Комнаты","75 м²"], ["Санузел","Совмещенный"], ["Балкон","Лоджия"], ["Мебель","Есть"], ["Телефон","Есть"], ["Plus","Можно с детьми"], ["Minus","Без животных"], ["Description", "После рабочего дня нам хочется расслабиться перед телевизором или компьютером, посмотреть что-то или поиграть."]]

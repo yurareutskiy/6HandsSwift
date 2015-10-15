@@ -243,14 +243,23 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     
     func makeSegueToRoomPage() {
         
-    
-        let vc: RoomViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RoomPage") as! RoomViewController
-        vc.forLog = "other"
-        navigationController?.pushViewController(vc, animated: true)
+        print("im here")
+        
+//        let sb = UIStoryboard(name: "Main", bundle: nil)
+//        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("RoomPage")
+//        self.showDetailViewController(vc, sender: nil)
+        
+        //self.showViewController(vc, sender: nil)
+        
+        let vc: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RoomPage") as! RoomViewController
+        //vc.forLog = "other"
+        self.showViewController(vc, sender: nil)
+        //navigationController?.pushViewController(vc, animated: true)
     }
 
     func didSelect(text:String) {
         print(text)
+        performSegueWithIdentifier("toRoomPage", sender: nil)
     }
     
     @IBAction func filterPressed(sender: UIBarButtonItem) {
