@@ -127,7 +127,7 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate, GMSMapViewDelegate {
                     let geocodingResultsData = NSData(contentsOfURL: geocodeURL!)
 
                 
-                    let dictionary: Dictionary<NSObject, AnyObject> = try NSJSONSerialization.JSONObjectWithData(geocodingResultsData!, options: NSJSONReadingOptions.MutableContainers) as! Dictionary<NSObject, AnyObject>
+                    let dictionary: Dictionary <NSObject, AnyObject> = try NSJSONSerialization.JSONObjectWithData(geocodingResultsData!, options: NSJSONReadingOptions.MutableContainers) as! Dictionary<NSObject, AnyObject>
                 
                     print(dictionary.description)
 
@@ -146,9 +146,9 @@ class MapTableViewCell: UITableViewCell, MKMapViewDelegate, GMSMapViewDelegate {
                         
                         // Keep the most important values.
                         self.fetchedFormattedAddress = self.lookupAddressResults["formatted_address"] as! String
-                        let geometry = self.lookupAddressResults["geometry"]as!  Dictionary<NSObject, AnyObject>
-                        self.fetchedAddressLongitude = ((geometry["location"] as! Dictionary<NSObject, AnyObject>)["lng"] as! NSNumber).doubleValue
-                        self.fetchedAddressLatitude = ((geometry["location"] as! Dictionary<NSObject, AnyObject>)["lat"] as! NSNumber).doubleValue
+                        let geometry = self.lookupAddressResults["geometry"]as!  Dictionary <NSObject, AnyObject>
+                        self.fetchedAddressLongitude = ((geometry["location"] as! Dictionary <NSObject, AnyObject>)["lng"] as! NSNumber).doubleValue
+                        self.fetchedAddressLatitude = ((geometry["location"] as! Dictionary <NSObject, AnyObject>)["lat"] as! NSNumber).doubleValue
                         
                         completionHandler(status: status, success: true)
                     }

@@ -132,22 +132,32 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     }
     
     @IBAction func dismissAction(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func nextButtonAction(sender: UIButton) {
         
+        
         if index >= 2 {
+            
+            let alert = UIAlertView(title: "Квартира сдается", message: "Теперь можно продложить пользоваьбся нашим приложением", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
+            alert.show()
+            
             performSegueWithIdentifier("finish", sender: self)
             return
         }
         
         let duration : Double = Double(scrollAnimationDuration) / Double(1000)
         
+        UIView.animateWithDuration(duration) { () -> Void in
+        }
+        
         UIView.animateWithDuration(duration, animations: { () -> Void in
             self.index++
             let xOffset : CGFloat = CGFloat(self.index) * self.scroll.frame.width
             self.scroll.setContentOffset(CGPoint(x: xOffset, y: self.scroll.contentOffset.y), animated: false)
+            self.arrowBackButton.hidden = false
+
         })
         
         switch index {
@@ -159,6 +169,13 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         attributesForStepLabel()
     }
     
+    @IBAction func backAction(sender: UIButton) {
+        if index == 1 {
+            arrowBackButton.hidden = true
+        }
+        
+        
+    }
 }
 
 
