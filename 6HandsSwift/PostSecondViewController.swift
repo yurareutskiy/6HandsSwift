@@ -9,6 +9,7 @@
 import UIKit
 
 class PostSecondViewController: UIViewController {
+    @IBOutlet var fields: [UITextField]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,12 @@ class PostSecondViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
     }
     
 

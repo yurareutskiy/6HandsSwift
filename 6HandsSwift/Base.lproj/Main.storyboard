@@ -103,7 +103,7 @@
                         <outlet property="findRoomButton" destination="zcz-I0-Sfp" id="fYL-SM-RcH"/>
                         <outlet property="rentRoomButton" destination="cTo-52-h07" id="HbP-Oi-yMN"/>
                         <segue destination="clw-v9-lO6" kind="modal" identifier="FindRoom" id="foF-vG-QVs"/>
-                        <segue destination="JhB-7x-kJu" kind="modal" identifier="ToPostSegue" id="Uam-Mp-znH"/>
+                        <segue destination="BP6-6K-Xag" kind="modal" identifier="ToPostSegue" id="Uam-Mp-znH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -200,11 +200,12 @@
                         <outlet property="backgroundView" destination="IqW-V0-P6w" id="o57-cW-fgQ"/>
                         <outlet property="scroll" destination="hXP-aF-XpL" id="J5t-iG-asE"/>
                         <outlet property="stepLabel" destination="dGZ-Rf-HRG" id="DXY-zr-4dF"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="finish" animates="NO" id="Ya1-Ah-b1n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCw-ui-5eI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1970" y="-425"/>
+            <point key="canvasLocation" x="2502" y="-425"/>
         </scene>
         <!--New Post With Photos View Controller-->
         <scene sceneID="ocI-CP-U73">
@@ -328,7 +329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qz8-3o-MSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442" y="-425"/>
+            <point key="canvasLocation" x="2974" y="-425"/>
         </scene>
         <!--Main Tables View Controller-->
         <scene sceneID="IFr-dZ-Lke">
@@ -468,16 +469,6 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3i6-VI-agV">
-                                <rect key="frame" x="147" y="83" width="41" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="CGB-cV-F7K"/>
-                                    <constraint firstAttribute="width" constant="41" id="HUf-vy-EZ9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Площадь (м²):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txn-p7-9uk">
                                 <rect key="frame" x="28" y="133" width="107" height="21"/>
                                 <animations/>
@@ -612,6 +603,16 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3i6-VI-agV">
+                                <rect key="frame" x="147" y="83" width="41" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CGB-cV-F7K"/>
+                                    <constraint firstAttribute="width" constant="41" id="HUf-vy-EZ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -652,10 +653,22 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="493"/>
+                    <connections>
+                        <outletCollection property="fields" destination="Prc-7a-Sxi" collectionClass="NSMutableArray" id="YEv-zw-RCI"/>
+                        <outletCollection property="fields" destination="chV-Zf-51N" collectionClass="NSMutableArray" id="GWE-xv-hpv"/>
+                        <outletCollection property="fields" destination="025-iU-Hnu" collectionClass="NSMutableArray" id="XvV-UT-xkZ"/>
+                        <outletCollection property="fields" destination="jR2-bH-kal" collectionClass="NSMutableArray" id="ySi-GV-0pl"/>
+                        <outletCollection property="fields" destination="6oc-8z-pkT" collectionClass="NSMutableArray" id="AQy-AD-WxO"/>
+                        <outletCollection property="fields" destination="wdw-Ws-lwZ" collectionClass="NSMutableArray" id="aAU-ds-ZEu"/>
+                        <outletCollection property="fields" destination="3dD-pF-bcN" collectionClass="NSMutableArray" id="b9j-Mk-qHb"/>
+                        <outletCollection property="fields" destination="gbg-xI-vVh" collectionClass="NSMutableArray" id="0fa-yc-RWJ"/>
+                        <outletCollection property="fields" destination="dn2-ea-hgy" collectionClass="NSMutableArray" id="EwA-vl-rQL"/>
+                        <outletCollection property="fields" destination="3i6-VI-agV" collectionClass="NSMutableArray" id="tbF-pQ-3RB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJt-x8-lDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2946" y="-425.5"/>
+            <point key="canvasLocation" x="3478" y="-425.5"/>
         </scene>
         <!--ThirdVC-->
         <scene sceneID="xrm-YE-VPI">
@@ -730,7 +743,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCp-4X-hTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3448" y="-425.5"/>
+            <point key="canvasLocation" x="3980" y="-425.5"/>
         </scene>
         <!--Room View Controller-->
         <scene sceneID="IXd-Zu-dME">
@@ -990,7 +1003,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Za8-Ob-onY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1978" y="395"/>
+            <point key="canvasLocation" x="1970" y="395"/>
         </scene>
         <!--LeftMenu-->
         <scene sceneID="1tr-6u-85T">
@@ -1108,7 +1121,7 @@
                         <outlet property="chatsCountLabel" destination="H3n-7u-QT3" id="Xbw-0D-3em"/>
                         <outlet property="manWantButton" destination="Jhu-EL-HS5" id="wSm-XS-kdy"/>
                         <outlet property="photoUserImageView" destination="CtP-qs-lqH" id="dCR-pM-rpF"/>
-                        <segue destination="JhB-7x-kJu" kind="modal" identifier="WantRent" id="JAj-YE-RCB"/>
+                        <segue destination="BP6-6K-Xag" kind="modal" identifier="WantRent" id="JAj-YE-RCB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfG-Ig-stS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1296,6 +1309,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WnO-qh-so8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2442" y="1192"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qI9-vN-EuR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="BP6-6K-Xag" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kOH-54-Jhk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JhB-7x-kJu" kind="relationship" relationship="rootViewController" id="qYE-h5-kxp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nn-os-2EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1970" y="-425"/>
         </scene>
     </scenes>
     <resources>

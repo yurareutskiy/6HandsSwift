@@ -8,11 +8,13 @@
 
 import UIKit
 
-class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate {
 
     @IBOutlet weak var stepLabel: UILabel!
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var scroll: UIScrollView!
+    
+    var secondVC: PostSecondViewController?
     
     @IBOutlet weak var arrowBackButton: UIButton!
     var photoArray = []
@@ -31,6 +33,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         photoArray = [UIImage(named: "kvartira.jpg")!, UIImage(named: "kvartira2.jpg")!]
 
         
+        
         attributesForStepLabel()
         
         let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FirstPostVC") as! NewPostWithPhotosViewController
@@ -46,28 +49,44 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         
         scroll.addSubview(firstVC.view)
         
-        
-        let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SecondPostVC") as! PostSecondViewController
+        secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SecondPostVC") as! PostSecondViewController
         
         let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ThirdVC") as! PostThirdViewController
         
-        secondVC.view.frame.origin = CGPointMake(self.view.frame.width, offsetTopScroll)
+        secondVC!.view.frame.origin = CGPointMake(self.view.frame.width, offsetTopScroll)
         thirdVC.view.frame.origin = CGPointMake(self.view.frame.width * 2, offsetTopScroll)
-
-        scroll.addSubview(secondVC.view)
+        
+        scroll.addSubview(secondVC!.view)
         scroll.addSubview(thirdVC.view)
         
         arrowBackButton.hidden = true
-        
         
 //        vc.button.addTarget(self, action: "testFunc", forControlEvents: UIControlEvents.TouchUpInside)
 
         
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        for field in secondVC!.fields {
+            field.delegate = self
+        }
+
+    }
+    
+//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        
+//        view.endEditing(true)
+//        super.touchesBegan(touches, withEvent: event)
+//    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
     }
     
     func addPhoto() {
@@ -118,15 +137,10 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     
     @IBAction func nextButtonAction(sender: UIButton) {
         
-
         if index >= 2 {
+            performSegueWithIdentifier("finish", sender: self)
             return
         }
-        
-        
-        
-
-        
         
         let duration : Double = Double(scrollAnimationDuration) / Double(1000)
         

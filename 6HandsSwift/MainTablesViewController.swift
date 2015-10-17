@@ -155,6 +155,7 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
     //MARK: CAPSPageMenuDelegate
     
