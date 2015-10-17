@@ -9,7 +9,7 @@
 import UIKit
 
 
-class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTableViewDelegate {
+class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTableViewDelegate, UITableViewDelegate {
 
     var widthMenu: CGFloat?
     var widthView: CGFloat?
@@ -90,6 +90,9 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         
         newVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as? PopTableViewController
         newVC!.delegate? = self
+        newVC!.tableView.delegate = self
+        
+        
 //        var newVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as! PopTableViewController
         newVC!.title = "Новое"
         

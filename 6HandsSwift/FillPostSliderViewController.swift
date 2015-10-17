@@ -157,7 +157,6 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         default: stepLabel.text = ""
         }
         attributesForStepLabel()
-        print(index)
     }
     
 }

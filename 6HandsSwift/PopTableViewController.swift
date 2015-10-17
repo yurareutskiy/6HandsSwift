@@ -16,7 +16,6 @@ import UIKit
 class PopTableViewController: UITableViewController {
 
     weak var delegate : PopTableViewDelegate?
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,27 +88,13 @@ class PopTableViewController: UITableViewController {
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("RoomPage")
-        //navigationController?.showViewController(vc, sender: nil)
-        navigationController?.showDetailViewController(vc, sender: nil)
-        //self.showDetailViewController(vc, sender: nil)
-        //self.showViewController(vc, sender: nil)
+//        let sb = UIStoryboard(name: "Main", bundle: nil)
+//        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("RoomPage")
+//        navigationController?.showDetailViewController(vc, sender: nil)
 
         
-        //performSegueWithIdentifier("toRoomPage", sender: self)
-        
-//        let vc: MainTablesViewController = MainTablesViewController()
-//        vc.makeSegueToRoomPage()
-        //delegate?.didSelect("test")
-        
-        
-        
-        
-        //        let mainVC = storyboard?.instantiateViewControllerWithIdentifier("Main") as! UIViewController
-        //        mainVC.pushRoomPage()
-        
-//        performSegueWithIdentifier("segue", sender: self)
+        performSegueWithIdentifier("toRoomPage", sender: self)
+
     }
     
     func configure(cell: SimpleTableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {

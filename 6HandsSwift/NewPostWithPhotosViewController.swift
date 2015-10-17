@@ -51,13 +51,6 @@ class NewPostWithPhotosViewController: UIViewController {
     }
     
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
-        
-        view.endEditing(true)
-        super.touchesBegan(touches, withEvent: event)
-    }
-    
-    
 //    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 ////        return photoArray.count + 1
 //        return 30
