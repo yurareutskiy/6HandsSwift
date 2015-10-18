@@ -18,6 +18,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     
     var rightItem: UIBarButtonItem?
     var leftItem: UIBarButtonItem?
+    
+    var controllers = [UIViewController?](count: 2, repeatedValue: nil)
 
     
     var slider : CAPSPageMenu?
@@ -92,6 +94,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         newVC!.delegate? = self
         //newVC!.tableView.delegate = self
         
+        self.navigationController?.addChildViewController(newVC!)
+        
         
 //        var newVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as! PopTableViewController
         newVC!.title = "Новое"
@@ -129,13 +133,11 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         view.addSubview(rightViewClear!)
         viewClear?.hidden = true
         
-        
+
         let ncArray = navigationController?.viewControllers
         print(ncArray?.description)
         
-//        performSegueWithIdentifier("toRoomPage", sender: self)
-
-        
+         //performSegueWithIdentifier("toRoomPage", sender: self)
         
     }
     
@@ -157,6 +159,10 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func toPageMenu(){
+        performSegueWithIdentifier("toRoomPage", sender: self)
     }
 
     

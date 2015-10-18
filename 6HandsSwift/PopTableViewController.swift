@@ -22,6 +22,8 @@ class PopTableViewController: UITableViewController {
 
         
         self.tableView.registerNib(UINib(nibName: "SimpleTableViewCell", bundle: nil), forCellReuseIdentifier: "TableCell")
+        
+
 
         
         // Uncomment the following line to preserve selection between presentations
@@ -88,8 +90,17 @@ class PopTableViewController: UITableViewController {
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
-        let vc = MainTablesViewController()
-        vc.performSegueWithIdentifier("toRoomPage", sender: self)
+//        let vc = MainTablesViewController()
+//        vc.performSegueWithIdentifier("toRoomPage", sender: self)
+//        let vc = MainTablesViewController()
+//        vc.toPageMenu()
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("RoomPage") as! RoomViewController
+        //vc.setYourProperty(someDictionaryHere) // I'm not so sure about this, I'm new in Swift too :)
+        //self.presentViewController(vc, animated: true, completion: nil)
+        self.performSegueWithIdentifier("toRoomPage", sender: self)
+        //self.navigationController?.pushViewController(vc, animated: true)
 
     }
     
