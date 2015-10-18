@@ -13,6 +13,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     @IBOutlet weak var stepLabel: UILabel!
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var scroll: UIScrollView!
+    @IBOutlet weak var nextButton: UIButton!
     
     var secondVC: PostSecondViewController?
     
@@ -129,6 +130,36 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         return cell
     }
     @IBAction func backButtonAction(sender: AnyObject) {
+    
+        if index != 1{
+            nextButton.setTitle("далее", forState: UIControlState.Normal)
+            nextButton.imageEdgeInsets.right = -77.0
+        }
+        
+        let duration : Double = Double(scrollAnimationDuration) / Double(1000)
+        
+        UIView.animateWithDuration(duration) { () -> Void in
+        }
+        
+        UIView.animateWithDuration(duration, animations: { () -> Void in
+            self.index--
+            let xOffset : CGFloat = CGFloat(self.index) * self.scroll.frame.width
+            self.scroll.setContentOffset(CGPoint(x: xOffset, y: self.scroll.contentOffset.y), animated: false)
+            self.arrowBackButton.hidden = false
+            
+        })
+        
+        if index == 0{
+            self.arrowBackButton.hidden = true
+        }
+    
+        switch index {
+        case 0: stepLabel.text = "ШАГ 1 ИЗ 3"
+        case 1: stepLabel.text = "ШАГ 2 ИЗ 3"
+        case 2: stepLabel.text = "ШАГ 3 ИЗ 3"
+        default: stepLabel.text = ""
+        }
+        attributesForStepLabel()
     }
     
     @IBAction func dismissAction(sender: AnyObject) {
@@ -140,11 +171,14 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         
         if index >= 2 {
             
-            let alert = UIAlertView(title: "Квартира сдается", message: "Теперь можно продложить пользоваьбся нашим приложением", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
+            let alert = UIAlertView(title: "Квартира сдается", message: "Теперь можно продолжить пользоваться нашим приложением", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
             alert.show()
             
             performSegueWithIdentifier("finish", sender: self)
             return
+        } else if index == 1{
+            nextButton.setTitle("закончить регистрацию", forState: UIControlState.Normal)
+            nextButton.imageEdgeInsets.right = -225.0
         }
         
         let duration : Double = Double(scrollAnimationDuration) / Double(1000)

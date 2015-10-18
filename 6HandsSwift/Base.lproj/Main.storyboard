@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B22c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -199,6 +199,7 @@
                     <connections>
                         <outlet property="arrowBackButton" destination="8MF-Bc-vyr" id="kD5-ci-eTC"/>
                         <outlet property="backgroundView" destination="IqW-V0-P6w" id="o57-cW-fgQ"/>
+                        <outlet property="nextButton" destination="Z6d-uu-DGh" id="XiL-7H-WuM"/>
                         <outlet property="scroll" destination="hXP-aF-XpL" id="J5t-iG-asE"/>
                         <outlet property="stepLabel" destination="dGZ-Rf-HRG" id="DXY-zr-4dF"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="finish" animates="NO" id="Ya1-Ah-b1n"/>
@@ -376,7 +377,7 @@
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z3p-71-60f" id="5HP-Iw-mpm">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -416,7 +417,7 @@
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gQG-i2-LLZ" id="D7y-6t-pFv">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -655,16 +656,13 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="493"/>
                     <connections>
-                        <outletCollection property="fields" destination="Prc-7a-Sxi" collectionClass="NSMutableArray" id="YEv-zw-RCI"/>
-                        <outletCollection property="fields" destination="chV-Zf-51N" collectionClass="NSMutableArray" id="GWE-xv-hpv"/>
-                        <outletCollection property="fields" destination="025-iU-Hnu" collectionClass="NSMutableArray" id="XvV-UT-xkZ"/>
-                        <outletCollection property="fields" destination="jR2-bH-kal" collectionClass="NSMutableArray" id="ySi-GV-0pl"/>
-                        <outletCollection property="fields" destination="6oc-8z-pkT" collectionClass="NSMutableArray" id="AQy-AD-WxO"/>
-                        <outletCollection property="fields" destination="wdw-Ws-lwZ" collectionClass="NSMutableArray" id="aAU-ds-ZEu"/>
-                        <outletCollection property="fields" destination="3dD-pF-bcN" collectionClass="NSMutableArray" id="b9j-Mk-qHb"/>
-                        <outletCollection property="fields" destination="gbg-xI-vVh" collectionClass="NSMutableArray" id="0fa-yc-RWJ"/>
-                        <outletCollection property="fields" destination="dn2-ea-hgy" collectionClass="NSMutableArray" id="EwA-vl-rQL"/>
-                        <outletCollection property="fields" destination="3i6-VI-agV" collectionClass="NSMutableArray" id="tbF-pQ-3RB"/>
+                        <outletCollection property="fields" destination="3i6-VI-agV" collectionClass="NSMutableArray" id="3gt-QU-97j"/>
+                        <outletCollection property="fields" destination="jR2-bH-kal" collectionClass="NSMutableArray" id="XpN-Np-VQj"/>
+                        <outletCollection property="fields" destination="6oc-8z-pkT" collectionClass="NSMutableArray" id="MFq-vq-jqf"/>
+                        <outletCollection property="fields" destination="wdw-Ws-lwZ" collectionClass="NSMutableArray" id="SQZ-po-BYC"/>
+                        <outletCollection property="fields" destination="3dD-pF-bcN" collectionClass="NSMutableArray" id="90Y-e3-XkX"/>
+                        <outletCollection property="fields" destination="gbg-xI-vVh" collectionClass="NSMutableArray" id="RzX-Kn-U1H"/>
+                        <outletCollection property="fields" destination="dn2-ea-hgy" collectionClass="NSMutableArray" id="9Kb-hy-rUa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJt-x8-lDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -767,7 +765,7 @@
                                         <rect key="frame" x="0.0" y="86" width="320" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AK4-Ky-HQ9" id="FlG-9h-2kL">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kvartira.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ckw-42-ZW8">
@@ -820,7 +818,7 @@
                                         <rect key="frame" x="0.0" y="216" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IL0-6D-X7A" id="yX1-lO-L9b">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Общая" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElJ-Tg-yAY">
@@ -850,7 +848,7 @@
                                         <rect key="frame" x="0.0" y="256" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="POq-v7-ba7" id="AC4-g0-GvH">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="40.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -860,7 +858,7 @@
                                         <rect key="frame" x="0.0" y="297" width="320" height="10"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RbH-lS-Kow" id="FH4-SE-WMG">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="9.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="9"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cj6-Cd-L4Q" customClass="GMSMapView">
@@ -883,7 +881,7 @@
                                         <rect key="frame" x="0.0" y="307" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Em-Qa-tLc" id="bft-ja-GDK">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBT-8O-6Oa">
@@ -940,7 +938,7 @@
                                         <rect key="frame" x="0.0" y="377" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MHe-tZ-KuT" id="3SE-1S-o6m">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -950,7 +948,7 @@
                                         <rect key="frame" x="0.0" y="437" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vD8-vV-WHz" id="K0h-Bi-G3N">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="40.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
