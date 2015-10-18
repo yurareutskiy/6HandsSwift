@@ -87,13 +87,9 @@ class PopTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
-//        let sb = UIStoryboard(name: "Main", bundle: nil)
-//        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("RoomPage")
-//        navigationController?.showDetailViewController(vc, sender: nil)
 
-        
-        performSegueWithIdentifier("toRoomPage", sender: self)
+        let vc = MainTablesViewController()
+        vc.performSegueWithIdentifier("toRoomPage", sender: self)
 
     }
     

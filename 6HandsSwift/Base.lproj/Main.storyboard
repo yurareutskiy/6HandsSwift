@@ -356,7 +356,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="MCg-8f-nBE" kind="push" identifier="toRoomPage" id="oaH-uO-PsH"/>
+                        <segue destination="MCg-8f-nBE" kind="push" identifier="toRoomPage" id="ssh-1G-fjA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yx7-65-JfD" userLabel="First Responder" sceneMemberID="firstResponder"/>
