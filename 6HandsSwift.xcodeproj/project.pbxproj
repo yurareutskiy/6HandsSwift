@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4432421BD3D18900D5EC46 /* New2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4432411BD3D18900D5EC46 /* New2TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3A6A69C01BCD7F8E00C9C39D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */; };
 		709685E21A0CCF585E7CBBC0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF5DE1114C461F85168160E /* libPods.a */; };
 		DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */; };
@@ -89,6 +90,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A4432411BD3D18900D5EC46 /* New2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = New2TableViewController.swift; path = ../6HandsSwift/New2TableViewController.swift; sourceTree = "<group>"; };
 		3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B93BEC3411F8436BCB6F220 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8DF5DE1114C461F85168160E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,6 +278,7 @@
 		DB70BB8D1B7253AC00FECB99 /* 6HandsSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				3A4432411BD3D18900D5EC46 /* New2TableViewController.swift */,
 				DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */,
 				DB70BB901B7253AC00FECB99 /* _HandsSwiftTests.swift */,
 				DB70BB8E1B7253AC00FECB99 /* Supporting Files */,
@@ -608,6 +611,7 @@
 				DB4CC2DE1B7BACC600480DC0 /* LeftMenuViewController.swift in Sources */,
 				DB0EA7D61B80B4790093B796 /* SimpleTableViewCell.swift in Sources */,
 				DB0EA7D11B80AAF50093B796 /* NewTableViewController.swift in Sources */,
+				3A4432421BD3D18900D5EC46 /* New2TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

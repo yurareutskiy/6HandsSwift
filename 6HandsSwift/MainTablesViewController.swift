@@ -9,7 +9,7 @@
 import UIKit
 
 
-class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTableViewDelegate, UITableViewDelegate {
+class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTableViewDelegate, New2TableViewDelegate, UITableViewDelegate {
     
     var widthMenu: CGFloat?
     var widthView: CGFloat?
@@ -19,12 +19,11 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     var rightItem: UIBarButtonItem?
     var leftItem: UIBarButtonItem?
     
-    var controllers = [UIViewController?](count: 2, repeatedValue: nil)
-
-    
     var slider : CAPSPageMenu?
     
     var newVC: PopTableViewController?
+    var popularVC: New2TableViewController?
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,23 +88,21 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         
         let rectSlider = CGRect(x: 0, y: 0, width: width, height: height - 40)
         
-        
         newVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as? PopTableViewController
         newVC!.delegate? = self
-        //newVC!.tableView.delegate = self
         
-        self.navigationController?.addChildViewController(newVC!)
+        popularVC = storyboard?.instantiateViewControllerWithIdentifier("VC with New") as? New2TableViewController
+        popularVC!.delegate? = self
         
+        var arrayVC: [UIViewController] = []
         
-//        var newVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as! PopTableViewController
-        newVC!.title = "Новое"
+        let controller1 = PopTableViewController()
+        controller1.title = "Новое"
+        arrayVC.append(controller1)
         
-        let popularVC = storyboard?.instantiateViewControllerWithIdentifier("VC with Pop") as! PopTableViewController
-//        var popularVC: PopularTableViewController = PopularTableViewController(nibName: "PopularTableViewController", bundle: nil)
-
-        popularVC.title = "Популярное"
-        
-        let arrayVC: [UIViewController] = [newVC!, popularVC]
+        let controller2 = New2TableViewController()
+        controller2.title = "Популярное"
+        arrayVC.append(controller2)
         
         let parameters: [CAPSPageMenuOption] = [
             .ScrollMenuBackgroundColor(UIColor.whiteColor()),
@@ -122,7 +119,7 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
             .MenuItemSeparatorWidth(0),
         ]
                 
-        slider = CAPSPageMenu(viewControllers: arrayVC, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), pageMenuOptions: parameters)
+        slider = CAPSPageMenu(viewControllers: arrayVC, frame: rectSlider, pageMenuOptions: parameters)
         slider!.delegate = self
         
         self.view.addSubview(slider!.view)
@@ -133,7 +130,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         view.addSubview(rightViewClear!)
         viewClear?.hidden = true
         
-
+        self.navigationController?.addChildViewController(popularVC!)
+        self.navigationController?.addChildViewController(newVC!)
         let ncArray = navigationController?.viewControllers
         print(ncArray?.description)
         
@@ -160,11 +158,6 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func toPageMenu(){
-        performSegueWithIdentifier("toRoomPage", sender: self)
-    }
-
     
     //MARK: CAPSPageMenuDelegate
     
