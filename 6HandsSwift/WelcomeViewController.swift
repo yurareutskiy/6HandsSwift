@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     
     @IBOutlet var findRoomButton: UIButton!
     @IBOutlet var rentRoomButton: UIButton!
@@ -32,7 +32,20 @@ class WelcomeViewController: UIViewController {
     }
 
     @IBAction func rentRoomAction(sender: UIButton) {
-        performSegueWithIdentifier("ToPostSegue", sender: nil)
+        // Get view controllers and build the walkthrough
+        let stb = UIStoryboard(name: "Main", bundle: nil)
+        let walkthrough = stb.instantiateViewControllerWithIdentifier("Master") as! BWWalkthroughViewController
+        let page_one = stb.instantiateViewControllerWithIdentifier("page1") as UIViewController
+        let page_two = stb.instantiateViewControllerWithIdentifier("page2") as UIViewController
+        let page_three = stb.instantiateViewControllerWithIdentifier("page3") as UIViewController
+        
+        // Attach the pages to the master
+        walkthrough.delegate = self
+        walkthrough.addViewController(page_one)
+        walkthrough.addViewController(page_two)
+        walkthrough.addViewController(page_three)
+        
+        self.presentViewController(walkthrough, animated: true, completion: nil)
     }
     
     @IBAction func findRoomAction(sender: UIButton) {

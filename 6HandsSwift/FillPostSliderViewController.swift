@@ -40,6 +40,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FirstPostVC") as! NewPostWithPhotosViewController
         firstVC.view.frame.size.height = self.view.frame.height - 105
         firstVC.view.frame.origin.y = offsetTopScroll
+        firstVC.view.frame.size.width = self.view.frame.width
         navigationController?.navigationBarHidden = true
         
         collection = firstVC.collection
