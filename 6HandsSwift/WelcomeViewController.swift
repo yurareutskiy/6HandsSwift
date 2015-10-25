@@ -32,20 +32,20 @@ class WelcomeViewController: UIViewController, BWWalkthroughViewControllerDelega
     }
 
     @IBAction func rentRoomAction(sender: UIButton) {
-        // Get view controllers and build the walkthrough
-        let stb = UIStoryboard(name: "Main", bundle: nil)
-        let walkthrough = stb.instantiateViewControllerWithIdentifier("Master") as! BWWalkthroughViewController
-        let page_one = stb.instantiateViewControllerWithIdentifier("page1") as UIViewController
-        let page_two = stb.instantiateViewControllerWithIdentifier("page2") as UIViewController
-        let page_three = stb.instantiateViewControllerWithIdentifier("page3") as UIViewController
+//        // Get view controllers and build the walkthrough
+//        let stb = UIStoryboard(name: "Main", bundle: nil)
+//        let walkthrough = stb.instantiateViewControllerWithIdentifier("Master") as! BWWalkthroughViewController
+//        let page_one = stb.instantiateViewControllerWithIdentifier("page1") as UIViewController
+//        let page_two = stb.instantiateViewControllerWithIdentifier("page2") as UIViewController
+//        let page_three = stb.instantiateViewControllerWithIdentifier("page3") as UIViewController
+//        
+//        // Attach the pages to the master
+//        walkthrough.delegate = self
+//        walkthrough.addViewController(page_one)
+//        walkthrough.addViewController(page_two)
+//        walkthrough.addViewController(page_three)
         
-        // Attach the pages to the master
-        walkthrough.delegate = self
-        walkthrough.addViewController(page_one)
-        walkthrough.addViewController(page_two)
-        walkthrough.addViewController(page_three)
-        
-        self.presentViewController(walkthrough, animated: true, completion: nil)
+        self.performSegueWithIdentifier("ToPostSegue", sender: self)
     }
     
     @IBAction func findRoomAction(sender: UIButton) {

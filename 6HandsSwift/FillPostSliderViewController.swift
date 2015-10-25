@@ -33,7 +33,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
 
         photoArray = [UIImage(named: "kvartira.jpg")!, UIImage(named: "kvartira2.jpg")!]
 
-        
+        scroll.frame = self.view.frame
         
         attributesForStepLabel()
         
@@ -52,6 +52,10 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         scroll.addSubview(firstVC.view)
         
         secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SecondPostVC") as! PostSecondViewController
+        
+        secondVC!.view.frame.size.height = self.view.frame.height - 105
+        secondVC!.view.frame.origin.y = offsetTopScroll
+        secondVC!.view.frame.size.width = self.view.frame.width
         
         let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ThirdVC") as! PostThirdViewController
         
@@ -144,7 +148,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         
         UIView.animateWithDuration(duration, animations: { () -> Void in
             self.index--
-            let xOffset : CGFloat = CGFloat(self.index) * self.scroll.frame.width
+            let xOffset : CGFloat = CGFloat(self.index) * self.view.frame.width
             self.scroll.setContentOffset(CGPoint(x: xOffset, y: self.scroll.contentOffset.y), animated: false)
             self.arrowBackButton.hidden = false
             
@@ -189,7 +193,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         
         UIView.animateWithDuration(duration, animations: { () -> Void in
             self.index++
-            let xOffset : CGFloat = CGFloat(self.index) * self.scroll.frame.width
+            let xOffset : CGFloat = CGFloat(self.index) * self.view.frame.width
             self.scroll.setContentOffset(CGPoint(x: xOffset, y: self.scroll.contentOffset.y), animated: false)
             self.arrowBackButton.hidden = false
 
