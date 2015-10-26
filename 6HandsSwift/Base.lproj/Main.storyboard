@@ -1375,6 +1375,7 @@
                                     <color key="titleColor" red="1" green="0.76470588240000004" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="checkLoc:" destination="fvm-og-U95" eventType="touchUpInside" id="7es-St-CuF"/>
                                     <action selector="rentRoomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaY-zm-SLX"/>
                                 </connections>
                             </button>
@@ -1405,6 +1406,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="495"/>
                     <connections>
+                        <outlet property="check" destination="XwM-Oc-sD6" id="ykh-27-a63"/>
                         <outlet property="point" destination="3ZI-7H-v6A" id="Ixe-NK-pqh"/>
                     </connections>
                 </viewController>

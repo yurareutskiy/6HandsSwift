@@ -16,6 +16,7 @@ class WelcomeViewController: UIViewController, BWWalkthroughViewControllerDelega
     @IBOutlet var rentRoomButton: UIButton!
 
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

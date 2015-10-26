@@ -13,6 +13,10 @@
 		3A4810591BDBA06F003AC3A8 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4810571BDBA06F003AC3A8 /* BWWalkthroughViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3A6A69C01BCD7F8E00C9C39D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */; };
 		3ACF5C751BDDBECD000BCB8C /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ACF5C741BDDBECD000BCB8C /* location.png */; settings = {ASSET_TAGS = (); }; };
+		3ACF5C771BDDC75F000BCB8C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACF5C761BDDC75F000BCB8C /* CoreLocation.framework */; };
+		3ACF5C791BDDCB14000BCB8C /* SwiftLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF5C781BDDCB14000BCB8C /* SwiftLocation.swift */; settings = {ASSET_TAGS = (); }; };
+		3ACF5C7B1BDDCB36000BCB8C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACF5C7A1BDDCB36000BCB8C /* MapKit.framework */; };
+		3ACF5C7D1BDDE14A000BCB8C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACF5C7C1BDDE14A000BCB8C /* AddressBookUI.framework */; };
 		709685E21A0CCF585E7CBBC0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF5DE1114C461F85168160E /* libPods.a */; };
 		DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */; };
 		DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7CB1B80AAE70093B796 /* PopularTableViewController.swift */; };
@@ -100,6 +104,10 @@
 		3A4810571BDBA06F003AC3A8 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughViewController.swift; path = "../../../Downloads/BWWalkthrough-master/BWWalkthrough/BWWalkthroughViewController.swift"; sourceTree = "<group>"; };
 		3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3ACF5C741BDDBECD000BCB8C /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = location.png; path = ../../../Downloads/ic_location_on_white_24dp/ios/ic_location_on_white.imageset/location.png; sourceTree = "<group>"; };
+		3ACF5C761BDDC75F000BCB8C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3ACF5C781BDDCB14000BCB8C /* SwiftLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftLocation.swift; path = "../../../Downloads/SwiftLocation-master/Pod/Classes/SwiftLocation.swift"; sourceTree = "<group>"; };
+		3ACF5C7A1BDDCB36000BCB8C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3ACF5C7C1BDDE14A000BCB8C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		8B93BEC3411F8436BCB6F220 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8DF5DE1114C461F85168160E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
@@ -187,6 +195,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ACF5C7D1BDDE14A000BCB8C /* AddressBookUI.framework in Frameworks */,
+				3ACF5C7B1BDDCB36000BCB8C /* MapKit.framework in Frameworks */,
+				3ACF5C771BDDC75F000BCB8C /* CoreLocation.framework in Frameworks */,
 				3A259BC31BDA16AC005C465A /* CoreGraphics.framework in Frameworks */,
 				3A6A69C01BCD7F8E00C9C39D /* Foundation.framework in Frameworks */,
 				709685E21A0CCF585E7CBBC0 /* libPods.a in Frameworks */,
@@ -217,6 +228,7 @@
 			children = (
 				3A4810561BDBA06E003AC3A8 /* BWWalkthroughPageViewController.swift */,
 				3A4810571BDBA06F003AC3A8 /* BWWalkthroughViewController.swift */,
+				3ACF5C781BDDCB14000BCB8C /* SwiftLocation.swift */,
 			);
 			name = BWWalkthrough;
 			sourceTree = "<group>";
@@ -224,6 +236,9 @@
 		BDFD6222745C6688FFADAE11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3ACF5C7C1BDDE14A000BCB8C /* AddressBookUI.framework */,
+				3ACF5C7A1BDDCB36000BCB8C /* MapKit.framework */,
+				3ACF5C761BDDC75F000BCB8C /* CoreLocation.framework */,
 				3A259BC21BDA16AB005C465A /* CoreGraphics.framework */,
 				3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */,
 				DB9240111BA3F45700CE57F3 /* Security.framework */,
@@ -617,6 +632,7 @@
 				DB0EA7F01B8223400093B796 /* RightMenuViewController.swift in Sources */,
 				DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */,
 				DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */,
+				3ACF5C791BDDCB14000BCB8C /* SwiftLocation.swift in Sources */,
 				DBBF9F1A1B8B4A6D00E31A44 /* RoomViewController.swift in Sources */,
 				DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */,
 				3A4810581BDBA06F003AC3A8 /* BWWalkthroughPageViewController.swift in Sources */,
