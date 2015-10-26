@@ -228,9 +228,16 @@
 			children = (
 				3A4810561BDBA06E003AC3A8 /* BWWalkthroughPageViewController.swift */,
 				3A4810571BDBA06F003AC3A8 /* BWWalkthroughViewController.swift */,
-				3ACF5C781BDDCB14000BCB8C /* SwiftLocation.swift */,
 			);
 			name = BWWalkthrough;
+			sourceTree = "<group>";
+		};
+		3ACF5C7E1BDE538E000BCB8C /* SwiftLocation */ = {
+			isa = PBXGroup;
+			children = (
+				3ACF5C781BDDCB14000BCB8C /* SwiftLocation.swift */,
+			);
+			name = SwiftLocation;
 			sourceTree = "<group>";
 		};
 		BDFD6222745C6688FFADAE11 /* Frameworks */ = {
@@ -284,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				DB70BBA61B72548B00FECB99 /* Design */,
+				3ACF5C7E1BDE538E000BCB8C /* SwiftLocation */,
 				3A48105A1BDBA094003AC3A8 /* BWWalkthrough */,
 				DB70BBAA1B7254A600FECB99 /* Slider */,
 				DB4CC2DA1B7B705400480DC0 /* Menu */,

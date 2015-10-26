@@ -34,7 +34,7 @@ class PostThirdViewController: UIViewController, CLLocationManagerDelegate {
         let coordinates = CLLocationCoordinate2DMake(firstCoor, secondCoor)
         SwiftLocation.shared.reverseCoordinates(Service.Apple, coordinates: coordinates, onSuccess: { (place) -> Void in
             // our placemark is here
-            self.check.text = ABCreateStringWithAddressDictionary((place?.addressDictionary)!, false)
+            //self.check.text = ABCreateStringWithAddressDictionary((place?.addressDictionary)!, false)
             }) { (error) -> Void in
                 // something went wrong
         }

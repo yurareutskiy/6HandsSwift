@@ -23,7 +23,6 @@ class WelcomeViewController: UIViewController, BWWalkthroughViewControllerDelega
         findRoomButton.layer.cornerRadius = 10.0
         rentRoomButton.layer.cornerRadius = 10.0
         
-        
         // Do any additional setup after loading the view.
     }
     

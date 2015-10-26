@@ -263,6 +263,8 @@
                             <constraint firstItem="gN0-ij-Gx8" firstAttribute="leading" secondItem="IqW-V0-P6w" secondAttribute="leading" id="odY-il-ZQt"/>
                             <constraint firstAttribute="trailing" secondItem="Z6d-uu-DGh" secondAttribute="trailing" id="pEC-FW-Oun"/>
                             <constraint firstItem="ubo-py-l3m" firstAttribute="leading" secondItem="QiA-Bk-5XG" secondAttribute="leadingMargin" constant="-20" id="pmj-xz-i3k"/>
+                            <constraint firstItem="3HQ-Ic-KUo" firstAttribute="centerY" secondItem="8MF-Bc-vyr" secondAttribute="centerY" id="qsK-Du-IcB"/>
+                            <constraint firstItem="dGZ-Rf-HRG" firstAttribute="centerY" secondItem="8MF-Bc-vyr" secondAttribute="centerY" id="vsA-xw-dkT"/>
                             <constraint firstItem="IqW-V0-P6w" firstAttribute="top" secondItem="gN0-ij-Gx8" secondAttribute="top" id="vsC-yi-87P"/>
                         </constraints>
                         <variation key="default">
@@ -304,7 +306,7 @@
                                 <rect key="frame" x="49" y="28" width="502" height="43"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="49" y="28" width="302" height="74"/>
@@ -317,7 +319,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ck-1v-n2W">
-                                <rect key="frame" x="10" y="90" width="580" height="54"/>
+                                <rect key="frame" x="20" y="90" width="560" height="54"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="CDi-3m-3tK"/>
@@ -325,7 +327,7 @@
                                 </constraints>
                                 <string key="text">Отметим, что геопозиция на вашем телефоне должна быть включена. Так мы проверяем, что фотографии соответствуют адресу, по которому находится квартира. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -440,7 +442,7 @@
                             <constraint firstItem="4Ck-1v-n2W" firstAttribute="top" secondItem="9YI-It-NLn" secondAttribute="bottom" constant="19" id="GJA-46-yEH"/>
                             <constraint firstItem="9YI-It-NLn" firstAttribute="top" secondItem="V6i-T5-DQN" secondAttribute="bottom" constant="8" symbolic="YES" id="Oz3-Ut-GkD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YTt-Ck-4zz" secondAttribute="trailing" constant="-10" id="Pw6-CS-Icz"/>
-                            <constraint firstItem="4Ck-1v-n2W" firstAttribute="leading" secondItem="Y2a-ac-OTP" secondAttribute="leadingMargin" constant="-10" id="WBV-LK-8sq"/>
+                            <constraint firstItem="4Ck-1v-n2W" firstAttribute="leading" secondItem="Y2a-ac-OTP" secondAttribute="leadingMargin" id="WBV-LK-8sq"/>
                             <constraint firstItem="YTt-Ck-4zz" firstAttribute="trailing" secondItem="4Ck-1v-n2W" secondAttribute="trailing" id="aIb-dH-4g2"/>
                             <constraint firstItem="YTt-Ck-4zz" firstAttribute="top" secondItem="4Ck-1v-n2W" secondAttribute="bottom" constant="74" id="goE-gQ-tvZ"/>
                             <constraint firstItem="4Ck-1v-n2W" firstAttribute="leading" secondItem="Y2a-ac-OTP" secondAttribute="leadingMargin" constant="-10" id="hI7-gd-36A"/>
@@ -602,12 +604,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="HlS-8U-iN1">
-                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="xa7-Um-9cE"/>
-                        <barButtonItem key="rightBarButtonItem" tag="1" image="kitchen pack18.png" id="zQx-Ej-sdk">
+                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="xa7-Um-9cE">
                             <connections>
-                                <action selector="filterPressed:" destination="Nkc-gL-Tv5" id="ohU-oJ-tNb"/>
+                                <action selector="menuPressed:" destination="Nkc-gL-Tv5" id="kjx-eJ-HDm"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" tag="1" image="kitchen pack18.png" id="zQx-Ej-sdk">
+                            <connections>
+                                <action selector="filterPressed:" destination="Nkc-gL-Tv5" id="yQp-1g-ORp"/>
+                            </connections>
+                        </barButtonItem>
+                        <connections>
+                            <outlet property="leftBarButtonItem" destination="xa7-Um-9cE" id="G5n-29-FVq"/>
+                            <outlet property="rightBarButtonItem" destination="zQx-Ej-sdk" id="05k-Pc-1Lw"/>
+                        </connections>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yx7-65-JfD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -684,7 +694,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69w-8l-BAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6536.25" y="1121.8309859154929"/>
+            <point key="canvasLocation" x="5416" y="1145"/>
         </scene>
         <!--MainProperties-->
         <scene sceneID="JB7-kR-h58">
@@ -2256,7 +2266,7 @@
         <image name="welcomeBackground.png" width="252" height="378"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xlx-2x-qHq"/>
         <segue reference="Uam-Mp-znH"/>
+        <segue reference="gAE-c1-hYe"/>
     </inferredMetricsTieBreakers>
 </document>

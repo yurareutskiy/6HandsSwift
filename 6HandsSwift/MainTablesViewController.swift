@@ -87,8 +87,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
 //        navigationItem.rightBarButtonItem = rightItem
         
             // Custom LEFT navigation bar button
-        leftItem = UIBarButtonItem(image: UIImage(named: "menu"), style: UIBarButtonItemStyle.Plain, target: nil, action: "revealMenu:")
-        navigationItem.leftBarButtonItem = leftItem
+        leftItem = UIBarButtonItem(image: UIImage(named: "menu"), style: UIBarButtonItemStyle.Plain, target: nil, action: "revealMenu")
+        //navigationItem.leftBarButtonItem = leftItem
         
         // Page slider
         
@@ -241,13 +241,18 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     
     func revealFilterMenu() {
 
+        //ВОТ ТУТ ЗАБЛОКИРОВАТЬ ВЗАИМОДЕЙСТВИЕ С ТАБЛИЦЕЙ И СЛАЙДЕРОМ
+        
         self.sideMenuController()?.rightSideMenu?.toggleMenu()
     
     }
     
-    func revealMenu(sender: UIBarButtonItem) {
+    func revealMenu() {
+        
+        //ВОТ ТУТ ЗАБЛОКИРОВАТЬ ВЗАИМОДЕЙСТВИЕ С ТАБЛИЦЕЙ И СЛАЙДЕРОМ
         
         self.sideMenuController()?.sideMenu?.toggleMenu()
+        
     }
     
     
@@ -325,11 +330,32 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     }
     
     @IBAction func filterPressed(sender: UIBarButtonItem) {
+        
+        let addView: UIView = UIView.init(frame: self.view.frame)
+        addView.userInteractionEnabled = false
+        //addView.backgroundColor = UIColor.blackColor()
+        popularVC?.view.addSubview(addView)
+        newVC?.view.addSubview(addView)
+        print("here")
+        
+        view.userInteractionEnabled = false
         self.sideMenuController()?.rightSideMenu?.toggleMenu()
-
+        
     }
     
-    
+    @IBAction func menuPressed(sender: UIBarButtonItem){
+        
+        let addView: UIView = UIView.init(frame: self.view.frame)
+        addView.userInteractionEnabled = false
+        //addView.backgroundColor = UIColor.blackColor()
+        popularVC?.view.addSubview(addView)
+        newVC?.view.addSubview(addView)
+        print("here")
+        
+        view.userInteractionEnabled = false
+        self.sideMenuController()?.sideMenu?.toggleMenu()
+        
+    }
     
     
     

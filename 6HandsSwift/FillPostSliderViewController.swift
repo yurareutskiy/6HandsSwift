@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate {
+class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var stepLabel: UILabel!
     @IBOutlet weak var backgroundView: UIView!
@@ -134,6 +134,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         cell.image.image = photoArray[0] as? UIImage
         return cell
     }
+    
     @IBAction func backButtonAction(sender: AnyObject) {
     
         if index != 1{
