@@ -9,9 +9,13 @@
 import UIKit
 
 class PostThirdViewController: UIViewController {
+    
+    @IBOutlet var point:UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        point.layer.cornerRadius = 10.0
 
         // Do any additional setup after loading the view.
     }

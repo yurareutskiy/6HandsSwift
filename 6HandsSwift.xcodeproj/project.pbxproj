@@ -12,6 +12,7 @@
 		3A4810581BDBA06F003AC3A8 /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4810561BDBA06E003AC3A8 /* BWWalkthroughPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3A4810591BDBA06F003AC3A8 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4810571BDBA06F003AC3A8 /* BWWalkthroughViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3A6A69C01BCD7F8E00C9C39D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */; };
+		3ACF5C751BDDBECD000BCB8C /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ACF5C741BDDBECD000BCB8C /* location.png */; settings = {ASSET_TAGS = (); }; };
 		709685E21A0CCF585E7CBBC0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF5DE1114C461F85168160E /* libPods.a */; };
 		DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */; };
 		DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7CB1B80AAE70093B796 /* PopularTableViewController.swift */; };
@@ -98,6 +99,7 @@
 		3A4810561BDBA06E003AC3A8 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughPageViewController.swift; path = "../../../Downloads/BWWalkthrough-master/BWWalkthrough/BWWalkthroughPageViewController.swift"; sourceTree = "<group>"; };
 		3A4810571BDBA06F003AC3A8 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughViewController.swift; path = "../../../Downloads/BWWalkthrough-master/BWWalkthrough/BWWalkthroughViewController.swift"; sourceTree = "<group>"; };
 		3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3ACF5C741BDDBECD000BCB8C /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = location.png; path = ../../../Downloads/ic_location_on_white_24dp/ios/ic_location_on_white.imageset/location.png; sourceTree = "<group>"; };
 		8B93BEC3411F8436BCB6F220 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8DF5DE1114C461F85168160E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0EA7C51B80A7340093B796 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 		DB70BBA61B72548B00FECB99 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				3ACF5C741BDDBECD000BCB8C /* location.png */,
 				DBBF3A121BC86E2000DDA567 /* locationMark.png */,
 				DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */,
 				DBD3C3CE1B8722740046655A /* Test */,
@@ -514,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */,
+				3ACF5C751BDDBECD000BCB8C /* location.png in Resources */,
 				DBD3C3C51B86949D0046655A /* kvartira.jpg in Resources */,
 				DBBF3A131BC86E2000DDA567 /* locationMark.png in Resources */,
 				DB459D781BBAE02A0062C525 /* welcomeBackground@3x.png in Resources */,
