@@ -24,20 +24,20 @@ class PostThirdViewController: UIViewController, CLLocationManagerDelegate {
         point.layer.cornerRadius = 10.0
         locationManager.requestWhenInUseAuthorization()
 
-        let coor = userDefaults.valueForKey("coor") as! String
-
-        let components = coor.characters.split {$0 == ","}.map { String($0) }
-        
-        let firstCoor = (components[0] as NSString).doubleValue
-        let secondCoor = (components[1] as NSString).doubleValue
-        
-        let coordinates = CLLocationCoordinate2DMake(firstCoor, secondCoor)
-        SwiftLocation.shared.reverseCoordinates(Service.Apple, coordinates: coordinates, onSuccess: { (place) -> Void in
-            // our placemark is here
-            self.check.text = ABCreateStringWithAddressDictionary((place?.addressDictionary)!, false)
-            }) { (error) -> Void in
-                // something went wrong
-        }
+//        let coor = userDefaults.valueForKey("coor") as! String
+//
+//        let components = coor.characters.split {$0 == ","}.map { String($0) }
+//        
+//        let firstCoor = (components[0] as NSString).doubleValue
+//        let secondCoor = (components[1] as NSString).doubleValue
+//        
+//        let coordinates = CLLocationCoordinate2DMake(firstCoor, secondCoor)
+//        SwiftLocation.shared.reverseCoordinates(Service.Apple, coordinates: coordinates, onSuccess: { (place) -> Void in
+//            // our placemark is here
+//            self.check.text = ABCreateStringWithAddressDictionary((place?.addressDictionary)!, false)
+//            }) { (error) -> Void in
+//                // something went wrong
+//        }
         
         
         

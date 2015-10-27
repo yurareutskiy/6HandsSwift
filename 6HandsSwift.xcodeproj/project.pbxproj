@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		3A259BC31BDA16AC005C465A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A259BC21BDA16AB005C465A /* CoreGraphics.framework */; };
 		3A4432421BD3D18900D5EC46 /* New2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4432411BD3D18900D5EC46 /* New2TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		3A4810581BDBA06F003AC3A8 /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4810561BDBA06E003AC3A8 /* BWWalkthroughPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		3A4810591BDBA06F003AC3A8 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4810571BDBA06F003AC3A8 /* BWWalkthroughViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3A6A69C01BCD7F8E00C9C39D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */; };
-		3ACF5C751BDDBECD000BCB8C /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ACF5C741BDDBECD000BCB8C /* location.png */; settings = {ASSET_TAGS = (); }; };
+		3A7E0E711BDFA7BD00EAD729 /* SwiftLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7E0E701BDFA7BD00EAD729 /* SwiftLocation.swift */; settings = {ASSET_TAGS = (); }; };
+		3A7E0E741BDFA80300EAD729 /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7E0E721BDFA80300EAD729 /* BWWalkthroughPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A7E0E751BDFA80300EAD729 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7E0E731BDFA80300EAD729 /* BWWalkthroughViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3ACF5C771BDDC75F000BCB8C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACF5C761BDDC75F000BCB8C /* CoreLocation.framework */; };
-		3ACF5C791BDDCB14000BCB8C /* SwiftLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF5C781BDDCB14000BCB8C /* SwiftLocation.swift */; settings = {ASSET_TAGS = (); }; };
 		3ACF5C7B1BDDCB36000BCB8C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACF5C7A1BDDCB36000BCB8C /* MapKit.framework */; };
 		3ACF5C7D1BDDE14A000BCB8C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACF5C7C1BDDE14A000BCB8C /* AddressBookUI.framework */; };
 		709685E21A0CCF585E7CBBC0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF5DE1114C461F85168160E /* libPods.a */; };
@@ -66,7 +65,7 @@
 		DB9240101BA3522500CE57F3 /* newPhotoButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB92400F1BA3522500CE57F3 /* newPhotoButton@2x.png */; };
 		DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAF80721B8478CA00299913 /* TTRangeSlider.m */; };
 		DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB2DE241B7274B40076765A /* CalendarAndDate.m */; };
-		DBBF3A131BC86E2000DDA567 /* locationMark.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBF3A121BC86E2000DDA567 /* locationMark.png */; settings = {ASSET_TAGS = (); }; };
+		DBBF3A131BC86E2000DDA567 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBF3A121BC86E2000DDA567 /* location.png */; settings = {ASSET_TAGS = (); }; };
 		DBBF3A151BC86FE400DDA567 /* PostThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF3A141BC86FE400DDA567 /* PostThirdViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DBBF9F1A1B8B4A6D00E31A44 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */; };
 		DBBF9F1C1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */; };
@@ -100,12 +99,11 @@
 /* Begin PBXFileReference section */
 		3A259BC21BDA16AB005C465A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3A4432411BD3D18900D5EC46 /* New2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = New2TableViewController.swift; path = ../6HandsSwift/New2TableViewController.swift; sourceTree = "<group>"; };
-		3A4810561BDBA06E003AC3A8 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughPageViewController.swift; path = "../../../Downloads/BWWalkthrough-master/BWWalkthrough/BWWalkthroughPageViewController.swift"; sourceTree = "<group>"; };
-		3A4810571BDBA06F003AC3A8 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughViewController.swift; path = "../../../Downloads/BWWalkthrough-master/BWWalkthrough/BWWalkthroughViewController.swift"; sourceTree = "<group>"; };
 		3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3ACF5C741BDDBECD000BCB8C /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = location.png; path = ../../../Downloads/ic_location_on_white_24dp/ios/ic_location_on_white.imageset/location.png; sourceTree = "<group>"; };
+		3A7E0E701BDFA7BD00EAD729 /* SwiftLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftLocation.swift; path = "../../../Downloads/SwiftLocation-master-2/Pod/Classes/SwiftLocation.swift"; sourceTree = "<group>"; };
+		3A7E0E721BDFA80300EAD729 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughPageViewController.swift; path = "../../../Downloads/BWWalkthrough-master/BWWalkthrough/BWWalkthroughPageViewController.swift"; sourceTree = "<group>"; };
+		3A7E0E731BDFA80300EAD729 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughViewController.swift; path = "../../../Downloads/BWWalkthrough-master/BWWalkthrough/BWWalkthroughViewController.swift"; sourceTree = "<group>"; };
 		3ACF5C761BDDC75F000BCB8C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		3ACF5C781BDDCB14000BCB8C /* SwiftLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftLocation.swift; path = "../../../Downloads/SwiftLocation-master/Pod/Classes/SwiftLocation.swift"; sourceTree = "<group>"; };
 		3ACF5C7A1BDDCB36000BCB8C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3ACF5C7C1BDDE14A000BCB8C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		8B93BEC3411F8436BCB6F220 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,7 +166,7 @@
 		DBAF80731B8478CA00299913 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRangeSliderDelegate.h; path = 6HandsSwift/TTRangeSlider/TTRangeSliderDelegate.h; sourceTree = "<group>"; };
 		DBB2DE231B7274B40076765A /* CalendarAndDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarAndDate.h; path = 6HandsSwift/CalendarAndDate.h; sourceTree = "<group>"; };
 		DBB2DE241B7274B40076765A /* CalendarAndDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarAndDate.m; path = 6HandsSwift/CalendarAndDate.m; sourceTree = "<group>"; };
-		DBBF3A121BC86E2000DDA567 /* locationMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = locationMark.png; path = Design/locationMark.png; sourceTree = "<group>"; };
+		DBBF3A121BC86E2000DDA567 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = location.png; path = Design/location.png; sourceTree = "<group>"; };
 		DBBF3A141BC86FE400DDA567 /* PostThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostThirdViewController.swift; sourceTree = "<group>"; };
 		DBBF9F191B8B4A6D00E31A44 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		DBBF9F1B1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollTableViewCell.swift; sourceTree = "<group>"; };
@@ -226,8 +224,8 @@
 		3A48105A1BDBA094003AC3A8 /* BWWalkthrough */ = {
 			isa = PBXGroup;
 			children = (
-				3A4810561BDBA06E003AC3A8 /* BWWalkthroughPageViewController.swift */,
-				3A4810571BDBA06F003AC3A8 /* BWWalkthroughViewController.swift */,
+				3A7E0E721BDFA80300EAD729 /* BWWalkthroughPageViewController.swift */,
+				3A7E0E731BDFA80300EAD729 /* BWWalkthroughViewController.swift */,
 			);
 			name = BWWalkthrough;
 			sourceTree = "<group>";
@@ -235,7 +233,7 @@
 		3ACF5C7E1BDE538E000BCB8C /* SwiftLocation */ = {
 			isa = PBXGroup;
 			children = (
-				3ACF5C781BDDCB14000BCB8C /* SwiftLocation.swift */,
+				3A7E0E701BDFA7BD00EAD729 /* SwiftLocation.swift */,
 			);
 			name = SwiftLocation;
 			sourceTree = "<group>";
@@ -340,8 +338,7 @@
 		DB70BBA61B72548B00FECB99 /* Design */ = {
 			isa = PBXGroup;
 			children = (
-				3ACF5C741BDDBECD000BCB8C /* location.png */,
-				DBBF3A121BC86E2000DDA567 /* locationMark.png */,
+				DBBF3A121BC86E2000DDA567 /* location.png */,
 				DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */,
 				DBD3C3CE1B8722740046655A /* Test */,
 				DB851C261B9F438200984A2C /* krest@2x.png */,
@@ -540,9 +537,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */,
-				3ACF5C751BDDBECD000BCB8C /* location.png in Resources */,
 				DBD3C3C51B86949D0046655A /* kvartira.jpg in Resources */,
-				DBBF3A131BC86E2000DDA567 /* locationMark.png in Resources */,
+				DBBF3A131BC86E2000DDA567 /* location.png in Resources */,
 				DB459D781BBAE02A0062C525 /* welcomeBackground@3x.png in Resources */,
 				DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */,
 				DB851C2D1B9F49C100984A2C /* imageBackgroundFillPost@2x.png in Resources */,
@@ -632,6 +628,7 @@
 				DBBF9F1F1B8B83B600E31A44 /* InfoTableViewCell.swift in Sources */,
 				DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */,
 				DB8B91DD1B8F3AC80019EBF4 /* SellerProfileTableViewCell.swift in Sources */,
+				3A7E0E741BDFA80300EAD729 /* BWWalkthroughPageViewController.swift in Sources */,
 				DBEC634A1BC0B9F900347679 /* NewPostsViewController.swift in Sources */,
 				DBAF80741B8478CA00299913 /* TTRangeSlider.m in Sources */,
 				DB0EA7C61B80A7340093B796 /* CAPSPageMenu.swift in Sources */,
@@ -640,11 +637,9 @@
 				DB0EA7F01B8223400093B796 /* RightMenuViewController.swift in Sources */,
 				DB70BBAC1B7254C400FECB99 /* WelcomeViewController.swift in Sources */,
 				DB70BB7B1B7253AC00FECB99 /* _HandsSwift.xcdatamodeld in Sources */,
-				3ACF5C791BDDCB14000BCB8C /* SwiftLocation.swift in Sources */,
+				3A7E0E711BDFA7BD00EAD729 /* SwiftLocation.swift in Sources */,
 				DBBF9F1A1B8B4A6D00E31A44 /* RoomViewController.swift in Sources */,
 				DBB2DE251B7274B40076765A /* CalendarAndDate.m in Sources */,
-				3A4810581BDBA06F003AC3A8 /* BWWalkthroughPageViewController.swift in Sources */,
-				3A4810591BDBA06F003AC3A8 /* BWWalkthroughViewController.swift in Sources */,
 				DB851C321B9F6E0B00984A2C /* FillPostSliderViewController.swift in Sources */,
 				DBD3C3D11B8753770046655A /* InfoRoomTableViewCell.swift in Sources */,
 				DB0EA7CD1B80AAE70093B796 /* PopularTableViewController.swift in Sources */,
@@ -657,6 +652,7 @@
 				DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */,
 				DBD3C3D31B8753F30046655A /* DescriptionTableViewCell.swift in Sources */,
 				DB4CC2DE1B7BACC600480DC0 /* LeftMenuViewController.swift in Sources */,
+				3A7E0E751BDFA80300EAD729 /* BWWalkthroughViewController.swift in Sources */,
 				DB0EA7D61B80B4790093B796 /* SimpleTableViewCell.swift in Sources */,
 				DB0EA7D11B80AAF50093B796 /* NewTableViewController.swift in Sources */,
 				3A4432421BD3D18900D5EC46 /* New2TableViewController.swift in Sources */,

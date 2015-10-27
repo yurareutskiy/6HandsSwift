@@ -29,33 +29,33 @@ class NewPostWithPhotosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        do {
-            
-            try SwiftLocation.shared.currentLocation(Accuracy.Neighborhood, timeout: 20, onSuccess: { (location) -> Void in
-                //print("IM HERE!!!!!! \(location)")
-                let us = "\(location)"
-                let scanner = NSScanner(string:us)
-                var scanned: NSString?
-                
-                if scanner.scanUpToString("<", intoString: nil){
-                    scanner.scanString("<", intoString: nil)
-                    if scanner.scanUpToString(">", intoString: &scanned){
-                        let result: String = scanned as! String
-                        //print("IM HERE! \(result)")
-                        self.coor = result
-                        self.userDefaults.setObject(result, forKey: "coor")
-                        //let checka = self.userDefaults.valueForKey("coor")
-                        //print(checka!)
-                        //print(self.coor!)
-                    }
-                }
-                }) { (error) -> Void in
-                    
-            }
-        }
-        catch{
-            
-        }
+//        do {
+//            
+//            try SwiftLocation.shared.currentLocation(Accuracy.Neighborhood, timeout: 20, onSuccess: { (location) -> Void in
+//                //print("IM HERE!!!!!! \(location)")
+//                let us = "\(location)"
+//                let scanner = NSScanner(string:us)
+//                var scanned: NSString?
+//                
+//                if scanner.scanUpToString("<", intoString: nil){
+//                    scanner.scanString("<", intoString: nil)
+//                    if scanner.scanUpToString(">", intoString: &scanned){
+//                        let result: String = scanned as! String
+//                        //print("IM HERE! \(result)")
+//                        self.coor = result
+//                        self.userDefaults.setObject(result, forKey: "coor")
+//                        //let checka = self.userDefaults.valueForKey("coor")
+//                        //print(checka!)
+//                        //print(self.coor!)
+//                    }
+//                }
+//                }) { (error) -> Void in
+//                    
+//            }
+//        }
+//        catch{
+//            
+//        }
         
         photoArray = [UIImage(named: "kvartira.jpg")!]
 
