@@ -9,12 +9,10 @@
 import UIKit
 
 
-
 class WelcomeViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     
     @IBOutlet var findRoomButton: UIButton!
     @IBOutlet var rentRoomButton: UIButton!
-
 
 
     override func viewDidLoad() {

@@ -243,6 +243,7 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
 
         //ВОТ ТУТ ЗАБЛОКИРОВАТЬ ВЗАИМОДЕЙСТВИЕ С ТАБЛИЦЕЙ И СЛАЙДЕРОМ
         
+    
         self.sideMenuController()?.rightSideMenu?.toggleMenu()
     
     }
