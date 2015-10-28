@@ -13,8 +13,8 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     
     override func prepareForReuse() {
-        image.layer.cornerRadius = 10
-        image.clipsToBounds = true
+//        image.layer.cornerRadius = 10
+//        image.clipsToBounds = true
     }
 
 

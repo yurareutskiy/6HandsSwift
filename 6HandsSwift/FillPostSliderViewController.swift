@@ -47,7 +47,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         collection.delegate = self
         collection.dataSource = self
         
-        collection.frame.size.height = 200
+//        collection.frame.size.height = 200
         
         scroll.addSubview(firstVC.view)
         
@@ -67,7 +67,6 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         
         arrowBackButton.hidden = true
         
-//        vc.button.addTarget(self, action: "testFunc", forControlEvents: UIControlEvents.TouchUpInside)
 
         
     }
@@ -78,7 +77,14 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
             field.delegate = self
         }
 
+        if (self.view.frame.height == 480) {
+            collection.frame.size.height = 190
+        }
+
     }
+
+
+
     
 //    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
 //        
@@ -94,15 +100,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    func addPhoto() {
-        print("Test")
-    }
-    
 
-    func testFunc() {
-        print("<3")
-    }
 
     override func prefersStatusBarHidden() -> Bool {
         return true
@@ -117,14 +115,14 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 //        return photoArray.count + 1
-        return 20
+        return 9
     }
     
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         
-        if (indexPath.row == 19) {
+        if (indexPath.row == 8) {
             let cellPlus = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionCellPlus", forIndexPath: indexPath) 
             return cellPlus
         }

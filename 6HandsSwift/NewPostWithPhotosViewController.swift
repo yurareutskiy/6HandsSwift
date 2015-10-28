@@ -29,6 +29,10 @@ class NewPostWithPhotosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let collectionOriginPoint = collection.frame.origin.y
+        let requriedCollectionSize = self.view.frame.height - collectionOriginPoint - 55
+        collection.frame.size.height = requriedCollectionSize
+        
 //        do {
 //            
 //            try SwiftLocation.shared.currentLocation(Accuracy.Neighborhood, timeout: 20, onSuccess: { (location) -> Void in
