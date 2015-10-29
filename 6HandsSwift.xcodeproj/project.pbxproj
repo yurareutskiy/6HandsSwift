@@ -34,6 +34,7 @@
 		DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */; };
 		DB0EA7EE1B8214690093B796 /* onRightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0EA7ED1B8214690093B796 /* onRightArrow.png */; };
 		DB0EA7F01B8223400093B796 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */; };
+		DB13C1FE1BE1FFB500C3972E /* JRLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13C1FD1BE1FFB500C3972E /* JRLocation.swift */; settings = {ASSET_TAGS = (); }; };
 		DB19566E1BAEC2E900A3C294 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */; };
 		DB459D781BBAE02A0062C525 /* welcomeBackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */; settings = {ASSET_TAGS = (); }; };
 		DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */; };
@@ -126,6 +127,7 @@
 		DB0EA7EB1B8213BE0093B796 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteArrow.png; path = Design/whiteArrow.png; sourceTree = "<group>"; };
 		DB0EA7ED1B8214690093B796 /* onRightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = onRightArrow.png; path = Design/onRightArrow.png; sourceTree = "<group>"; };
 		DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
+		DB13C1FD1BE1FFB500C3972E /* JRLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRLocation.swift; sourceTree = "<group>"; };
 		DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "welcomeBackground@3x.png"; path = "Design/welcomeBackground@3x.png"; sourceTree = "<group>"; };
 		DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
@@ -252,6 +254,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB13C1FF1BE2069F00C3972E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB13C1FD1BE1FFB500C3972E /* JRLocation.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		DB4CC2DA1B7B705400480DC0 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +314,7 @@
 				DB70BB831B7253AC00FECB99 /* LaunchScreen.xib */,
 				DB70BB791B7253AC00FECB99 /* _HandsSwift.xcdatamodeld */,
 				DB70BB751B7253AC00FECB99 /* Supporting Files */,
+				DB13C1FF1BE2069F00C3972E /* Models */,
 			);
 			path = 6HandsSwift;
 			sourceTree = "<group>";
@@ -619,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB13C1FE1BE1FFB500C3972E /* JRLocation.swift in Sources */,
 				DBBF9F1C1B8B6D3600E31A44 /* ImageScrollTableViewCell.swift in Sources */,
 				DB8B91DF1B8F5DA60019EBF4 /* ButtonConnectionTableViewCell.swift in Sources */,
 				DB92400A1BA350EE00CE57F3 /* NewPostWithPhotosViewController.swift in Sources */,

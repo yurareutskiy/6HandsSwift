@@ -26,6 +26,7 @@ class PostSecondViewController: UIViewController, UIPickerViewDataSource, UIPick
             picker.tag = i
             fields[i].inputView = picker
             i++
+         
         }
         
         // Do any additional setup after loading the view.
@@ -34,6 +35,8 @@ class PostSecondViewController: UIViewController, UIPickerViewDataSource, UIPick
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
+    
+    
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView.tag == 0 {
@@ -67,7 +70,10 @@ class PostSecondViewController: UIViewController, UIPickerViewDataSource, UIPick
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        print(component)
         if pickerView.tag == 0 {
             let onePickerDict = pickerDict.objectForKey(0) as! [String]
             return onePickerDict[row]

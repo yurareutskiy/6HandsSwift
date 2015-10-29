@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import CoreLocation
 
-class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate {
+class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, NewPostWithPhotosDelegate {
+    
+    enum JRLocationError: ErrorType {
+        case IncorrectWork
+    }
 
     @IBOutlet weak var stepLabel: UILabel!
     @IBOutlet weak var backgroundView: UIView!
@@ -16,40 +21,50 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     @IBOutlet weak var nextButton: UIButton!
     
     var secondVC: PostSecondViewController?
+    var firstVC: NewPostWithPhotosViewController?
+    var thirdVC: PostThirdViewController?
     
     @IBOutlet weak var arrowBackButton: UIButton!
-    var photoArray = []
+    var photoArray: NSMutableArray = []
     var indexPage: Int = 0
     
     var collection: UICollectionView!
+    let locationManager = CLLocationManager()
+
     
     let offsetTopScroll: CGFloat = 50
     let scrollAnimationDuration: CGFloat = 350
     
     var index = 0
+    var coor = CLLocationCoordinate2D()
+
+    let picker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        photoArray = [UIImage(named: "kvartira.jpg")!, UIImage(named: "kvartira2.jpg")!]
+        picker.delegate = self
+        
+        photoArray = []
 
         scroll.frame = self.view.frame
         
         attributesForStepLabel()
         
-        let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FirstPostVC") as! NewPostWithPhotosViewController
-        firstVC.view.frame.size.height = self.view.frame.height - 105
-        firstVC.view.frame.origin.y = offsetTopScroll
-        firstVC.view.frame.size.width = self.view.frame.width
+        firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FirstPostVC") as! NewPostWithPhotosViewController
+        firstVC!.view.frame.size.height = self.view.frame.height - 105
+        firstVC!.view.frame.origin.y = offsetTopScroll
+        firstVC!.view.frame.size.width = self.view.frame.width
+        firstVC!.delegate = self
         navigationController?.navigationBarHidden = true
         
-        collection = firstVC.collection
+        collection = firstVC!.collection
         collection.delegate = self
         collection.dataSource = self
         
 //        collection.frame.size.height = 200
         
-        scroll.addSubview(firstVC.view)
+        scroll.addSubview(firstVC!.view)
         
         secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SecondPostVC") as! PostSecondViewController
         
@@ -57,13 +72,25 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
         secondVC!.view.frame.origin.y = offsetTopScroll
         secondVC!.view.frame.size.width = self.view.frame.width
         
-        let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ThirdVC") as! PostThirdViewController
+        thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ThirdVC") as! PostThirdViewController
+        
+//        dispatch_async(dispatch_get_main_queue()) { () -> Void in
+            do {
+                locationManager.requestWhenInUseAuthorization()
+                locationManager.startUpdatingLocation()
+                let coordinates = locationManager.location?.coordinate
+                print(coordinates)
+                self.coor = try self.getLocation()
+            } catch {
+                print("Location isn't determined")
+            }
+//        }
         
         secondVC!.view.frame.origin = CGPointMake(self.view.frame.width, offsetTopScroll)
-        thirdVC.view.frame.origin = CGPointMake(self.view.frame.width * 2, offsetTopScroll)
+        thirdVC!.view.frame.origin = CGPointMake(self.view.frame.width * 2, offsetTopScroll)
         
         scroll.addSubview(secondVC!.view)
-        scroll.addSubview(thirdVC.view)
+        scroll.addSubview(thirdVC!.view)
         
         arrowBackButton.hidden = true
         
@@ -83,8 +110,57 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
 
     }
 
+    
+    func getLocation() throws -> CLLocationCoordinate2D {
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+        let coor = locationManager.location?.coordinate
+        print(coor)
+        guard let result: CLLocationCoordinate2D = coor else {
+            throw JRLocationError.IncorrectWork
+        }
+        return result
+    }
 
-
+    func addPhoto() {
+        let alertVC = UIAlertController(title: "Загрузка фотографии", message: "Выберете способ загрузки фотографии", preferredStyle: .ActionSheet)
+        let libraryAction = UIAlertAction(title: "Выбрать уже сделанную", style: .Default) { (UIAlertAction) -> Void in
+            self.picker.allowsEditing = false
+            self.picker.sourceType = .PhotoLibrary
+            self.picker.modalPresentationStyle = .Popover
+            self.presentViewController(self.picker, animated: true, completion: nil)
+        }
+        let photoAction = UIAlertAction(title: "Сделать фото", style: .Default, handler: { (UIAlertAction) -> Void in
+            if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear) != nil {
+                self.picker.allowsEditing = false
+                self.picker.sourceType = .Camera
+                self.picker.cameraCaptureMode = .Photo
+                self.presentViewController(self.picker, animated: true, completion: nil)
+            }
+        })
+        alertVC.addAction(photoAction)
+        alertVC.addAction(libraryAction)
+        presentViewController(alertVC, animated: true, completion: nil)
+    }
+    
+    func deletePhoto(sender: UIButton) {
+        photoArray.removeObjectAtIndex(sender.tag)
+        self.collection.reloadData()
+    }
+    
+    
+    // MARK: Photo Delegate
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let chosenPhoto = info[UIImagePickerControllerOriginalImage] as! UIImage
+        photoArray.addObject(chosenPhoto)
+        collection.reloadData()
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
 //    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
 //        
@@ -114,22 +190,23 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return photoArray.count + 1
-        return 9
+        return photoArray.count + 1
     }
     
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         
-        if (indexPath.row == 8) {
+        if (indexPath.row == photoArray.count) {
             let cellPlus = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionCellPlus", forIndexPath: indexPath) 
             return cellPlus
         }
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionCell", forIndexPath: indexPath) as! CollectionViewCell
         cell.image.layer.cornerRadius = 10
         cell.image.clipsToBounds = true
-        cell.image.image = photoArray[0] as? UIImage
+        cell.image.image = photoArray[indexPath.row] as? UIImage
+        cell.closeButton.tag = indexPath.row
+        
         return cell
     }
     
@@ -167,7 +244,7 @@ class FillPostSliderViewController: UIViewController, UICollectionViewDelegate, 
     }
     
     @IBAction func dismissAction(sender: AnyObject) {
-    self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func nextButtonAction(sender: UIButton) {

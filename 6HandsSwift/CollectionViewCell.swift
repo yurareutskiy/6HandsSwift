@@ -11,6 +11,7 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var closeButton: UIButton!
     
     override func prepareForReuse() {
 //        image.layer.cornerRadius = 10

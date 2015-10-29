@@ -10,6 +10,7 @@ import UIKit
 
 protocol NewPostWithPhotosDelegate {
     func addPhoto()
+    func deletePhoto(sender: UIButton)
 }
 
 class NewPostWithPhotosViewController: UIViewController {
@@ -74,7 +75,7 @@ class NewPostWithPhotosViewController: UIViewController {
     }
     
     @IBAction func pressKrestButtonAction(sender: UIButton) {
-        print(":3")
+        delegate?.deletePhoto(sender)
     }
 
 
