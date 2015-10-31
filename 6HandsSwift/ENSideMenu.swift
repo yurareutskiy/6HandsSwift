@@ -135,9 +135,9 @@ public class ENSideMenu : NSObject, UIGestureRecognizerDelegate {
     public weak var delegate : ENSideMenuDelegate?
     private(set) var isMenuOpen : Bool = false
     /// A Boolean value indicating whether the left swipe is enabled.
-    public var allowLeftSwipe : Bool = true
+    public var allowLeftSwipe : Bool = false
     /// A Boolean value indicating whether the right swipe is enabled.
-    public var allowRightSwipe : Bool = true
+    public var allowRightSwipe : Bool = false
     
     /**
     Initializes an instance of a `ENSideMenu` object.

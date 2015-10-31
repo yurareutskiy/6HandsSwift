@@ -9,7 +9,7 @@
 import UIKit
 
 
-class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTableViewDelegate, New2TableViewDelegate, UITableViewDelegate, UITableViewDataSource {
+class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, ENSideMenuDelegate, PopTableViewDelegate, New2TableViewDelegate, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
     
     var widthMenu: CGFloat?
     var widthView: CGFloat?
@@ -25,33 +25,15 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     var popularVC: New2TableViewController?
     var oneMoreVC: PopTableViewController?
     
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // set menu swipes
+        
+        sideMenuController()?.rightSideMenu?.allowRightSwipe = true
+        sideMenuController()?.sideMenu?.allowLeftSwipe = true
 
-        // Menu
-        
-        
-        widthMenu = 280
-        widthView = view.frame.width - 280
-
-        viewClear = UIView(frame: CGRectMake(widthMenu!, 0, widthView!, view.frame.height))
-        viewClear!.backgroundColor = UIColor.clearColor()
-        
-        rightViewClear = UIView(frame: CGRectMake(0, 0, widthView!, view.frame.height))
-        rightViewClear?.backgroundColor = UIColor.clearColor()
-        
-        let rightGestureRecognizer:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "closeMenu")
-        viewClear!.addGestureRecognizer(rightGestureRecognizer)
-        rightViewClear!.addGestureRecognizer(rightGestureRecognizer)
-        
-        navigationController?.navigationBar.addSubview(viewClear!)
-        
-        // add clear view
-        
-        view.addSubview(viewClear!)
-        view.addSubview(rightViewClear!)
-        viewClear?.hidden = true
 
         
         // Determine screen size
@@ -196,7 +178,37 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         
          //performSegueWithIdentifier("toRoomPage", sender: self)
         
+        
+        
+        
+        // Menu
+        
+        
+        sideMenuController()?.sideMenu?.delegate = self
+        sideMenuController()?.rightSideMenu?.delegate = self
+        
+        widthMenu = 280
+        widthView = view.frame.width - 280
+        
+        viewClear = UIView(frame: CGRectMake(widthMenu!, 0, widthView!, view.frame.height))
+        viewClear!.backgroundColor = UIColor.blueColor()
+        
+        rightViewClear = UIView(frame: CGRectMake(0, 0, widthView!, view.frame.height))
+        rightViewClear?.backgroundColor = UIColor.redColor()
+        
+        let rightGestureRecognizer:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "closeMenu")
+        viewClear!.addGestureRecognizer(rightGestureRecognizer)
+        rightViewClear!.addGestureRecognizer(rightGestureRecognizer)
+        
+        navigationController?.navigationBar.addSubview(viewClear!)
+        navigationController?.navigationBar.addSubview(rightViewClear!)
+        
+        viewClear?.hidden = true
+        rightViewClear?.hidden = true
+        
     }
+    
+
     
     class func pushRoomPage() {
 //        var ncArray = navigationController?.viewControllers
@@ -243,7 +255,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
 
         //ВОТ ТУТ ЗАБЛОКИРОВАТЬ ВЗАИМОДЕЙСТВИЕ С ТАБЛИЦЕЙ И СЛАЙДЕРОМ
         
-    
+        print("revealFilterMenu")
+        
         self.sideMenuController()?.rightSideMenu?.toggleMenu()
     
     }
@@ -252,6 +265,8 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
         
         //ВОТ ТУТ ЗАБЛОКИРОВАТЬ ВЗАИМОДЕЙСТВИЕ С ТАБЛИЦЕЙ И СЛАЙДЕРОМ
         
+        print("revealMenu")
+
         self.sideMenuController()?.sideMenu?.toggleMenu()
         
     }
@@ -273,27 +288,15 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     }
     
     func sideMenuWillOpen() {
-        print("sideMenuWillOpen")
-        
-        print(widthView)
-        print(widthMenu!)
-        print(self.view.frame.width)
-        
-        
-        viewClear?.hidden = false
-        
-        
-        if self.sideMenuController()?.rightSideMenu?.isMenuOpen == true {
 
+        slider?.view.userInteractionEnabled = false
         
-        }
-        
+
     }
     
     func sideMenuWillClose() {
-        print("sideMenuWillClose")
-        
-        viewClear?.hidden = true
+
+        slider?.view.userInteractionEnabled = true
         
     }
     func sideMenuShouldOpenSideMenu() -> Bool {
@@ -332,29 +335,24 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, PopTable
     
     @IBAction func filterPressed(sender: UIBarButtonItem) {
         
-        let addView: UIView = UIView.init(frame: self.view.frame)
-        addView.userInteractionEnabled = false
-        //addView.backgroundColor = UIColor.blackColor()
-        popularVC?.view.addSubview(addView)
-        newVC?.view.addSubview(addView)
-        print("here")
-        
-        view.userInteractionEnabled = false
-        self.sideMenuController()?.rightSideMenu?.toggleMenu()
+
+        if self.sideMenuController()?.sideMenu?.isMenuOpen == false {
+            
+
+            
+            self.sideMenuController()?.rightSideMenu?.toggleMenu()
+
+        }
         
     }
     
     @IBAction func menuPressed(sender: UIBarButtonItem){
-        
-        let addView: UIView = UIView.init(frame: self.view.frame)
-        addView.userInteractionEnabled = false
-        //addView.backgroundColor = UIColor.blackColor()
-        popularVC?.view.addSubview(addView)
-        newVC?.view.addSubview(addView)
-        print("here")
-        
-        view.userInteractionEnabled = false
-        self.sideMenuController()?.sideMenu?.toggleMenu()
+       
+        if self.sideMenuController()?.rightSideMenu?.isMenuOpen == false {
+            
+            self.sideMenuController()?.sideMenu?.toggleMenu()
+            
+        }
         
     }
     
