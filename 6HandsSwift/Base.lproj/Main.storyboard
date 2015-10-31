@@ -1997,10 +1997,10 @@
                         <viewControllerLayoutGuide type="bottom" id="Yba-j9-PF6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="84H-NT-ya9">
-                        <rect key="frame" x="0.0" y="0.0" width="280" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kGK-oM-ewr">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGK-oM-ewr">
                                 <rect key="frame" x="0.0" y="0.0" width="280" height="600"/>
                                 <subviews>
                                     <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YQe-TO-2K6">
@@ -2019,29 +2019,7 @@
                                         <rect key="frame" x="14" y="62" width="75" height="75"/>
                                         <animations/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o17-3d-6qx">
-                                        <rect key="frame" x="0.0" y="490" width="280" height="78"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onRightArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="YL5-dY-Ymd">
-                                                <rect key="frame" x="124" y="24" width="30" height="30"/>
-                                                <animations/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhu-EL-HS5">
-                                                <rect key="frame" x="29" y="24" width="96" height="30"/>
-                                                <animations/>
-                                                <state key="normal" title="ХОЧУ СДАТЬ">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="wantRentAction:" destination="T2v-Za-VDq" eventType="touchUpInside" id="LZs-Sd-2B2"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <animations/>
-                                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sca-0x-FqE">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sca-0x-FqE">
                                         <rect key="frame" x="30" y="447" width="105" height="30"/>
                                         <animations/>
                                         <state key="normal" title="О КОМПАНИИ">
@@ -2089,16 +2067,49 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o17-3d-6qx">
+                                        <rect key="frame" x="0.0" y="522" width="280" height="78"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onRightArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="YL5-dY-Ymd">
+                                                <rect key="frame" x="124" y="24" width="30" height="30"/>
+                                                <animations/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhu-EL-HS5">
+                                                <rect key="frame" x="29" y="24" width="96" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="ХОЧУ СДАТЬ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="wantRentAction:" destination="T2v-Za-VDq" eventType="touchUpInside" id="LZs-Sd-2B2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.76470588240000004" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Muc-ra-gA5"/>
+                                    <constraint firstAttribute="bottom" secondItem="o17-3d-6qx" secondAttribute="bottom" id="YS1-vc-aHj"/>
+                                    <constraint firstItem="o17-3d-6qx" firstAttribute="leading" secondItem="kGK-oM-ewr" secondAttribute="leading" id="mrr-Ta-U97"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yba-j9-PF6" firstAttribute="top" secondItem="kGK-oM-ewr" secondAttribute="bottom" id="4g4-Uj-ZdC"/>
+                            <constraint firstItem="Yba-j9-PF6" firstAttribute="top" secondItem="Sca-0x-FqE" secondAttribute="bottom" constant="123" id="5Hi-WN-saf"/>
+                            <constraint firstItem="kGK-oM-ewr" firstAttribute="top" secondItem="84H-NT-ya9" secondAttribute="top" id="F0e-Vw-v8i"/>
+                            <constraint firstItem="kGK-oM-ewr" firstAttribute="leading" secondItem="84H-NT-ya9" secondAttribute="leading" id="vXq-R4-TN4"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="280" height="568"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="backgroundView" destination="kGK-oM-ewr" id="h0m-nY-75P"/>
                         <outlet property="chatsCountLabel" destination="H3n-7u-QT3" id="Xbw-0D-3em"/>
@@ -2111,23 +2122,23 @@
             </objects>
             <point key="canvasLocation" x="5503" y="-1991"/>
         </scene>
-        <!--LeftMenu-->
+        <!--RightMenu-->
         <scene sceneID="Gav-7U-UkQ">
             <objects>
-                <viewController storyboardIdentifier="RightMenu" title="LeftMenu" id="wPo-ON-nZ8" customClass="RightMenuViewController" customModule="_HandsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RightMenu" title="RightMenu" id="wPo-ON-nZ8" customClass="RightMenuViewController" customModule="_HandsSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1p5-bE-gKr"/>
                         <viewControllerLayoutGuide type="bottom" id="gKN-jj-71W"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bf8-mx-phI">
-                        <rect key="frame" x="0.0" y="0.0" width="280" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-Ri-gAc">
-                                <rect key="frame" x="0.0" y="0.0" width="280" height="600"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-Ri-gAc">
+                                <rect key="frame" x="320" y="0.0" width="280" height="600"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rRK-aw-eRL">
-                                        <rect key="frame" x="0.0" y="490" width="280" height="78"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rRK-aw-eRL">
+                                        <rect key="frame" x="0.0" y="522" width="280" height="78"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPb-qt-6vq">
                                                 <rect key="frame" x="15" y="24" width="177" height="30"/>
@@ -2141,8 +2152,8 @@
                                         <animations/>
                                         <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUq-8y-og3">
-                                        <rect key="frame" x="14" y="447" width="165" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUq-8y-og3">
+                                        <rect key="frame" x="14" y="450" width="165" height="30"/>
                                         <animations/>
                                         <state key="normal" title="СБРОСИТЬ ФИЛЬТРЫ">
                                             <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -2254,13 +2265,24 @@
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.76470588240000004" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rRK-aw-eRL" secondAttribute="trailing" id="CrT-Cn-wz2"/>
+                                    <constraint firstAttribute="width" constant="280" id="I9P-7w-0FS"/>
+                                    <constraint firstAttribute="bottom" secondItem="rRK-aw-eRL" secondAttribute="bottom" id="rfj-kI-IbA"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gKN-jj-71W" firstAttribute="top" secondItem="Iaf-Ri-gAc" secondAttribute="bottom" id="Bpa-IQ-7sh"/>
+                            <constraint firstItem="Iaf-Ri-gAc" firstAttribute="top" secondItem="bf8-mx-phI" secondAttribute="top" id="PPQ-7l-9Dn"/>
+                            <constraint firstAttribute="trailing" secondItem="Iaf-Ri-gAc" secondAttribute="trailing" id="VBA-RL-Amh"/>
+                            <constraint firstItem="gKN-jj-71W" firstAttribute="top" secondItem="AUq-8y-og3" secondAttribute="bottom" constant="120" id="gTS-tE-vSZ"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="280" height="568"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="backgroundView" destination="Iaf-Ri-gAc" id="gRx-uf-3Sx"/>
                         <outlet property="choosenSubwayStationLabel" destination="bLs-o4-ezc" id="ZDT-jc-GoX"/>
@@ -2272,7 +2294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqa-FE-BWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6465" y="-1991"/>
+            <point key="canvasLocation" x="6242" y="-1991"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qI9-vN-EuR">
@@ -2315,7 +2337,7 @@
         <image name="welcomeBackground.png" width="252" height="378"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uam-Mp-znH"/>
+        <segue reference="JAj-YE-RCB"/>
         <segue reference="gAE-c1-hYe"/>
     </inferredMetricsTieBreakers>
 </document>

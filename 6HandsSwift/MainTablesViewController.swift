@@ -33,6 +33,7 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, ENSideMe
         
         sideMenuController()?.rightSideMenu?.allowRightSwipe = true
         sideMenuController()?.sideMenu?.allowLeftSwipe = true
+        
 
 
         
