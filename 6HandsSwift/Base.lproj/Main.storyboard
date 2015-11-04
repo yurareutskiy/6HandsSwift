@@ -643,16 +643,16 @@
             <objects>
                 <tableViewController storyboardIdentifier="VC with New" id="oAw-ge-sWE" customClass="New2TableViewController" customModule="_HandsSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VaT-aZ-6v9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="G6S-Zc-ide" customClass="SimpleTableViewCell" customModule="_HandsSwift" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G6S-Zc-ide" id="7R5-d6-JcR">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -665,7 +665,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="6eP-oe-Lgr"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="MCg-8f-nBE" kind="show" identifier="toRoomPage" id="xlx-2x-qHq"/>
                     </connections>
@@ -1737,7 +1736,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3rm-OT-FyI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KJ2-Tx-W2v">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="btH-60-U12">
@@ -2338,6 +2337,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JAj-YE-RCB"/>
-        <segue reference="gAE-c1-hYe"/>
+        <segue reference="xlx-2x-qHq"/>
     </inferredMetricsTieBreakers>
 </document>
