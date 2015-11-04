@@ -99,7 +99,7 @@
 
 /* Begin PBXFileReference section */
 		3A259BC21BDA16AB005C465A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3A4432411BD3D18900D5EC46 /* New2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = New2TableViewController.swift; path = ../6HandsSwift/New2TableViewController.swift; sourceTree = "<group>"; };
+		3A4432411BD3D18900D5EC46 /* New2TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = New2TableViewController.swift; sourceTree = "<group>"; };
 		3A6A69BF1BCD7F8E00C9C39D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A7E0E761BDFC7F200EAD729 /* SwiftLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLocation.swift; sourceTree = "<group>"; };
 		3A7E0E781BDFC7F800EAD729 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		DBBF9F1E1B8B83B600E31A44 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		DBC6ACA51BC4FF4A00413983 /* PostSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSecondViewController.swift; sourceTree = "<group>"; };
 		DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomPageViewController.swift; sourceTree = "<group>"; };
-		DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopTableViewController.swift; path = ../6HandsSwift/PopTableViewController.swift; sourceTree = "<group>"; };
+		DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTableViewController.swift; sourceTree = "<group>"; };
 		DBD3C3C21B8648D30046655A /* backButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonArrow.png; path = Design/backButtonArrow.png; sourceTree = "<group>"; };
 		DBD3C3C41B86949D0046655A /* kvartira.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kvartira.jpg; path = Design/kvartira.jpg; sourceTree = "<group>"; };
 		DBD3C3C61B8695660046655A /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Design/star.png; sourceTree = "<group>"; };
@@ -330,8 +330,6 @@
 		DB70BB8D1B7253AC00FECB99 /* 6HandsSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A4432411BD3D18900D5EC46 /* New2TableViewController.swift */,
-				DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */,
 				DB70BB901B7253AC00FECB99 /* _HandsSwiftTests.swift */,
 				DB70BB8E1B7253AC00FECB99 /* Supporting Files */,
 			);
@@ -451,6 +449,8 @@
 		DBF00DF01B77B2D700209549 /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				3A4432411BD3D18900D5EC46 /* New2TableViewController.swift */,
+				DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */,
 				DB0EA7D41B80B4790093B796 /* SimpleTableViewCell.swift */,
 				DB0EA7D51B80B4790093B796 /* SimpleTableViewCell.xib */,
 				DB0EA7CB1B80AAE70093B796 /* PopularTableViewController.swift */,

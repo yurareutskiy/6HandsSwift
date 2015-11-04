@@ -131,7 +131,7 @@ class New2TableViewController: UITableViewController {
             resultString += String(char)
             lenghtString -= 1
         }
-        return resultString
+        return resultString + " ₽"
     }
 
     /*
