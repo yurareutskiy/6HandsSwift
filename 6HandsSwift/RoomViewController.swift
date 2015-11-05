@@ -61,7 +61,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if (indexPath.section == 0) {
             if (indexPath.row == 0) {
-                return 130
+                return self.view.frame.width * 0.75
             } else if (indexPath.row == countParameters) {
                 let height = heightForView()
                 print("Height 2: ", terminator: "")
@@ -178,6 +178,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     func configureImageCell(tableView: UITableView, rowAtIndexPath indexPath: NSIndexPath) -> ImageScrollTableViewCell {
         
         let cell = table.dequeueReusableCellWithIdentifier("ImagesCell") as! ImageScrollTableViewCell
+        cell.setScrollViewWith(self.view.frame.width)
         cell.setTextForPriceLabel(String(1000))
         return cell
     }
@@ -230,8 +231,13 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     func configureMapCell(tableView: UITableView, rowAtIndexPath indexPath: NSIndexPath) -> MapTableViewCell {
     
         let cell = tableView.dequeueReusableCellWithIdentifier("MapCell") as! MapTableViewCell
-        cell.setContentFrameWithStationName("Баррикадная", AndAddress: "Карамышесвская набережная, 56к2, 9 этаж, кв. 88")
+        cell.setContentFrameWithStationName("Баррикадная", AndAddress: "Карамышесвская набережная, 56к2, 9 этаж, кв. 88", width: self.view.frame.width)
         cell.selectionStyle = UITableViewCellSelectionStyle.None
+        print(cell.map.frame.size.width)
+        print("___\n")
+        cell.map.frame.size.width = self.view.frame.width
+        print(cell.map.frame.size.width)
+        print(self.view.frame.width)
         return cell
     }
     

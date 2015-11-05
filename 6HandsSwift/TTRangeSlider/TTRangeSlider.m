@@ -31,7 +31,7 @@ static const CGFloat kLabelsFontSize = 12.0f;
 
 //do all the setup in a common place, as there can be two initialisers called depending on if storyboards or code are used. The designated initialiser isn't always called :|
 - (void)initialiseControl {
-    //defaults:
+
     _minValue = 0;
     _selectedMinimum = 10;
     _maxValue = 100;
@@ -174,15 +174,18 @@ static const CGFloat kLabelsFontSize = 12.0f;
 
     self.minLabel.string = [formatter stringFromNumber:@(self.selectedMinimum)];
     self.maxLabel.string = [formatter stringFromNumber:@(self.selectedMaximum)];
+    
 }
 
 #pragma mark - Set Positions
 - (void)updateHandlePositions {
+    
     CGPoint leftHandleCenter = CGPointMake([self getXPositionAlongLineForValue:self.selectedMinimum], CGRectGetMidY(self.sliderLine.frame));
     self.leftHandle.position = leftHandleCenter;
 
     CGPoint rightHandleCenter = CGPointMake([self getXPositionAlongLineForValue:self.selectedMaximum], CGRectGetMidY(self.sliderLine.frame));
     self.rightHandle.position= rightHandleCenter;
+    
 }
 
 - (void)updateLabelPositions {
@@ -206,8 +209,8 @@ static const CGFloat kLabelsFontSize = 12.0f;
     if (newSpacingBetweenTextLabels > minSpacingBetweenLabels) {
         self.minLabel.position = newMinLabelCenter;
         self.maxLabel.position = newMaxLabelCenter;
-    }
-    else {
+    
+    } else {
         newMinLabelCenter = CGPointMake(self.minLabel.position.x, self.leftHandle.frame.origin.y - (self.minLabel.frame.size.height/2) - padding);
         newMaxLabelCenter = CGPointMake(self.maxLabel.position.x, self.rightHandle.frame.origin.y - (self.maxLabel.frame.size.height/2) - padding);
         self.minLabel.position = newMinLabelCenter;
@@ -362,7 +365,7 @@ static const CGFloat kLabelsFontSize = 12.0f;
     } else {
         [CATransaction begin];
         [CATransaction setAnimationDuration:0.3];
-        [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut] ];
+        [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
         handle.transform = CATransform3DIdentity;
 
         //the label above the handle will need to move too if the handle changes size

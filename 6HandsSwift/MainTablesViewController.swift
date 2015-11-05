@@ -300,6 +300,7 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, ENSideMe
         slider?.view.userInteractionEnabled = true
         
     }
+    
     func sideMenuShouldOpenSideMenu() -> Bool {
         print("sideMenuShouldOpenSideMenu")
 
@@ -311,26 +312,16 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, ENSideMe
         return true
     }
     
-
-    
     func makeSegueToRoomPage() {
         
-        print("im here")
-        
-//        let sb = UIStoryboard(name: "Main", bundle: nil)
-//        let vc: UIViewController! = sb.instantiateViewControllerWithIdentifier("RoomPage")
-//        self.showDetailViewController(vc, sender: nil)
-        
-        //self.showViewController(vc, sender: nil)
-        
         let vc: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RoomPage") as! RoomViewController
-        //vc.forLog = "other"
+        
         self.showViewController(vc, sender: nil)
-        //navigationController?.pushViewController(vc, animated: true)
+
     }
 
     func didSelect(text:String) {
-        print(text)
+
         performSegueWithIdentifier("toRoomPage", sender: nil)
     }
     
@@ -338,8 +329,6 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, ENSideMe
         
 
         if self.sideMenuController()?.sideMenu?.isMenuOpen == false {
-            
-
             
             self.sideMenuController()?.rightSideMenu?.toggleMenu()
 

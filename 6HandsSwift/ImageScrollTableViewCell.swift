@@ -17,16 +17,24 @@ class ImageScrollTableViewCell: UITableViewCell, UIScrollViewDelegate {
     @IBOutlet weak var favoritesButton: UIButton!
     @IBOutlet weak var imagesPageControll: UIPageControl!
     @IBOutlet weak var priceLabel: UILabel!
+    
 
     // Arrays for ImageViews and Images
     var pageImages: [UIImage] = []
     var pageViews: [UIImageView?] = []
     
+    var pageWidth: CGFloat = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
 
         // Setup scroll view for images
+        
+    }
+
+    func setScrollViewWith(widthScroll: CGFloat) {
+    
+        pageWidth = widthScroll
         
         imagesScrollView.delegate = self
         imagesScrollView.bounces = false
@@ -35,7 +43,7 @@ class ImageScrollTableViewCell: UITableViewCell, UIScrollViewDelegate {
         
         priceLabel.layer.cornerRadius = 5
         priceLabel.clipsToBounds = true
-    
+        
         // Fill the arrays
         
         pageImages = [UIImage(named: "kvartira.jpg")!, UIImage(named: "kvartira2.jpg")!, UIImage(named: "kvartira3.jpg")!]
@@ -57,10 +65,12 @@ class ImageScrollTableViewCell: UITableViewCell, UIScrollViewDelegate {
         // Set up the content size of the scroll view
         let pagesScrollViewSize = imagesScrollView.frame.size
         imagesScrollView.contentSize = CGSizeMake(pagesScrollViewSize.width * CGFloat(pageImages.count), pagesScrollViewSize.height)
-    
+        
         loadVisiblePages() // Make magic for showing images in row
-    }
 
+    
+    }
+    
     
     func setTextForPriceLabel(text:String) {
         priceLabel.text = formattedStringWithPrice(text)
@@ -102,8 +112,11 @@ class ImageScrollTableViewCell: UITableViewCell, UIScrollViewDelegate {
     
     func loadVisiblePages() {
         // First, determine which page is currently visible
-        let pageWidth = imagesScrollView.frame.size.width
+        
         let page = Int(floor((imagesScrollView.contentOffset.x * 2.0 + pageWidth) / (pageWidth * 2.0)))
+        
+        
+        print("loadVisiblePages scroll width " + pageWidth.description)
         
         // Update the page control
         imagesPageControll.currentPage = page
@@ -145,6 +158,7 @@ class ImageScrollTableViewCell: UITableViewCell, UIScrollViewDelegate {
             
             let newPageView = UIImageView(image: pageImages[page])
             newPageView.contentMode = .ScaleAspectFill
+
             newPageView.frame = frame
             imagesScrollView.addSubview(newPageView)
             pageViews[page] = newPageView

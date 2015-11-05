@@ -95,8 +95,8 @@ class New2TableViewController: UITableViewController {
         //        let vc = MainTablesViewController()
         //        vc.toPageMenu()
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("RoomPage") as! RoomViewController
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewControllerWithIdentifier("RoomPage") as! RoomViewController
         
         performSegueWithIdentifier("toRoomPage", sender: self)
         
