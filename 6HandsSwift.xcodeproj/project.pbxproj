@@ -120,6 +120,7 @@
 		DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 		DB13C1FD1BE1FFB500C3972E /* JRLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRLocation.swift; sourceTree = "<group>"; };
 		DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DB4430E11BF1224A00A36B17 /* libVK-ios-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libVK-ios-sdk.a"; path = "Pods/../build/Debug-iphoneos/libVK-ios-sdk.a"; sourceTree = "<group>"; };
 		DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "welcomeBackground@3x.png"; path = "Design/welcomeBackground@3x.png"; sourceTree = "<group>"; };
 		DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
@@ -233,6 +234,7 @@
 		BDFD6222745C6688FFADAE11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB4430E11BF1224A00A36B17 /* libVK-ios-sdk.a */,
 				3ACF5C7C1BDDE14A000BCB8C /* AddressBookUI.framework */,
 				3ACF5C7A1BDDCB36000BCB8C /* MapKit.framework */,
 				3ACF5C761BDDC75F000BCB8C /* CoreLocation.framework */,
@@ -459,6 +461,7 @@
 				DB70BB6F1B7253AC00FECB99 /* Frameworks */,
 				DB70BB701B7253AC00FECB99 /* Resources */,
 				168785B27ECE6D0561F8B08E /* Copy Pods Resources */,
+				046F7B50A91D2507CE4DA7E3 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -576,6 +579,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		046F7B50A91D2507CE4DA7E3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		168785B27ECE6D0561F8B08E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -780,6 +798,10 @@
 				INFOPLIST_FILE = 6HandsSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reutskiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -798,6 +820,10 @@
 				INFOPLIST_FILE = 6HandsSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reutskiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

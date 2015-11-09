@@ -10,3 +10,4 @@
 #import "LGDrawer.h"
 #import "TTRangeSlider.h"
 #import "TTRangeSliderDelegate.h"
+#import <VK-ios-sdk/VKSdk.h>
