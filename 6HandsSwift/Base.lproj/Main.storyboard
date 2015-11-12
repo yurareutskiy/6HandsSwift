@@ -542,7 +542,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGT-Ot-b8Q">
-                                <rect key="frame" x="541" y="20.5" width="15" height="22"/>
+                                <rect key="frame" x="541" y="21" width="15" height="22"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="9Ty-uJ-nDk"/>
@@ -1739,13 +1739,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" directionalLockEnabled="YES" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="btH-60-U12">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="btH-60-U12">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="541"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="541" id="evH-7C-EQf"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesCell" rowHeight="256" id="AK4-Ky-HQ9" customClass="ImageScrollTableViewCell" customModule="_HandsSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="600" height="256"/>
@@ -1986,13 +1983,8 @@
                                         <animations/>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="evH-7C-EQf"/>
-                                    </mask>
-                                </variation>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LF3-cF-eZx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LF3-cF-eZx">
                                 <rect key="frame" x="0.0" y="541" width="600" height="59"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.34163581199999998" green="0.74829270680000004" blue="0.95162115420000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2009,23 +2001,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3rm-OT-FyI" firstAttribute="top" secondItem="LF3-cF-eZx" secondAttribute="bottom" id="7J6-RT-A18"/>
-                            <constraint firstItem="btH-60-U12" firstAttribute="top" secondItem="KJ2-Tx-W2v" secondAttribute="topMargin" id="9ce-ac-c9A"/>
-                            <constraint firstAttribute="trailing" secondItem="LF3-cF-eZx" secondAttribute="trailing" id="B8K-vO-prc"/>
-                            <constraint firstItem="btH-60-U12" firstAttribute="leading" secondItem="KJ2-Tx-W2v" secondAttribute="leading" id="cUt-bF-tUu"/>
-                            <constraint firstItem="LF3-cF-eZx" firstAttribute="top" secondItem="btH-60-U12" secondAttribute="bottom" constant="59" id="f8B-A0-kSj"/>
-                            <constraint firstItem="3rm-OT-FyI" firstAttribute="top" secondItem="LF3-cF-eZx" secondAttribute="bottom" id="nKS-Gj-Hef"/>
-                            <constraint firstItem="LF3-cF-eZx" firstAttribute="top" secondItem="btH-60-U12" secondAttribute="bottom" id="uDM-r6-aCJ"/>
-                            <constraint firstItem="LF3-cF-eZx" firstAttribute="leading" secondItem="KJ2-Tx-W2v" secondAttribute="leading" id="uDp-ZB-Phq"/>
-                            <constraint firstAttribute="trailing" secondItem="btH-60-U12" secondAttribute="trailing" id="yJO-nK-UCB"/>
+                            <constraint firstItem="btH-60-U12" firstAttribute="leading" secondItem="KJ2-Tx-W2v" secondAttribute="leading" id="3If-kj-Ciz"/>
+                            <constraint firstAttribute="trailing" secondItem="btH-60-U12" secondAttribute="trailing" id="CMv-Ih-vMF"/>
+                            <constraint firstItem="btH-60-U12" firstAttribute="top" secondItem="KJ2-Tx-W2v" secondAttribute="top" id="c9p-H4-9Xp"/>
+                            <constraint firstAttribute="trailing" secondItem="LF3-cF-eZx" secondAttribute="trailing" id="fkq-Bl-Q3f"/>
+                            <constraint firstItem="LF3-cF-eZx" firstAttribute="top" secondItem="btH-60-U12" secondAttribute="bottom" id="iul-Js-qay"/>
+                            <constraint firstItem="3rm-OT-FyI" firstAttribute="top" secondItem="LF3-cF-eZx" secondAttribute="bottom" id="krK-vz-qUh"/>
+                            <constraint firstItem="LF3-cF-eZx" firstAttribute="leading" secondItem="KJ2-Tx-W2v" secondAttribute="leading" id="yWX-ew-VbI"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="uDM-r6-aCJ"/>
-                                <exclude reference="7J6-RT-A18"/>
-                                <exclude reference="nKS-Gj-Hef"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="jNH-aQ-BX0"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -2036,7 +2019,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Zr-ws-gT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5392" y="417"/>
+            <point key="canvasLocation" x="5828" y="281"/>
         </scene>
         <!--Main Navigation View Controller-->
         <scene sceneID="8AH-d2-qJW">
