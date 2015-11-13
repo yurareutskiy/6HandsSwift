@@ -63,8 +63,7 @@ class ImageScrollTableViewCell: UITableViewCell, UIScrollViewDelegate {
         }
         
         // Set up the content size of the scroll view
-        let pagesScrollViewSize = imagesScrollView.frame.size
-        imagesScrollView.contentSize = CGSizeMake(pagesScrollViewSize.width * CGFloat(pageImages.count), pagesScrollViewSize.height)
+        imagesScrollView.contentSize = CGSizeMake(pageWidth * CGFloat(pageImages.count), widthScroll * (3/4))
         
         loadVisiblePages() // Make magic for showing images in row
 
@@ -151,13 +150,16 @@ class ImageScrollTableViewCell: UITableViewCell, UIScrollViewDelegate {
         if let pageView = pageViews[page] {
             // Do nothing. The view is already loaded.
         } else {
+            print(page)
+            print(imagesScrollView.frame)
             var frame = imagesScrollView.bounds
-            frame.origin.x = frame.size.width * CGFloat(page)
+            frame.origin.x = pageWidth * CGFloat(page)
             frame.origin.y = 0.0
+            frame.size.height = pageWidth * (3/4)
             frame = CGRectInset(frame, 0.0, 0.0)
             
             let newPageView = UIImageView(image: pageImages[page])
-            newPageView.contentMode = .ScaleAspectFill
+            newPageView.contentMode = .ScaleToFill
 
             newPageView.frame = frame
             imagesScrollView.addSubview(newPageView)

@@ -32,6 +32,7 @@
 		DB0EA7F01B8223400093B796 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */; };
 		DB13C1FE1BE1FFB500C3972E /* JRLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13C1FD1BE1FFB500C3972E /* JRLocation.swift */; settings = {ASSET_TAGS = (); }; };
 		DB19566E1BAEC2E900A3C294 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */; };
+		DB1E20D01BF5E3F30027183E /* NavBarSampleColor.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1E20CF1BF5E3F30027183E /* NavBarSampleColor.png */; settings = {ASSET_TAGS = (); }; };
 		DB459D781BBAE02A0062C525 /* welcomeBackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */; settings = {ASSET_TAGS = (); }; };
 		DB4CC2D81B7B704A00480DC0 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */; };
 		DB4CC2D91B7B704A00480DC0 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC2D71B7B704A00480DC0 /* ENSideMenu.swift */; };
@@ -70,7 +71,7 @@
 		DBC6ACA61BC4FF4A00413983 /* PostSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC6ACA51BC4FF4A00413983 /* PostSecondViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DBD3C3BB1B85C12E0046655A /* RoomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */; };
 		DBD3C3BE1B85FAB20046655A /* PopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */; };
-		DBD3C3C31B8648D30046655A /* backButtonArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C21B8648D30046655A /* backButtonArrow.png */; };
+		DBD3C3C31B8648D30046655A /* backButtonArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C21B8648D30046655A /* backButtonArrow@2x.png */; };
 		DBD3C3C51B86949D0046655A /* kvartira.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C41B86949D0046655A /* kvartira.jpg */; };
 		DBD3C3C71B8695660046655A /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C61B8695660046655A /* star.png */; };
 		DBD3C3C91B8696FF0046655A /* empryStar.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD3C3C81B8696FF0046655A /* empryStar.png */; };
@@ -120,6 +121,7 @@
 		DB0EA7EF1B8223400093B796 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
 		DB13C1FD1BE1FFB500C3972E /* JRLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRLocation.swift; sourceTree = "<group>"; };
 		DB19566D1BAEC2E900A3C294 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DB1E20CF1BF5E3F30027183E /* NavBarSampleColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NavBarSampleColor.png; path = Design/NavBarSampleColor.png; sourceTree = "<group>"; };
 		DB4430E11BF1224A00A36B17 /* libVK-ios-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libVK-ios-sdk.a"; path = "Pods/../build/Debug-iphoneos/libVK-ios-sdk.a"; sourceTree = "<group>"; };
 		DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "welcomeBackground@3x.png"; path = "Design/welcomeBackground@3x.png"; sourceTree = "<group>"; };
 		DB4CC2D61B7B704A00480DC0 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
@@ -168,7 +170,7 @@
 		DBC6ACA51BC4FF4A00413983 /* PostSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSecondViewController.swift; sourceTree = "<group>"; };
 		DBD3C3B91B85C12E0046655A /* RoomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomPageViewController.swift; sourceTree = "<group>"; };
 		DBD3C3BD1B85FAB20046655A /* PopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTableViewController.swift; sourceTree = "<group>"; };
-		DBD3C3C21B8648D30046655A /* backButtonArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButtonArrow.png; path = Design/backButtonArrow.png; sourceTree = "<group>"; };
+		DBD3C3C21B8648D30046655A /* backButtonArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backButtonArrow@2x.png"; path = "Design/backButtonArrow@2x.png"; sourceTree = "<group>"; };
 		DBD3C3C41B86949D0046655A /* kvartira.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kvartira.jpg; path = Design/kvartira.jpg; sourceTree = "<group>"; };
 		DBD3C3C61B8695660046655A /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Design/star.png; sourceTree = "<group>"; };
 		DBD3C3C81B8696FF0046655A /* empryStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empryStar.png; path = Design/empryStar.png; sourceTree = "<group>"; };
@@ -339,11 +341,12 @@
 		DB70BBA61B72548B00FECB99 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				DB1E20CF1BF5E3F30027183E /* NavBarSampleColor.png */,
 				DBBF3A121BC86E2000DDA567 /* location.png */,
 				DB459D771BBAE02A0062C525 /* welcomeBackground@3x.png */,
 				DBD3C3CE1B8722740046655A /* Test */,
 				DB851C261B9F438200984A2C /* krest@2x.png */,
-				DBD3C3C21B8648D30046655A /* backButtonArrow.png */,
+				DBD3C3C21B8648D30046655A /* backButtonArrow@2x.png */,
 				DBD3C3C81B8696FF0046655A /* empryStar.png */,
 				DBD3C3C61B8695660046655A /* star.png */,
 				DB0EA7ED1B8214690093B796 /* onRightArrow.png */,
@@ -538,6 +541,7 @@
 				DB70BBA51B72548500FECB99 /* sixHandsLogo.png in Resources */,
 				DBD3C3C51B86949D0046655A /* kvartira.jpg in Resources */,
 				DBBF3A131BC86E2000DDA567 /* location.png in Resources */,
+				DB1E20D01BF5E3F30027183E /* NavBarSampleColor.png in Resources */,
 				DB459D781BBAE02A0062C525 /* welcomeBackground@3x.png in Resources */,
 				DB0EA7EC1B8213BE0093B796 /* whiteArrow.png in Resources */,
 				DB851C2D1B9F49C100984A2C /* imageBackgroundFillPost@2x.png in Resources */,
@@ -553,7 +557,7 @@
 				DB70BBA41B72548500FECB99 /* rectBackgroundForButtonFirstView.png in Resources */,
 				DBD3C3C71B8695660046655A /* star.png in Resources */,
 				DB70BB851B7253AC00FECB99 /* LaunchScreen.xib in Resources */,
-				DBD3C3C31B8648D30046655A /* backButtonArrow.png in Resources */,
+				DBD3C3C31B8648D30046655A /* backButtonArrow@2x.png in Resources */,
 				DB70BBA31B72548500FECB99 /* menu.png in Resources */,
 				DBD3C3C91B8696FF0046655A /* empryStar.png in Resources */,
 				DB9240101BA3522500CE57F3 /* newPhotoButton@2x.png in Resources */,

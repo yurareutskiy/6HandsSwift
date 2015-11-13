@@ -33,12 +33,27 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
 //        table.frame.size = CGSizeMake(view.frame.width, 450)
         // Logo in navigation bar
         
-        let imgView = UIImageView(image: UIImage(named: "sixHandsLogo"))
+        let leftItem = UIBarButtonItem(image: UIImage(named: "backButtonArrow@2x"), style: .Done, target: self, action: "pushBack")
+        navigationItem.leftBarButtonItem = leftItem
+
+        let rightItem = UIBarButtonItem()
+        rightItem.width = (navigationItem.leftBarButtonItem?.width)!
+        rightItem.title = ""
+        navigationItem.rightBarButtonItems = [rightItem]
+
         
-        imgView.frame = CGRect(x: 13, y: 0, width: 80, height: 20)
+        let imgView = UIImageView(image: UIImage(named: "sixHandsLogo"))
+
+        imgView.frame = CGRect(x: 0, y: 0, width: 80, height: 20)
         imgView.contentMode = UIViewContentMode.ScaleAspectFit
-//        navBar.topItem?.titleView = imgView
-//        navBar.frame = CGRectMake(0, 0, view.frame.width, 64)
+        navigationItem.titleView = imgView
+        navigationController?.navigationItem.leftBarButtonItem?.image = UIImage(named: "backButtonArrow@2x")
+        navigationController?.navigationItem.leftBarButtonItem?.title = ""
+        
+
+        
+        
+//        navigationController?.navigationBar.frame = CGRectMake(0, 0, view.frame.width, 64)
         
         
         infoParameters = [["Общая", "100 м²"], ["Кухня", "25 м²"], ["Комнаты","75 м²"], ["Санузел","Совмещенный"], ["Балкон","Лоджия"], ["Мебель","Есть"], ["Телефон","Есть"], ["Plus","Можно с детьми"], ["Minus","Без животных"], ["Description", "После рабочего дня нам хочется расслабиться перед телевизором или компьютером, посмотреть что-то или поиграть."]]
@@ -56,12 +71,16 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-
+    
+    func pushBack() {
+//        let vc = navigationController?.parentViewController
+        navigationController?.popViewControllerAnimated(true)
+    }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if (indexPath.section == 0) {
             if (indexPath.row == 0) {
-                return self.view.frame.width * 0.75
+                return self.view.frame.width * (3/4)
             } else if (indexPath.row == countParameters) {
                 let height = heightForView()
                 print("Height 2: ", terminator: "")
@@ -166,10 +185,19 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        print(indexPath.description)
         if (indexPath.section == 1) {
             return indexPath
         } else {
             return nil
+        }
+    }
+    
+    func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.section == 1 {
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            let vc = storyboard?.instantiateViewControllerWithIdentifier("RoomPage") as! RoomViewController
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 

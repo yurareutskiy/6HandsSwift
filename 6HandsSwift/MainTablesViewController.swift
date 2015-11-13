@@ -64,6 +64,10 @@ class MainTablesViewController: UIViewController, CAPSPageMenuDelegate, ENSideMe
         imgView.contentMode = UIViewContentMode.ScaleAspectFit
         navigationController?.navigationBar.topItem?.titleView = imgView
         
+        navigationController?.navigationBar.barTintColor = UIColor(patternImage: UIImage(named: "NavBarSampleColor")!)
+        navigationController?.navigationBar.tintColor = UIColor.blackColor()
+
+        
             // Custom RIGHT navigation bar button
         
         rightItem = UIBarButtonItem(image: UIImage(named: "kitchen pack18"), style: UIBarButtonItemStyle.Plain, target: nil, action: "revealFilterMenu")
